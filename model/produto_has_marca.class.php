@@ -1,15 +1,15 @@
 <?php
 
 class produto_has_marca {
-	private Produto_id;
-	private Marca_id;
+	private $Produto_id;
+	private $Marca_id;
 
 	public function getProduto_id(){
-		return Produto_id;
+		return $this->Produto_id;
 	}
 
 	public function getMarca_id(){
-		return Marca_id;
+		return $this->Marca_id;
 	}
 
 	public function setProduto_id($Produto_id){

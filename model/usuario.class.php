@@ -5,7 +5,7 @@ class usuario{
 	private $id;
 	private $login;
 	private $senha;
-	private $mercado_id;
+	private $Mercado_id;
 	private $ativo;
 	private $nivel;	
 	
@@ -24,7 +24,7 @@ class usuario{
 	}
 	
 	public function getMercado_Id(){
-		return $this->mercado_id;
+		return $this->Mercado_id;
 	}
 	
 	public function getAtivo(){
@@ -49,8 +49,8 @@ class usuario{
 		$this->senha = $senha;
 	}
 	
-	public function setMercado_Id($mercado_id){
-		$this->mercado_id = $mercado_id;
+	public function setMercado_Id($Mercado_id){
+		$this->Mercado_id = $Mercado_id;
 	}
 	
 	public function setAtivo ($ativo){
