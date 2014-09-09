@@ -21,19 +21,6 @@ class MercadoController extends Crud {
 		return $this->execute_query("SELECT mercado.id, mercado.nome, mercado.endereco, mercado.Cidade_id  FROM mercado;" );
 	}
 	
-	public function insert(){
-		return $this->execute_query("insert into mercado (nome, endereco, Cidade_id ) values ('". addslashes($nome) . "' ,' ". addslashes($endereco) . "',". addslashes($cidade_id) .");" );
-	}
-	public function update(){
-		return $this->execute_query("update mercado set  nome = '". addslashes($nome) . "',  endereco = '". addslashes($endereco) . "', Cidade_id = ". addslashes($cidade_id) . "  WHERE id = ". addslashes($id).";" );
-	}
-	public function delete(){
-		return $this->execute_query("delete from mercado WHERE id = ". addslashes($id).";" );
-	}
-		
-		
-	
-	
 }
 
 ?>
