@@ -4,7 +4,7 @@ class Connection{
 	private $connection;
 	
 	//Local DB
-	private $parameters = array("host"=>"localhost","user"=>"aulas","password"=>"123456","database"=>"modelo");
+	private $parameters = array("host"=>"localhost","user"=>"root","password"=>"","database"=>"mercadoVirtual");
 
 	public function openConnection(){
 		

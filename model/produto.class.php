@@ -8,6 +8,9 @@ class produto{
 	private $Categoria_id;
 	private $status;
 	private $Setor_id;
+	private $Marca_id;
+
+
 
 	public function getId(){
 		return $this->id;
@@ -31,6 +34,10 @@ class produto{
 	
 	public function getSetor_id(){
 		return $this->Setor_id;
+	}
+
+	public function getMarca_id(){
+		return $this->Marca_id;
 	}
 	
 	//Setters
@@ -57,4 +64,8 @@ class produto{
 	
 	public function setSetor_id($Setor_id){
 		$this->Setor_id = $Setor_id;
+	}
+
+	public function setMarca_id($Marca_id){
+		$this->Marca_id = $Marca_id;
 	}
