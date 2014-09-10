@@ -18,7 +18,7 @@ class ProdutoController extends Crud {
 	//Listagem de todas as produto
 	
 	public function lista(){
-		return $this->execute_query("SELECT produto.id, produto.descricao, produto.Quantidade_id,  produto.Categoria_id, produto.status, produto.Setor_id  FROM produto;" );
+		return $this->execute_query("SELECT produto.id, produto.descricao, produto.Quantidade_id,  produto.Categoria_id, produto.status, produto.Setor_id, marca.descricao  FROM produto INNER JOIN marca ON produto.marca_id = marca.id;" );
 	}
 	
 }
