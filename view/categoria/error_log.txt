@@ -1,0 +1,20 @@
+[13-Sep-2014 19:52:28 UTC] PHP Warning:  include(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\categoria.controller.class.php on line 5
+[13-Sep-2014 19:52:28 UTC] PHP Stack trace:
+[13-Sep-2014 19:52:28 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[13-Sep-2014 19:52:28 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:16
+[13-Sep-2014 19:52:28 UTC] PHP Warning:  include(): Failed opening '../functions/crud.class.php' for inclusion (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\categoria.controller.class.php on line 5
+[13-Sep-2014 19:52:28 UTC] PHP Stack trace:
+[13-Sep-2014 19:52:28 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[13-Sep-2014 19:52:28 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:16
+[13-Sep-2014 19:52:28 UTC] PHP Fatal error:  Class 'Crud' not found in C:\Webserver\wamp\www\mercadoVirtual\controller\categoria.controller.class.php on line 7
+[13-Sep-2014 19:52:28 UTC] PHP Stack trace:
+[13-Sep-2014 19:52:28 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[13-Sep-2014 19:52:28 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:16
+[13-Sep-2014 19:55:20 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\categoria.controller.class.php on line 5
+[13-Sep-2014 19:55:20 UTC] PHP Stack trace:
+[13-Sep-2014 19:55:20 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[13-Sep-2014 19:55:20 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:16
+[13-Sep-2014 19:55:20 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\categoria.controller.class.php on line 5
+[13-Sep-2014 19:55:20 UTC] PHP Stack trace:
+[13-Sep-2014 19:55:20 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[13-Sep-2014 19:55:20 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:16

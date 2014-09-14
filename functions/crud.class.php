@@ -1,7 +1,7 @@
 <?php 
 
-require_once("../../functions/reflection.class.php");
-require_once("../../functions/connection.class.php");
+require_once("../functions/reflection.class.php");
+require_once("../functions/connection.class.php");
 
 abstract class Crud {
 
