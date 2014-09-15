@@ -3,20 +3,20 @@
 class categoria {
 	private $id;
 	private $descricao;
-	
-	public function getId(){
+
+	public function getId() {
 		return $this->id;
 	}
-	
-	public function getDescricao(){
+
+	public function getDescricao() {
 		return $this->descricao;
 	}
-	
-	public function setId($id){
+
+	public function setId($id) {
 		$this->id = $id;
 	}
-	
-	public function setDescricao($descricao){
+
+	public function setDescricao($descricao) {
 		$this->descricao = $descricao;
 	}
 }
