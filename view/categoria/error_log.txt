@@ -86,3 +86,23 @@
 [15-Sep-2014 20:35:10 America/Sao_Paulo] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in /var/www/mercadoVirtual/functions/crud.class.php on line 174
 [15-Sep-2014 20:35:10 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Functions::geraMenu() in /var/www/mercadoVirtual/view/categoria/lista.php on line 85
 [15-Sep-2014 20:35:31 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Functions::geraMenu() in /var/www/mercadoVirtual/view/categoria/lista.php on line 85
+[17-Sep-2014 01:00:40 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php on line 7
+[17-Sep-2014 01:00:40 UTC] PHP Stack trace:
+[17-Sep-2014 01:00:40 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[17-Sep-2014 01:00:40 UTC] PHP   2. Crud->listObjects() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:22
+[17-Sep-2014 01:00:40 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:171
+[17-Sep-2014 01:00:40 UTC] PHP   4. Connection->openConnection() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:190
+[17-Sep-2014 01:00:40 UTC] PHP   5. mysqli_connect() C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php:7
+[17-Sep-2014 01:01:25 UTC] PHP Fatal error:  Call to undefined method Functions::geraMenu() in C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php on line 85
+[17-Sep-2014 01:01:25 UTC] PHP Stack trace:
+[17-Sep-2014 01:01:25 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[17-Sep-2014 01:04:46 UTC] PHP Fatal error:  Call to undefined method Functions::geraMenu() in C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php on line 85
+[17-Sep-2014 01:04:46 UTC] PHP Stack trace:
+[17-Sep-2014 01:04:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[17-Sep-2014 01:07:57 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php on line 127
+[17-Sep-2014 01:07:57 UTC] PHP Stack trace:
+[17-Sep-2014 01:07:57 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[17-Sep-2014 01:07:57 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:127
+[17-Sep-2014 01:12:19 UTC] PHP Fatal error:  Call to undefined method Functions::mensagemDeRetorno() in C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php on line 96
+[17-Sep-2014 01:12:19 UTC] PHP Stack trace:
+[17-Sep-2014 01:12:19 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0

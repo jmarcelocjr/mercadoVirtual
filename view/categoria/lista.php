@@ -19,20 +19,7 @@ include_once("../../functions/functions.class.php");
 
 //Instanciando a classe controladora
 $categoria 	= new CategoriaController;
-$registros 	= $categoria->listObjects();
-
-/*
-//Método construtor do arquivo controlador
-
-public function __construct() {
-	//Passa como parâmetro a tabela
-    parent::__construct("categoria");
-}
-	
-public function lista(){
-	return $this->execute_query("SELECT * FROM categoria  ;" );
-}
-*/
+$registros 	= $categoria->lista();
 
 //Instanciando a classe de funções
 $functions	= new Functions;
@@ -137,14 +124,14 @@ if ($id > 0) {
             <tbody>
             
 				<?php
-                	while($reg = mysql_fetch_array($registros)){
+                	while($reg = mysqli_fetch_array($registros)){
 				?>
             
             	<tr>
                     <td><?php echo $reg["id"]; ?></td>
                     <td><?php echo $reg["descricao"]; ?></td>
                     <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove">x</i></a></td>
                 </tr>
             
             	<?php
