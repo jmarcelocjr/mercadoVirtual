@@ -46,3 +46,11 @@
 [13-Sep-2014 19:56:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:/wamp/www/mercadoVirtual/controller/setor.controller.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php on line 9
 [13-Sep-2014 19:56:14 UTC] PHP Stack trace:
 [13-Sep-2014 19:56:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[17-Sep-2014 22:47:39 Europe/Paris] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\controller\setor.controller.class.php on line 5
+[17-Sep-2014 22:47:39 Europe/Paris] PHP Stack trace:
+[17-Sep-2014 22:47:39 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[17-Sep-2014 22:47:39 Europe/Paris] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\setor\lista.php:9
+[17-Sep-2014 22:47:39 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\controller\setor.controller.class.php on line 5
+[17-Sep-2014 22:47:39 Europe/Paris] PHP Stack trace:
+[17-Sep-2014 22:47:39 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[17-Sep-2014 22:47:39 Europe/Paris] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\setor\lista.php:9

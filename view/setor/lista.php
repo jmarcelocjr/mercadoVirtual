@@ -6,29 +6,13 @@ ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
 //Importanto as classes externas
-require_once("C:/wamp/www/mercadoVirtual/controller/setor.controller.class.php");
-include_once("C:/wamp/www/mercadoVirtual/functions/functions.class.php");
+require_once("../../controller/setor.controller.class.php");
+include_once("../../functions/functions.class.php");
 
 
 //Instanciando a classe controladora
 $setor 	= new SetorController;
 $registros 	= $setor->lista();
-
-
-//Método construtor do arquivo controlador
-
-/* ERRO AQUI TCHELO
-public function __construct() {
-	//Passa como parâmetro a tabela
-    parent::__construct("setor");
-}
-*/
-
-/* ERRO AQUI TAMBÉM TCHELO	
-public function lista(){
-	return $this->execute_query("SELECT setor.id, setor.descricao FROM setor;");
-}
-*/
 
 //Instanciando a classe de funções
 $functions	= new Functions;
@@ -56,12 +40,11 @@ if ($id > 0) {
         <meta name="author" content="">
     
         <!-- Estilos -->
-        <!-- Não sei se é pra apagar, então comentei... GABRIEL NETTO.
-        <link href="file:///C|/wamp/www/mercadoVirtual/css/bootstrap.css" rel="stylesheet">
-        <link href="file:///C|/wamp/www/mercadoVirtual/css/geral.css" rel="stylesheet">
-        <link href="file:///C|/wamp/www/mercadoVirtual/css/validation.css" rel="stylesheet">
-        <link href="file:///C|/wamp/www/mercadoVirtual/css/bootstrap-responsive.css" rel="stylesheet">        
-		-->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/geral.css" rel="stylesheet">
+        <link href="../../css/validation.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">        
+		
   	</head>
 
 
@@ -116,7 +99,7 @@ if ($id > 0) {
 
         <div class="control-group">
             <div class="controls">
-              <a href="file:///C|/wamp/www/mercadoVirtual/view/setor/edita.php" class="btn btn-info btn-large">Cadastrar um novo setor</a>
+              <a href="edita.php" class="btn btn-info btn-large">Cadastrar uma nova categoria</a>
             </div>
 		</div>
 
@@ -136,14 +119,14 @@ if ($id > 0) {
             <tbody>
             
 				<?php
-                	while($reg = mysql_fetch_array($registros)){
+                	while($reg = mysqli_fetch_array($registros)){
 				?>
             
             	<tr>
                     <td><?php echo $reg["id"]; ?></td>
                     <td><?php echo $reg["nome"]; ?></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="file:///C|/wamp/www/mercadoVirtual/view/setor/edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste setor?');" href="file:///C|/wamp/www/mercadoVirtual/view/setor/lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste setor?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove"></i></a></td>
                 </tr>
             
             	<?php
@@ -174,21 +157,20 @@ if ($id > 0) {
     </div> <!-- /container -->
 		
     	<!-- Javascript -->
-        <!--
-		<script src="file:///C|/wamp/www/mercadoVirtual/js/jquery.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/jquery.validate.min.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-transition.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-alert.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-modal.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-dropdown.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-scrollspy.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-tab.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-tooltip.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-popover.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-button.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-collapse.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-carousel.js"></script>
-        <script src="file:///C|/wamp/www/mercadoVirtual/js/bootstrap-typeahead.js"></script>
-    	-->
+		<script src="../../js/jquery.js"></script>
+        <script src="../../js/jquery.validate.min.js"></script>
+        <script src="../../js/bootstrap-transition.js"></script>
+        <script src="../../js/bootstrap-alert.js"></script>
+        <script src="../../js/bootstrap-modal.js"></script>
+        <script src="../../js/bootstrap-dropdown.js"></script>
+        <script src="../../js/bootstrap-scrollspy.js"></script>
+        <script src="../../js/bootstrap-tab.js"></script>
+        <script src="../../js/bootstrap-tooltip.js"></script>
+        <script src="../../js/bootstrap-popover.js"></script>
+        <script src="../../js/bootstrap-button.js"></script>
+        <script src="../../js/bootstrap-collapse.js"></script>
+        <script src="../../js/bootstrap-carousel.js"></script>
+        <script src="../../js/bootstrap-typeahead.js"></script>
+    
 	</body>
 </html>
