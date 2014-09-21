@@ -135,7 +135,7 @@ abstract class Crud {
 
 		$sql = "select * from " . $this->tabela . " where " . $attr . " = " . $value . " ;";
 
-		return mysql_fetch_assoc($this->execute_query($sql));
+		return mysqli_fetch_assoc($this->execute_query($sql));
 	}
 
 	/**
@@ -154,7 +154,7 @@ abstract class Crud {
 
 		$sql = "select * from " . $this->tabela . " where " . $attr . " = " . $value . " ;";
 
-		return mysql_fetch_object($this->execute_query($sql), $this->tabela);
+		return mysqli_fetch_object($this->execute_query($sql), $this->tabela);
 	}
 
 	/**
