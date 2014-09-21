@@ -1,26 +1,26 @@
 <?php
 
-
 //Inclui a classe genérica CRUD
-require_once("../functions/crud.class.php");
+require_once ("../functions/crud.class.php");
 
 class ProdutoController extends Crud {
 
 	//Método construtor
 
-    public function __construct() {
-		
+	public function __construct() {
+
 		//Passa como parâmetro a tabela
-        parent::__construct("produto");
-    }
-	
-	
-	//Listagem de todas as produto
-	
-	public function lista(){
-		return $this->execute_query("SELECT produto.id, produto.descricao, produto.Quantidade_id,  produto.Categoria_id, produto.status, produto.Setor_id, marca.descricao  FROM produto INNER JOIN marca ON produto.marca_id = marca.id;" );
+		parent::__construct("produto");
 	}
-	
+
+	//Listagem de todas as produto
+
+	public function lista($where = null) {
+		$sql = "SELECT produto.descricao as 'produto', concat(quantidade.peso, '-', quantidade.unidade), setor.descricao as 'setor', marca.descricao as 'marca' FROM produto INNER JOIN quantidade on quantidade.id = produto.Quantidade_id INNER JOIN setor on setor.id = produto.Setor_id INNER JOIN marca on marca.id  = produto.Marca_id";
+		if ($where != null) {$sql .= " WHERE $where;";}
+		return $this->execute_query($sql);
+	}
+
 }
 
 ?>

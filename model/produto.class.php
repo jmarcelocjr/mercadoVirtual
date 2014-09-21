@@ -5,7 +5,6 @@ class produto{
 	private $id;
 	private $descricao;
 	private $Quantidade_id;
-	private $Categoria_id;
 	private $status;
 	private $Setor_id;
 	private $Marca_id;
@@ -23,11 +22,7 @@ class produto{
 	public function getQuantidade_id(){
 		return $this->Quantidade_id;
 	}
-	
-	public function getCategoria_id(){
-		return $this->Categoria_id;
-	}
-	
+
 	public function getStatus(){
 		return $this->status;
 	}
@@ -52,10 +47,6 @@ class produto{
 	
 	public function setQuantidade_id($Quantidade_id){
 		$this->Quantidade_id = $Quantidade_id;
-	}
-	
-	public function setCategoria_id($Categoria_id){
-		$this->Categoria_id = $Categoria_id;
 	}
 	
 	public function setStatus ($status){

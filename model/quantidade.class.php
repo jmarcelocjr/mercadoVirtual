@@ -1,43 +1,33 @@
 <?php
 
-class quantidade{
+class quantidade {
 	private $id;
-	private $pesoLiquido;
-	private $pesoKilograma;
+	private $peso;
 	private $unidade;
-	
-	public function getId(){
+
+	public function getId() {
 		return $this->id;
 	}
-	
-	public function getPesoLiquido(){
-		return $this->pesoLiquido;
+
+	public function getPeso() {
+		return $this->peso;
 	}
-	
-	public function getPesoKilograma(){
-		return $this->pesoKilograma;
-	}
-	
-	public function getUnidade(){
+	public function getUnidade() {
 		return $this->unidade;
 	}
-	
-	public function setId($id){
+
+	public function setId($id) {
 		$this->id = $id;
 	}
-	
-	public function setPesoLiquido($pesoLiquido){
-		$this->pesoLiquido = $pesoLiquido;
+
+	public function setPeso($peso) {
+		$this->peso = $peso;
 	}
-	
-	public function setPesoKilograma($pesoKilograma){
-		$this->pesoKilograma = $pesoKilograma;
-	}
-	
-	public function setUnidade ($unidade){
+
+	public function setUnidade($unidade) {
 		$this->unidade = $unidade;
 	}
-	
+
 }
 
 ?>
