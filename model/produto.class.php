@@ -60,3 +60,4 @@ class produto{
 	public function setMarca_id($Marca_id){
 		$this->Marca_id = $Marca_id;
 	}
+}
