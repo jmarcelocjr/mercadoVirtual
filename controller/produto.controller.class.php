@@ -21,8 +21,8 @@ class ProdutoController extends Crud {
 		return $this->execute_query($sql);
 	}
 
-	public function vinculaMarca() {
-		return $this->execute_query("INSERT INTO produto_has_marca (id, Produto_id, Marca_id) VALUES (null, $produto_id, $marca_id);");
+	public function vinculaMarca($marca_id, $img) {
+		return $this->execute_query("INSERT INTO produto_has_marca (id, Produto_id, Marca_id, img) VALUES (null, " . $this->id . ", " . $marca_id . ", " . $img . ");");
 	}
 
 }
