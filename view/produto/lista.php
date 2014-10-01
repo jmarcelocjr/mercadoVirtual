@@ -5,26 +5,21 @@ ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
+/*
+ * 	Descrição do Arquivo
+ * 	@author - João Ricardo Gomes dos Reis
+ * 	@data de criação - 09/09/2014
+ * 	@arquivo  - lista.php
+ */
+
 //Importanto as classes externas
-require_once("../../controller/mercado.controller.class.php");
+require_once("../../controller/produto.controller.class.php");
 include_once("../../functions/functions.class.php");
 
+
 //Instanciando a classe controladora
-$mercado	= new MercadoController;
-$registros 	= $mercado->lista();
-
-/*
-//Método construtor do arquivo controlador
-
-public function __construct() {
-	//Passa como parâmetro a tabela
-    parent::__construct("mercado");
-}
-	
-public function lista(){
-	return $this->execute_query("SELECT * FROM mercado  ;" );
-}
-*/
+$produto 	= new ProdutoController;
+$registros 	= $produto->lista();
 
 //Instanciando a classe de funções
 $functions	= new Functions;
@@ -33,10 +28,11 @@ $functions	= new Functions;
 //para o caso de exclusão de algum item
 $id = ( isset($_GET['id']) ) ? $_GET['id'] : 0;
 
+
 //Caso algum id tenha sido recebido, passa ele como parâmetro
 //para o método de remoção de item
 if ($id > 0) {
-    $load = $mercado->remove($id, 'id');
+    $load = $produto->deleteTables($id);
     header('Location: lista.php?acao=3&tipo=1');
 }
 
@@ -46,7 +42,7 @@ if ($id > 0) {
   	<head>
     
         <meta charset="utf-8">
-        <title>Modelo - UNIFEOB</title>
+        <title>Listagem de Produtos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -70,7 +66,7 @@ if ($id > 0) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
+          <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->
           <div class="nav-collapse collapse">
 
 			<?php
@@ -87,8 +83,8 @@ if ($id > 0) {
 
 		<!-- Título -->
         <blockquote>
-          <h2>Listagem de mercados</h2>
-          <small>Utilize os campos abaixo para gerenciar os mercados</small>
+          <h2>Listagem de Produtos</h2>
+          <small>Utilize os campos abaixo para gerenciar as produtos</small>
         </blockquote>
 
 
@@ -109,7 +105,7 @@ if ($id > 0) {
 
         <div class="control-group">
             <div class="controls">
-              <a href="edita.php" class="btn btn-info btn-large">Cadastrar novo mercado</a>
+              <a href="edita.php" class="btn btn-info btn-large">Cadastrar um novo produto</a>
             </div>
 		</div>
 
@@ -121,8 +117,11 @@ if ($id > 0) {
 			<thead>
             	<tr>
                     <th>Código</th>
-                    <th>Nome</th>
-                    <th>Endereco</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Setor</th>
+                    <th>Marca</th>
+                    <th>Status</th>
                     <th style="text-align:center"><i class="icon-edit"></i></th>
                     <th style="text-align:center"><i class="icon-remove"></i></th>
                 </tr>
@@ -130,15 +129,18 @@ if ($id > 0) {
             <tbody>
             
 				<?php
-                	while($reg = mysql_fetch_array($registros)){
+                	while($reg = mysqli_fetch_array($registros)){
 				?>
             
             	<tr>
                     <td><?php echo $reg["id"]; ?></td>
-                    <td><?php echo $reg["nome"]; ?></td>
-                    <td><?php echo $reg["endereco"]; ?></td>
+                    <td><?php echo $reg["produto"]; ?></td>
+                    <td><?php echo $reg["quantidade"]; ?></td>
+                    <td><?php echo $reg["setor"]; ?></td>
+                    <td><?php echo $reg["marca"]; ?></td>
+                    <td><?php echo $reg["status"]; ?></td>
                     <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove">x</i></a></td>
                 </tr>
             
             	<?php
