@@ -337,3 +337,9 @@
 [30-Sep-2014 23:12:51 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
 [30-Sep-2014 23:12:51 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
 [30-Sep-2014 23:12:51 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[02-Oct-2014 01:38:22 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
+[02-Oct-2014 01:38:22 Europe/Paris] PHP Stack trace:
+[02-Oct-2014 01:38:22 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[02-Oct-2014 01:38:52 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
+[02-Oct-2014 01:38:52 Europe/Paris] PHP Stack trace:
+[02-Oct-2014 01:38:52 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
