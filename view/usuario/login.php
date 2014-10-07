@@ -30,6 +30,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 			header("Location: login.php?tipo=4&acao=5");
 			
 		}else{
+
 			
 			//Declara as variáveis de sessão que serão utilizadas no sistema
 			session_start();
