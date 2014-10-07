@@ -337,9 +337,302 @@
 [30-Sep-2014 23:12:51 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
 [30-Sep-2014 23:12:51 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
 [30-Sep-2014 23:12:51 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+<<<<<<< HEAD
 [02-Oct-2014 01:38:22 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
 [02-Oct-2014 01:38:22 Europe/Paris] PHP Stack trace:
 [02-Oct-2014 01:38:22 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
 [02-Oct-2014 01:38:52 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
 [02-Oct-2014 01:38:52 Europe/Paris] PHP Stack trace:
 [02-Oct-2014 01:38:52 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
+=======
+[04-Oct-2014 15:29:23 UTC] PHP Fatal error:  Class 'MarcaController' not found in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
+[04-Oct-2014 15:29:23 UTC] PHP Stack trace:
+[04-Oct-2014 15:29:23 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:30:45 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\marca.controller.class.php on line 5
+[04-Oct-2014 15:30:45 UTC] PHP Stack trace:
+[04-Oct-2014 15:30:45 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:30:45 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:15
+[04-Oct-2014 15:30:45 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\marca.controller.class.php on line 5
+[04-Oct-2014 15:30:45 UTC] PHP Stack trace:
+[04-Oct-2014 15:30:45 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:30:45 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:15
+[04-Oct-2014 15:32:14 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\preco.controller.class.php on line 4
+[04-Oct-2014 15:32:14 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:14 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:16
+[04-Oct-2014 15:32:14 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\preco.controller.class.php on line 4
+[04-Oct-2014 15:32:14 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:14 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:16
+[04-Oct-2014 15:32:18 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\preco.controller.class.php on line 4
+[04-Oct-2014 15:32:18 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:18 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:16
+[04-Oct-2014 15:32:18 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\preco.controller.class.php on line 4
+[04-Oct-2014 15:32:18 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:18 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:16
+[04-Oct-2014 15:32:31 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\quantidade.controller.class.php on line 4
+[04-Oct-2014 15:32:31 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:31 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:17
+[04-Oct-2014 15:32:31 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\quantidade.controller.class.php on line 4
+[04-Oct-2014 15:32:31 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:31 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:17
+[04-Oct-2014 15:32:44 UTC] PHP Notice:  Undefined variable: controller in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 75
+[04-Oct-2014 15:32:44 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:44 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:32:44 UTC] PHP Fatal error:  Call to a member function listObjects() on a non-object in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 75
+[04-Oct-2014 15:32:44 UTC] PHP Stack trace:
+[04-Oct-2014 15:32:44 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:33:31 UTC] PHP Fatal error:  Call to undefined method MarcaController::listar() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 77
+[04-Oct-2014 15:33:31 UTC] PHP Stack trace:
+[04-Oct-2014 15:33:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:34:58 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 47
+[04-Oct-2014 15:34:58 UTC] PHP Stack trace:
+[04-Oct-2014 15:34:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:34:58 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 15:34:58 UTC] PHP Stack trace:
+[04-Oct-2014 15:34:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:34:58 UTC] PHP Notice:  Undefined index: valor in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[04-Oct-2014 15:34:58 UTC] PHP Stack trace:
+[04-Oct-2014 15:34:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:34:58 UTC] PHP Notice:  Undefined index: setProduto_has_marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 53
+[04-Oct-2014 15:34:58 UTC] PHP Stack trace:
+[04-Oct-2014 15:34:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 15:34:58 UTC] PHP Fatal error:  Call to undefined method preco::setMecado_id() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 54
+[04-Oct-2014 15:34:58 UTC] PHP Stack trace:
+[04-Oct-2014 15:34:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:34:46 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 47
+[04-Oct-2014 16:34:46 UTC] PHP Stack trace:
+[04-Oct-2014 16:34:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:34:46 UTC] PHP Notice:  Undefined index: Produto_has_marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 53
+[04-Oct-2014 16:34:46 UTC] PHP Stack trace:
+[04-Oct-2014 16:34:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:34:46 UTC] PHP Fatal error:  Call to undefined method preco::setMecado_id() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 54
+[04-Oct-2014 16:34:46 UTC] PHP Stack trace:
+[04-Oct-2014 16:34:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:39:31 UTC] PHP Notice:  Undefined index: Produto_has_marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 53
+[04-Oct-2014 16:39:31 UTC] PHP Stack trace:
+[04-Oct-2014 16:39:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:39:31 UTC] PHP Fatal error:  Call to undefined method preco::setMecado_id() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 54
+[04-Oct-2014 16:39:31 UTC] PHP Stack trace:
+[04-Oct-2014 16:39:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:48:03 UTC] PHP Notice:  Undefined variable: produtoMarca in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:48:03 UTC] PHP Stack trace:
+[04-Oct-2014 16:48:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:48:03 UTC] PHP Fatal error:  Call to a member function setMarca_id() on a non-object in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:48:03 UTC] PHP Stack trace:
+[04-Oct-2014 16:48:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:49:48 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:49:48 UTC] PHP Stack trace:
+[04-Oct-2014 16:49:48 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:50:10 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:50:10 UTC] PHP Stack trace:
+[04-Oct-2014 16:50:10 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:51:06 UTC] PHP Notice:  Undefined index: Quantidade_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 46
+[04-Oct-2014 16:51:06 UTC] PHP Stack trace:
+[04-Oct-2014 16:51:06 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:51:06 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:51:06 UTC] PHP Stack trace:
+[04-Oct-2014 16:51:06 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:52:11 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:52:11 UTC] PHP Stack trace:
+[04-Oct-2014 16:52:11 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 16:54:29 UTC] PHP Notice:  Undefined index: Marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 49
+[04-Oct-2014 16:54:29 UTC] PHP Stack trace:
+[04-Oct-2014 16:54:29 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 17:01:40 UTC] PHP Notice:  Undefined index: Quantidade_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 46
+[04-Oct-2014 17:01:40 UTC] PHP Stack trace:
+[04-Oct-2014 17:01:40 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[04-Oct-2014 18:34:05 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:34:05 UTC] PHP Stack trace:
+[04-Oct-2014 18:34:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:34:05 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:34:05 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:34:05 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:45:07 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:45:07 UTC] PHP Stack trace:
+[04-Oct-2014 18:45:07 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:45:07 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:45:07 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:45:07 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:46:34 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:46:34 UTC] PHP Stack trace:
+[04-Oct-2014 18:46:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:46:34 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:46:34 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:46:34 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:46:35 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:46:35 UTC] PHP Stack trace:
+[04-Oct-2014 18:46:35 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:46:35 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:46:35 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:46:35 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:46:35 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:46:35 UTC] PHP Stack trace:
+[04-Oct-2014 18:46:35 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:46:35 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:46:35 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:46:35 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:46:35 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:46:35 UTC] PHP Stack trace:
+[04-Oct-2014 18:46:35 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:46:35 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:46:35 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:46:35 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:46:41 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:46:41 UTC] PHP Stack trace:
+[04-Oct-2014 18:46:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:46:41 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:46:41 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:46:41 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:12 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:12 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:12 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:12 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:12 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:12 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:13 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:13 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:13 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:13 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:13 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:13 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:13 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:13 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:13 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:13 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:13 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:13 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:15 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:15 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:15 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:15 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:15 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:15 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:15 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:15 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:15 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:15 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:15 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:15 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:16 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:16 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:16 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:16 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:16 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:16 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:16 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:16 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:16 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:16 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:47:24 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:47:24 UTC] PHP Stack trace:
+[04-Oct-2014 18:47:24 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:47:24 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:47:24 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:47:24 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:48:24 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:48:24 UTC] PHP Stack trace:
+[04-Oct-2014 18:48:24 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:48:24 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:48:24 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:48:24 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:48:31 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:48:31 UTC] PHP Stack trace:
+[04-Oct-2014 18:48:31 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:48:31 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:48:31 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:48:31 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:51:46 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:51:46 UTC] PHP Stack trace:
+[04-Oct-2014 18:51:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:51:46 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:51:46 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:51:46 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:53:13 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:53:13 UTC] PHP Stack trace:
+[04-Oct-2014 18:53:13 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:53:13 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:53:13 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:53:13 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:54:45 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:54:45 UTC] PHP Stack trace:
+[04-Oct-2014 18:54:45 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:54:45 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:54:45 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:54:45 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:54:45 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:54:45 UTC] PHP Stack trace:
+[04-Oct-2014 18:54:45 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:54:45 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:54:45 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:54:45 UTC] PHP   4. mysqli_error() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:55:05 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[04-Oct-2014 18:55:05 UTC] PHP Stack trace:
+[04-Oct-2014 18:55:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 18:55:05 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:35
+[04-Oct-2014 18:55:05 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[04-Oct-2014 18:55:05 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[04-Oct-2014 18:56:05 UTC] PHP Fatal error:  Call to undefined method ProdutoController::deleteTables() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php on line 35
+[04-Oct-2014 18:56:05 UTC] PHP Stack trace:
+[04-Oct-2014 18:56:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:15:41 UTC] PHP Fatal error:  Call to undefined method ProdutoController::deleteTables() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php on line 35
+[04-Oct-2014 19:15:41 UTC] PHP Stack trace:
+[04-Oct-2014 19:15:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:39:21 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:39:21 UTC] PHP Stack trace:
+[04-Oct-2014 19:39:21 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:39:48 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:39:48 UTC] PHP Stack trace:
+[04-Oct-2014 19:39:48 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:40:38 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:40:38 UTC] PHP Stack trace:
+[04-Oct-2014 19:40:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:01 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:01 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:15 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:15 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:15 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:16 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:16 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:16 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:16 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:16 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:16 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:16 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:16 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:16 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:16 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:17 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:17 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:17 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:17 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:17 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:17 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:37 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:37 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:37 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:38 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:38 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:38 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:38 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[04-Oct-2014 19:41:38 UTC] PHP Parse error:  syntax error, unexpected '=' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[04-Oct-2014 19:41:38 UTC] PHP Stack trace:
+[04-Oct-2014 19:41:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+>>>>>>> thais
