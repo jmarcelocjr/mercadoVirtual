@@ -151,7 +151,7 @@ if ($id > 0) {
       <hr>
 
       <footer>
-        <p>&copy; Mercaddo Virtual 2014</p>
+        <p>&copy; Mercado Virtual 2014</p>
       </footer>
 
     </div> <!-- /container -->

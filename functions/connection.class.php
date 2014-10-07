@@ -2,7 +2,15 @@
 class Connection {
 	private $connection;
 //Local DB
+<<<<<<< HEAD
+	private $parameters = array("host" => "localhost", "user" => "root", "password" => "mohrole1", "database" => "mercadovirtual");
+=======
+<<<<<<< HEAD
 	private $parameters = array("host" => "localhost", "user" => "root", "password" => "", "database" => "mercadovirtual");
+=======
+	private $parameters = array("host" => "localhost", "user" => "root", "password" => "", "database" => "mercadoVirtual");
+>>>>>>> Giovani
+>>>>>>> 5126c50979e3e3a1306be88b246aee35c8d4bf11
 	public function openConnection() {
 		$this->connection = mysqli_connect($this->parameters["host"], $this->parameters["user"], $this->parameters["password"]);
 		if (!$this->connection) {
