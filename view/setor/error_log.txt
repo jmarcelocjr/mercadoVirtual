@@ -54,3 +54,19 @@
 [17-Sep-2014 22:47:39 Europe/Paris] PHP Stack trace:
 [17-Sep-2014 22:47:39 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
 [17-Sep-2014 22:47:39 Europe/Paris] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\setor\lista.php:9
+<<<<<<< HEAD
+[23-Sep-2014 00:28:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php on line 7
+[23-Sep-2014 00:28:56 UTC] PHP Stack trace:
+[23-Sep-2014 00:28:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[23-Sep-2014 00:28:56 UTC] PHP   2. SetorController->lista() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:15
+[23-Sep-2014 00:28:56 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\setor.controller.class.php:21
+[23-Sep-2014 00:28:56 UTC] PHP   4. Connection->openConnection() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:190
+[23-Sep-2014 00:28:56 UTC] PHP   5. mysqli_connect() C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php:7
+=======
+[26-Sep-2014 23:44:59 UTC] PHP Notice:  Undefined index: nome in C:\wamp\www\mercadoVirtual\view\setor\lista.php on line 127
+[26-Sep-2014 23:44:59 UTC] PHP Stack trace:
+[26-Sep-2014 23:44:59 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[26-Sep-2014 23:44:59 UTC] PHP Notice:  Undefined index: nome in C:\wamp\www\mercadoVirtual\view\setor\lista.php on line 127
+[26-Sep-2014 23:44:59 UTC] PHP Stack trace:
+[26-Sep-2014 23:44:59 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
+>>>>>>> Giovani

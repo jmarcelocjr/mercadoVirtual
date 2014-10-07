@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [16-Sep-2014 21:52:20 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
 [16-Sep-2014 21:52:20 UTC] PHP Stack trace:
 [16-Sep-2014 21:52:20 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
@@ -44,3 +45,32 @@
 [06-Oct-2014 01:26:29 UTC] PHP   3. Crud->execute_query() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:35
 [06-Oct-2014 01:26:29 UTC] PHP   4. Connection->openConnection() C:\wamp\www\mercadoVirtual\functions\crud.class.php:190
 [06-Oct-2014 01:26:29 UTC] PHP   5. mysqli_connect() C:\wamp\www\mercadoVirtual\functions\connection.class.php:7
+=======
+[16-Sep-2014 00:21:39 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[16-Sep-2014 00:21:39 UTC] PHP Stack trace:
+[16-Sep-2014 00:21:39 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[16-Sep-2014 00:21:39 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+[16-Sep-2014 00:21:39 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[16-Sep-2014 00:21:39 UTC] PHP Stack trace:
+[16-Sep-2014 00:21:39 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[16-Sep-2014 00:21:39 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+[16-Sep-2014 00:24:01 UTC] PHP Notice:  Undefined index: confirma in C:\wamp\www\mercadoVirtual\view\usuario\logoff.php on line 17
+[16-Sep-2014 00:24:01 UTC] PHP Stack trace:
+[16-Sep-2014 00:24:01 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\logoff.php:0
+[17-Sep-2014 03:20:22 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[17-Sep-2014 03:20:22 UTC] PHP Stack trace:
+[17-Sep-2014 03:20:22 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[17-Sep-2014 03:20:22 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+[17-Sep-2014 03:20:22 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[17-Sep-2014 03:20:22 UTC] PHP Stack trace:
+[17-Sep-2014 03:20:22 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[17-Sep-2014 03:20:22 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+[20-Sep-2014 00:17:16 UTC] PHP Warning:  require_once(../functions/crud.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[20-Sep-2014 00:17:16 UTC] PHP Stack trace:
+[20-Sep-2014 00:17:16 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[20-Sep-2014 00:17:16 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+[20-Sep-2014 00:17:16 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 12
+[20-Sep-2014 00:17:16 UTC] PHP Stack trace:
+[20-Sep-2014 00:17:16 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
+[20-Sep-2014 00:17:16 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
+>>>>>>> 67dc202c938121f98c95a3a51a7901f1215f8cd9

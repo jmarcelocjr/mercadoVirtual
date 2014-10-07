@@ -82,8 +82,8 @@ if ($id > 0) {
 
 		<!-- Título -->
         <blockquote>
-          <h2>Listagem de categorias</h2>
-          <small>Utilize os campos abaixo para gerenciar as categorias</small>
+          <h2>Listagem de mercados</h2>
+          <small>Utilize os campos abaixo para gerenciar os mercados</small>
         </blockquote>
 
 
@@ -129,7 +129,9 @@ if ($id > 0) {
             
             	<tr>
                     <td><?php echo $reg["id"]; ?></td>
-                    <td><?php echo $reg["descricao"]; ?></td>
+                    <td><?php echo $reg["nome"]; ?></td>
+                    <td><?php echo $reg["endereco"]; ?></td>
+
                     <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
                     <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove">x</i></a></td>
                 </tr>

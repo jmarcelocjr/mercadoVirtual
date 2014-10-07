@@ -1,0 +1,345 @@
+[24-Sep-2014 01:11:46 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 135
+[24-Sep-2014 01:11:46 UTC] PHP Stack trace:
+[24-Sep-2014 01:11:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:11:46 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 140
+[24-Sep-2014 01:11:46 UTC] PHP Stack trace:
+[24-Sep-2014 01:11:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:11:46 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[24-Sep-2014 01:11:46 UTC] PHP Stack trace:
+[24-Sep-2014 01:11:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:11:46 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[24-Sep-2014 01:11:46 UTC] PHP Stack trace:
+[24-Sep-2014 01:11:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:25:12 UTC] PHP Warning:  require_once(./../functions/crud.class.php): failed to open stream: No such file or directory in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 4
+[24-Sep-2014 01:25:12 UTC] PHP Stack trace:
+[24-Sep-2014 01:25:12 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:25:12 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:16
+[24-Sep-2014 01:25:12 UTC] PHP Fatal error:  require_once(): Failed opening required './../functions/crud.class.php' (include_path='.;C:\php\pear') in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 4
+[24-Sep-2014 01:25:12 UTC] PHP Stack trace:
+[24-Sep-2014 01:25:12 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[24-Sep-2014 01:25:12 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:16
+[24-Sep-2014 23:16:17 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 30
+[24-Sep-2014 23:16:17 UTC] PHP Stack trace:
+[24-Sep-2014 23:16:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:40:58 UTC] PHP Warning:  Missing argument 2 for ProdutoController::deleteTables(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 35 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 28
+[26-Sep-2014 23:40:58 UTC] PHP Stack trace:
+[26-Sep-2014 23:40:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:40:58 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
+[26-Sep-2014 23:40:58 UTC] PHP Notice:  Undefined variable: idMarca in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[26-Sep-2014 23:40:58 UTC] PHP Stack trace:
+[26-Sep-2014 23:40:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:40:58 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
+[26-Sep-2014 23:42:07 UTC] PHP Notice:  Undefined index: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:42:07 UTC] PHP Stack trace:
+[26-Sep-2014 23:42:07 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:42:07 UTC] PHP Notice:  Undefined index: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:42:07 UTC] PHP Stack trace:
+[26-Sep-2014 23:42:07 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:43:04 UTC] PHP Notice:  Undefined index: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:43:04 UTC] PHP Stack trace:
+[26-Sep-2014 23:43:04 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:43:04 UTC] PHP Notice:  Undefined index: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:43:04 UTC] PHP Stack trace:
+[26-Sep-2014 23:43:04 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:43:27 UTC] PHP Warning:  Missing argument 2 for ProdutoController::deleteTables(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 35 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 28
+[26-Sep-2014 23:43:27 UTC] PHP Stack trace:
+[26-Sep-2014 23:43:27 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:43:27 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
+[26-Sep-2014 23:43:27 UTC] PHP Notice:  Undefined variable: idMarca in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 29
+[26-Sep-2014 23:43:27 UTC] PHP Stack trace:
+[26-Sep-2014 23:43:27 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:43:27 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
+[26-Sep-2014 23:44:58 UTC] PHP Notice:  Undefined index: marca.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:44:58 UTC] PHP Stack trace:
+[26-Sep-2014 23:44:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[26-Sep-2014 23:44:58 UTC] PHP Notice:  Undefined index: marca.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[26-Sep-2014 23:44:58 UTC] PHP Stack trace:
+[26-Sep-2014 23:44:58 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[27-Sep-2014 14:56:29 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 82
+[27-Sep-2014 14:56:29 UTC] PHP Stack trace:
+[27-Sep-2014 14:56:29 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 14:56:29 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:82
+[27-Sep-2014 15:00:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 82
+[27-Sep-2014 15:00:06 UTC] PHP Stack trace:
+[27-Sep-2014 15:00:06 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:00:06 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:82
+[27-Sep-2014 15:03:37 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 82
+[27-Sep-2014 15:03:37 UTC] PHP Stack trace:
+[27-Sep-2014 15:03:37 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:03:37 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:82
+[27-Sep-2014 15:04:02 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 77
+[27-Sep-2014 15:04:02 UTC] PHP Stack trace:
+[27-Sep-2014 15:04:02 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:04:02 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:77
+[27-Sep-2014 15:09:39 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 78
+[27-Sep-2014 15:09:39 UTC] PHP Stack trace:
+[27-Sep-2014 15:09:39 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:09:39 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:78
+[27-Sep-2014 15:14:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:14:19 UTC] PHP Stack trace:
+[27-Sep-2014 15:14:19 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:14:19 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:14:55 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:14:55 UTC] PHP Stack trace:
+[27-Sep-2014 15:14:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:14:55 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:15:09 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:15:09 UTC] PHP Stack trace:
+[27-Sep-2014 15:15:09 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:15:09 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:16:33 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:16:33 UTC] PHP Stack trace:
+[27-Sep-2014 15:16:33 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:16:33 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:17:18 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:17:18 UTC] PHP Stack trace:
+[27-Sep-2014 15:17:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:17:18 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:35 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:35 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:35 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:35 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:37 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:37 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:37 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:37 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:38 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:38 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:38 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:38 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:38 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:38 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:38 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:38 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:38 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:38 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:54 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:54 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:54 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:55 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:55 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:55 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:55 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:55 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:55 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:56 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:56 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:56 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:56 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:56 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:56 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:18:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 83
+[27-Sep-2014 15:18:56 UTC] PHP Stack trace:
+[27-Sep-2014 15:18:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:18:56 UTC] PHP   2. mysql_fetch_array() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:83
+[27-Sep-2014 15:20:32 UTC] PHP Notice:  Undefined index: setor.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:20:32 UTC] PHP Stack trace:
+[27-Sep-2014 15:20:32 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:20:32 UTC] PHP Notice:  Undefined index: setor.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:20:32 UTC] PHP Stack trace:
+[27-Sep-2014 15:20:32 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:21:23 UTC] PHP Notice:  Undefined index: setor.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:21:23 UTC] PHP Stack trace:
+[27-Sep-2014 15:21:23 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:21:23 UTC] PHP Notice:  Undefined index: setor.id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:21:23 UTC] PHP Stack trace:
+[27-Sep-2014 15:21:23 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:22:59 UTC] PHP Notice:  Undefined index: idSetor in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:22:59 UTC] PHP Stack trace:
+[27-Sep-2014 15:22:59 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:22:59 UTC] PHP Notice:  Undefined index: idSetor in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 84
+[27-Sep-2014 15:22:59 UTC] PHP Stack trace:
+[27-Sep-2014 15:22:59 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:28:10 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 15:28:10 UTC] PHP Stack trace:
+[27-Sep-2014 15:28:10 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:28:16 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 15:28:16 UTC] PHP Stack trace:
+[27-Sep-2014 15:28:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:28:55 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 15:28:55 UTC] PHP Stack trace:
+[27-Sep-2014 15:28:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:29:03 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 15:29:03 UTC] PHP Stack trace:
+[27-Sep-2014 15:29:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:38:13 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:38:13 UTC] PHP Stack trace:
+[27-Sep-2014 15:38:13 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:42:40 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:42:40 UTC] PHP Stack trace:
+[27-Sep-2014 15:42:40 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:42:55 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:42:55 UTC] PHP Stack trace:
+[27-Sep-2014 15:42:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:43:01 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:43:01 UTC] PHP Stack trace:
+[27-Sep-2014 15:43:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:47:46 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:47:46 UTC] PHP Stack trace:
+[27-Sep-2014 15:47:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:48:05 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:48:05 UTC] PHP Stack trace:
+[27-Sep-2014 15:48:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:49:30 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:49:30 UTC] PHP Stack trace:
+[27-Sep-2014 15:49:30 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:57:02 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:57:02 UTC] PHP Stack trace:
+[27-Sep-2014 15:57:02 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:58:09 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 52
+[27-Sep-2014 15:58:09 UTC] PHP Stack trace:
+[27-Sep-2014 15:58:09 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:58:46 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getDescricao() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 56
+[27-Sep-2014 15:58:46 UTC] PHP Stack trace:
+[27-Sep-2014 15:58:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 15:59:18 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 56
+[27-Sep-2014 15:59:18 UTC] PHP Stack trace:
+[27-Sep-2014 15:59:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 16:03:04 UTC] PHP Fatal error:  Call to undefined method mysqli_result::getId() in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 56
+[27-Sep-2014 16:03:04 UTC] PHP Stack trace:
+[27-Sep-2014 16:03:04 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:48:56 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 19:48:56 UTC] PHP Stack trace:
+[27-Sep-2014 19:48:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:53 UTC] PHP Notice:  Undefined index: Status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 28
+[27-Sep-2014 19:57:53 UTC] PHP Stack trace:
+[27-Sep-2014 19:57:53 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:56 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:57:56 UTC] PHP Stack trace:
+[27-Sep-2014 19:57:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:56 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 19:57:56 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:57:56 UTC] PHP Stack trace:
+[27-Sep-2014 19:57:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:56 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 19:57:59 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:57:59 UTC] PHP Stack trace:
+[27-Sep-2014 19:57:59 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:59 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 19:57:59 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:57:59 UTC] PHP Stack trace:
+[27-Sep-2014 19:57:59 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:57:59 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 19:59:22 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:59:22 UTC] PHP Stack trace:
+[27-Sep-2014 19:59:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:59:22 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 19:59:22 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 19:59:22 UTC] PHP Stack trace:
+[27-Sep-2014 19:59:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 19:59:22 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:05:11 UTC] PHP Warning:  Missing argument 1 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:05:11 UTC] PHP Stack trace:
+[27-Sep-2014 20:05:11 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:05:11 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:05:11 UTC] PHP Warning:  Missing argument 2 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:05:11 UTC] PHP Stack trace:
+[27-Sep-2014 20:05:11 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:05:11 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:05:11 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:05:11 UTC] PHP Stack trace:
+[27-Sep-2014 20:05:11 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:05:11 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:05:11 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:05:11 UTC] PHP Stack trace:
+[27-Sep-2014 20:05:11 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:05:11 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:06:03 UTC] PHP Warning:  Missing argument 1 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:06:03 UTC] PHP Stack trace:
+[27-Sep-2014 20:06:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:06:03 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:06:03 UTC] PHP Warning:  Missing argument 2 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:06:03 UTC] PHP Stack trace:
+[27-Sep-2014 20:06:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:06:03 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:06:03 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:06:03 UTC] PHP Stack trace:
+[27-Sep-2014 20:06:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:06:03 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:06:03 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:06:03 UTC] PHP Stack trace:
+[27-Sep-2014 20:06:03 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:06:03 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:08:24 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51
+[27-Sep-2014 20:08:24 UTC] PHP Stack trace:
+[27-Sep-2014 20:08:24 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:08:24 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51
+[27-Sep-2014 20:08:24 UTC] PHP Stack trace:
+[27-Sep-2014 20:08:24 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:09:17 UTC] PHP Warning:  Missing argument 1 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:09:17 UTC] PHP Stack trace:
+[27-Sep-2014 20:09:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:09:17 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:09:17 UTC] PHP Warning:  Missing argument 2 for ProdutoController::vinculaMarca(), called in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 51 and defined in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 24
+[27-Sep-2014 20:09:17 UTC] PHP Stack trace:
+[27-Sep-2014 20:09:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:09:17 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:09:17 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:09:17 UTC] PHP Stack trace:
+[27-Sep-2014 20:09:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:09:17 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:09:17 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:09:17 UTC] PHP Stack trace:
+[27-Sep-2014 20:09:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:09:17 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:10:05 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:10:05 UTC] PHP Stack trace:
+[27-Sep-2014 20:10:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:10:05 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:10:05 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:10:05 UTC] PHP Stack trace:
+[27-Sep-2014 20:10:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:10:05 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:51
+[27-Sep-2014 20:25:26 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 50
+[27-Sep-2014 20:25:26 UTC] PHP Stack trace:
+[27-Sep-2014 20:25:26 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:16 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php on line 50
+[27-Sep-2014 20:28:16 UTC] PHP Stack trace:
+[27-Sep-2014 20:28:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:16 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:28:16 UTC] PHP Stack trace:
+[27-Sep-2014 20:28:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:16 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:50
+[27-Sep-2014 20:28:16 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:28:16 UTC] PHP Stack trace:
+[27-Sep-2014 20:28:16 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:16 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:50
+[27-Sep-2014 20:28:40 UTC] PHP Notice:  Undefined variable: produto_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:28:40 UTC] PHP Stack trace:
+[27-Sep-2014 20:28:40 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:40 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:50
+[27-Sep-2014 20:28:40 UTC] PHP Notice:  Undefined variable: marca_id in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 25
+[27-Sep-2014 20:28:40 UTC] PHP Stack trace:
+[27-Sep-2014 20:28:40 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[27-Sep-2014 20:28:40 UTC] PHP   2. ProdutoController->vinculaMarca() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:50
+[30-Sep-2014 23:12:51 UTC] PHP Warning:  mysqli_query(): Empty query in C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php on line 191
+[30-Sep-2014 23:12:51 UTC] PHP Stack trace:
+[30-Sep-2014 23:12:51 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[30-Sep-2014 23:12:51 UTC] PHP   2. ProdutoController->deleteTables() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:35
+[30-Sep-2014 23:12:51 UTC] PHP   3. Crud->execute_query() C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php:29
+[30-Sep-2014 23:12:51 UTC] PHP   4. mysqli_query() C:\Webserver\wamp\www\mercadoVirtual\functions\crud.class.php:191
+[02-Oct-2014 01:38:22 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
+[02-Oct-2014 01:38:22 Europe/Paris] PHP Stack trace:
+[02-Oct-2014 01:38:22 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[02-Oct-2014 01:38:52 Europe/Paris] PHP Fatal error:  Class 'MarcaController' not found in C:\wamp\www\mercadoVirtual\view\produto\edita.php on line 25
+[02-Oct-2014 01:38:52 Europe/Paris] PHP Stack trace:
+[02-Oct-2014 01:38:52 Europe/Paris] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\edita.php:0
