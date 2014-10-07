@@ -106,3 +106,48 @@
 [17-Sep-2014 01:12:19 UTC] PHP Fatal error:  Call to undefined method Functions::mensagemDeRetorno() in C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php on line 96
 [17-Sep-2014 01:12:19 UTC] PHP Stack trace:
 [17-Sep-2014 01:12:19 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:32:48 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:32:48 UTC] PHP Stack trace:
+[24-Sep-2014 23:32:48 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:32:48 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:32:48 UTC] PHP Stack trace:
+[24-Sep-2014 23:32:48 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:29 UTC] PHP Warning:  include_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:29 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:29 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:29 UTC] PHP Warning:  include_once(): Failed opening '../../controller/categoria.controller.class.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:29 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:29 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:29 UTC] PHP Fatal error:  Class 'CategoriaController' not found in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 21
+[24-Sep-2014 23:34:29 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:29 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:40 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:40 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:40 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:40 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:40 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:40 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:40 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:40 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:40 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:40 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:40 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:40 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:41 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:41 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:41 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:41 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:41 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:41 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:41 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:41 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:41 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[24-Sep-2014 23:34:41 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[24-Sep-2014 23:34:41 UTC] PHP Stack trace:
+[24-Sep-2014 23:34:41 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[27-Sep-2014 03:41:48 UTC] PHP Warning:  require_once(../../controller/categoria.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[27-Sep-2014 03:41:48 UTC] PHP Stack trace:
+[27-Sep-2014 03:41:48 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0
+[27-Sep-2014 03:41:48 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/categoria.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\categoria\lista.php on line 16
+[27-Sep-2014 03:41:48 UTC] PHP Stack trace:
+[27-Sep-2014 03:41:48 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\categoria\lista.php:0

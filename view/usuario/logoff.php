@@ -17,7 +17,7 @@ session_start();
 if($_GET["confirma"]=="SIM"){
 
 	require_once("../../controller/usuario.controller.class.php");
-	$login 	= new UsuarioController;
+	$login 	= new UsuarioMercado;
 
 	$login->logoff();
 	

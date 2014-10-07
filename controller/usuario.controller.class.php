@@ -9,7 +9,7 @@
  */
 
 //Inclui a classe genérica CRUD
-require_once("../functions/crud.class.php");
+require_once(__DIR__ . "/../functions/crud.class.php");
 
 class UsuarioController extends Crud {
 
