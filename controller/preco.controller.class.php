@@ -1,7 +1,7 @@
 <?php
 
 //Inclui a classe genérica CRUD
-require_once ("../functions/crud.class.php");
+require_once ("../../functions/crud.class.php");
 
 class PrecoController extends Crud {
 
