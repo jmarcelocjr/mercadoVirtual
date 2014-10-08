@@ -636,3 +636,168 @@
 [04-Oct-2014 19:41:38 UTC] PHP Stack trace:
 [04-Oct-2014 19:41:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
 >>>>>>> thais
+[07-Oct-2014 23:34:56 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 4
+[07-Oct-2014 23:34:56 UTC] PHP Stack trace:
+[07-Oct-2014 23:34:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:45:02 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:45:02 UTC] PHP Stack trace:
+[07-Oct-2014 23:45:02 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:45:19 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:45:19 UTC] PHP Stack trace:
+[07-Oct-2014 23:45:19 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:45:56 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:45:56 UTC] PHP Stack trace:
+[07-Oct-2014 23:45:56 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:46:17 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:46:17 UTC] PHP Stack trace:
+[07-Oct-2014 23:46:17 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:46:38 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:46:38 UTC] PHP Stack trace:
+[07-Oct-2014 23:46:38 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:47:02 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:47:02 UTC] PHP Stack trace:
+[07-Oct-2014 23:47:02 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\edita.php:0
+[07-Oct-2014 23:47:18 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:47:18 UTC] PHP Stack trace:
+[07-Oct-2014 23:47:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:48:32 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:48:32 UTC] PHP Stack trace:
+[07-Oct-2014 23:48:32 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:49:23 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:49:23 UTC] PHP Stack trace:
+[07-Oct-2014 23:49:23 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:53 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:53 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:53 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:54 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:54 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:54 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:54 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:54 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:54 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:54 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:54 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:54:54 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 43
+[07-Oct-2014 23:54:54 UTC] PHP Stack trace:
+[07-Oct-2014 23:54:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:00 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:00 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:00 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:00 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:00 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:00 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:01 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:01 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:01 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:01 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:57:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:57:01 UTC] PHP Stack trace:
+[07-Oct-2014 23:57:01 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:13 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:58:13 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:13 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:14 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:58:14 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:14 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:58:14 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:14 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:58:14 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:14 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:15 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 42
+[07-Oct-2014 23:58:15 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:15 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:43 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 49
+[07-Oct-2014 23:58:43 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:43 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 136
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 136
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:58:50 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[07-Oct-2014 23:58:50 UTC] PHP Stack trace:
+[07-Oct-2014 23:58:50 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 136
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 136
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[07-Oct-2014 23:59:34 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[07-Oct-2014 23:59:34 UTC] PHP Stack trace:
+[07-Oct-2014 23:59:34 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 141
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:00:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[08-Oct-2014 00:00:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:00:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:02:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[08-Oct-2014 00:02:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:02:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:02:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[08-Oct-2014 00:02:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:02:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:02:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[08-Oct-2014 00:02:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:02:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[08-Oct-2014 00:02:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[08-Oct-2014 00:02:22 UTC] PHP Stack trace:
+[08-Oct-2014 00:02:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
