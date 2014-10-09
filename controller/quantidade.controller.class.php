@@ -1,7 +1,7 @@
 <?php
 
 //Inclui a classe genérica CRUD
-require_once ("../functions/crud.class.php");
+require_once ("../../functions/crud.class.php");
 
 class QuantidadeController extends Crud {
 
@@ -16,7 +16,7 @@ class QuantidadeController extends Crud {
 	//Listagem de todas as quantidade
 
 	public function lista() {
-		return $this->execute_query("SELECT quantidade.id, quantidade.peso, quantidade.unidade,  FROM quantidade;");
+		return $this->execute_query("SELECT quantidade.id, quantidade.peso, quantidade.unidade  FROM quantidade;");
 	}
 
 }

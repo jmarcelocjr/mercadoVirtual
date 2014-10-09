@@ -30,33 +30,34 @@ INSERT INTO marca VALUES (3, "João");
 
 INSERT INTO marca VALUES (4, "Danone");
 
-INSERT INTO produto_has_marca (1, 1, 3, null);
+INSERT INTO produto_has_marca (`id`, `Produto_id`, `Marca_id`, `img`) VALUES (1, 1, 3, NULL);
 
-INSERT INTO produto_has_marca (2, 2, 1, null);
+INSERT INTO produto_has_marca (`id`, `Produto_id`, `Marca_id`, `img`) VALUES (2, 2, 1, null);
 
-INSERT INTO produto_has_marca (3, 3, 4, null);
+INSERT INTO produto_has_marca (`id`, `Produto_id`, `Marca_id`, `img`) VALUES (3, 3, 4, null);
 
-INSERT INTO produto_has_marca (4, 4, 2, null);
+INSERT INTO produto_has_marca (`id`, `Produto_id`, `Marca_id`, `img`) VALUES (4, 4, 2, null);
 
-INSERT INTO pais (1, "Brasil", "Brazil");
+INSERT INTO pais (`id`, `nome`, `pais_name`) VALUES ('1', 'Brasil', 'Brazil');
 
-INSERT INTO estado (1, "São Paulo", 1);
+INSERT INTO estado (`id`, `nome`, `Pais_id`) VALUES (1, "São Paulo", 1);
 
-INSERT INTO cidade (1, "São Paulo", 1);
+INSERT INTO cidade (`id`, `nome`, `Estado_id`) VALUES (1, "São Paulo", 1);
 
-INSERT INTO mercado (1, "Mercado De lá", "Endereço Daqui", 1, null, null);
+INSERT INTO mercado (`id`, `nome`, `endereco`, `Cidade_id`, `latitude`, `longitude`) VALUES (1, "Mercado De lá", "Endereço Daqui", 1, null, null);
 
-INSERT INTO mercado (2, "Mercado De cá", "Endereço de Lá", 1, null, null);
+INSERT INTO mercado (`id`, `nome`, `endereco`, `Cidade_id`, `latitude`, `longitude`) VALUES (2, "Mercado De cá", "Endereço de Lá", 1, null, null);
 
-INSERT INTO preco (1, 4.99, 1, 3);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (1, 4.99, 1, 3);
 
-INSERT INTO preco (2, 5.99, 1, 1);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (2, 5.99, 1, 1);
 
-INSERT INTO preco (3, 0.99, 1, 4);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (3, 0.99, 1, 4);
 
-INSERT INTO preco (4, 4.89, 2, 3);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (4, 4.89, 2, 3);
 
-INSERT INTO preco (5, 6.09, 2, 1);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (5, 6.09, 2, 1);
 
-INSERT INTO preco (6, 0.88, 2, 4);
+INSERT INTO preco (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES (6, 0.88, 2, 4);
+
 
