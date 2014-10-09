@@ -34,7 +34,11 @@ class ProdutoController extends Crud {
 		if ($where != null) {$sql .= " WHERE $where;$";}
 		return $this->execute_query($sql);
 	}
-
+	
+	public function listaMercado($mercado){
+		$sql = "SELECT id, mercado.descricao as 'descricao' FROM mercado";
+		return $this->execute_query($sql);
+	}
 }
 
 ?>

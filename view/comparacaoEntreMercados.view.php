@@ -1,7 +1,14 @@
 <?php
 
+require_once ("../controller/produto.controller.class.php");
 include_once("../functions/functions.class.php");
+
 $functions	= new Functions;
+
+$produto = new produtoController;
+
+
+
 
 ?>
 
@@ -41,6 +48,34 @@ $functions	= new Functions;
   </div>
     
   <div class="container">
+  
+  <div id="conteudo">
+  
+  	<table>
+  		<thead>
+  			<th>Descrição</th>
+  			<th>Quantidade</th>
+  		</thead>
+  		<tbody>
+  			<?php 
+  				$mercado = 2;
+  				$registros = $produto->$listaMercado($mercado);
+  				while ($reg = mysql_fetch_array($registros)){
+  			?>
+  			
+  			<tr>
+  				<td><?php echo $reg["descricao"] ?></td>
+  				<td><?php echo $reg["quantidade"] ?></td>
+  			</tr>
+  			
+  			<?php 
+}
+  			?>
+  		</tbody>
+  	</table>
+  
+  </div>
+  
 <button type="button" class="btn btn-default">
   <span class="icon-chevron-left"></span> Voltar ao Carrinho
 </button>
