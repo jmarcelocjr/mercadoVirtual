@@ -26,10 +26,15 @@ class ProdutoController extends Crud {
 	}
 
 	public function ativarProduto($id){
-		//if ('status' != 0) {
 			$sql = "UPDATE produto SET status = 1 WHERE id = $id";
-		//}
-		//else {$sql = "UPDATE produto SET status = 1 WHERE id = $id";}
+		return $this->execute_query($sql);
+	}
+	public function desativarProduto($id){
+			$sql = "UPDATE produto SET status = 0 WHERE id = $id";
+		return $this->execute_query($sql);
+	}
+	public function pegarStatus($id){
+			$sql = "SELECT status FROM produto WHERE id = $id";
 		return $this->execute_query($sql);
 	}
 

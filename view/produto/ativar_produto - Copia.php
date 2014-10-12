@@ -23,34 +23,23 @@ session_start();
 $ProdutoController = new ProdutoController();
 $produto    = new Produto();
 
-
-
 $id = $_GET['id'];
-//$status = $_GET['status'];
-
-echo $id;
 
 //Instanciando a classe de funções
 $functions	= new Functions;
 
-$listaproduto = $ProdutoController->pegarStatus($id);
- while($ativar = mysqli_fetch_array($listaproduto)) { 
- 
+//$produto->setStatus($_POST['Status']);
 
-if($ativar["status"] == 0){
-$ativar_produto = $ProdutoController->ativarProduto($id);
-}//else{
-if($ativar["status"] == 1){    
-$ativar_produto = $ProdutoController->desativarProduto($id);
-}
+if($produto->getStatus() == 0){
+$ativar_produto     = $ProdutoController->ativarProduto($id);
+}else{
+    $ativar_produto     = $ProdutoController->desativarProduto($id);
 }
 header('Location: produtos_inativos.php');
 
 if(isset($_SESSION["id"])){
     $produto = $controller->loadObject($_SESSION["id"], $id);
-    //$produto = $controller->loadObject($_SESSION["status"], $id);
 }
-
 
 //$listaproduto = $ProdutoController->lista();
 
