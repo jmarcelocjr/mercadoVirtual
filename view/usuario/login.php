@@ -43,7 +43,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 			$_SESSION["valido"]				= $usuario["valido"];
 	
 			//Sucesso, redireciona para a tela principal
-			header("Location: ../../home.php");
+			header("Location: ../../index.php");
 			
 		}
 		
@@ -58,7 +58,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 <link type="text/css" href="../../css/bootstrap.css">
 
 <div class="col md-offset6">
-      <form class="form-signin" id="login-form" action="login.php" method="post">
+      <form class="form-signin" id="login-form"  method="post">
             <fieldset>
             
                 <div class="control-group">

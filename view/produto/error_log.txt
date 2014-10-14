@@ -801,3 +801,10 @@
 [08-Oct-2014 00:02:22 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
 [08-Oct-2014 00:02:22 UTC] PHP Stack trace:
 [08-Oct-2014 00:02:22 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[13-Oct-2014 23:42:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 12
+[13-Oct-2014 23:42:09 UTC] PHP Stack trace:
+[13-Oct-2014 23:42:09 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[13-Oct-2014 23:42:09 UTC] PHP   2. ProdutoController->lista() C:\wamp\www\mercadoVirtual\view\produto\lista.php:22
+[13-Oct-2014 23:42:09 UTC] PHP   3. Crud->execute_query() C:\wamp\www\mercadoVirtual\controller\produto.controller.class.php:26
+[13-Oct-2014 23:42:09 UTC] PHP   4. Connection->openConnection() C:\wamp\www\mercadoVirtual\functions\crud.class.php:190
+[13-Oct-2014 23:42:09 UTC] PHP   5. mysqli_connect() C:\wamp\www\mercadoVirtual\functions\connection.class.php:12
