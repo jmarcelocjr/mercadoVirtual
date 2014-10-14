@@ -70,3 +70,13 @@
 [26-Sep-2014 23:44:59 UTC] PHP Stack trace:
 [26-Sep-2014 23:44:59 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\setor\lista.php:0
 >>>>>>> Giovani
+[14-Oct-2014 23:20:32 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php on line 6
+[14-Oct-2014 23:20:32 UTC] PHP Stack trace:
+[14-Oct-2014 23:20:32 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[14-Oct-2014 23:20:32 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:9
+[14-Oct-2014 23:20:32 UTC] PHP   3. require_once() C:\Webserver\wamp\www\mercadoVirtual\controller\setor.controller.class.php:5
+[14-Oct-2014 23:20:55 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\Webserver\wamp\www\mercadoVirtual\functions\connection.class.php on line 6
+[14-Oct-2014 23:20:55 UTC] PHP Stack trace:
+[14-Oct-2014 23:20:55 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:0
+[14-Oct-2014 23:20:55 UTC] PHP   2. require_once() C:\Webserver\wamp\www\mercadoVirtual\view\setor\lista.php:9
+[14-Oct-2014 23:20:55 UTC] PHP   3. require_once() C:\Webserver\wamp\www\mercadoVirtual\controller\setor.controller.class.php:5
