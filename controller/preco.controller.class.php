@@ -25,7 +25,7 @@ class PrecoController extends Crud {
 
 	public function comparaLista($listaProdutos) {
 		//produto_has_marca_id, quantidade
-		$mercado_id = mercado->buscaMercadosProximos();
+		//$mercado_id = mercado->buscaMercadosProximos();
 
 		foreach ($mercado_id as $mercado) {
 			for($i = 0; $i < $listaProdutos.lenght; $i++){

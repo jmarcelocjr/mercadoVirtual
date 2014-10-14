@@ -14,176 +14,44 @@ error_reporting(E_ALL);
 
 //Importanto as classes externas
 require_once("../../controller/produto.controller.class.php");
+require_once("../../model/produto.class.php");
 include_once("../../functions/functions.class.php");
 
+session_start();
 
 //Instanciando a classe controladora
-$produto 	= new ProdutoController;
-$registros 	= $produto->lista();
+$ProdutoController = new ProdutoController();
+$produto    = new Produto();
+
+
+
+$id = $_GET['id'];
+//$status = $_GET['status'];
+
+echo $id;
 
 //Instanciando a classe de funções
 $functions	= new Functions;
 
-//Verificando se está sendo passado algum id por parâmetro
-//para o caso de exclusão de algum item
-$id = ( isset($_GET['id']) ) ? $_GET['id'] : 0;
+$listaproduto = $ProdutoController->pegarStatus($id);
+ while($ativar = mysqli_fetch_array($listaproduto)) { 
+ 
+
+if($ativar["status"] == 0){
+$ativar_produto = $ProdutoController->ativarProduto($id);
+}//else{
+if($ativar["status"] == 1){    
+$ativar_produto = $ProdutoController->desativarProduto($id);
+}
+}
+header('Location: produtos_inativos.php');
+
+if(isset($_SESSION["id"])){
+    $produto = $controller->loadObject($_SESSION["id"], $id);
+    //$produto = $controller->loadObject($_SESSION["status"], $id);
+}
 
 
-//Caso algum id tenha sido recebido, passa ele como parâmetro
-//para o método de remoção de item
-
-
-if(isset($_POST['botao'])) {
-$registros  = $produto->ativarProduto($id);
-header('Location: ativar_produto.php');
-    }
+//$listaproduto = $ProdutoController->lista();
 
 ?>
-<!DOCTYPE html>
-<html>
-  	<head>
-    
-        <meta charset="utf-8">
-        <title>Listagem de Produtos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-    
-        <!-- Estilos -->
-        <link href="../../css/bootstrap.css" rel="stylesheet">
-        <link href="../../css/geral.css" rel="stylesheet">
-        <link href="../../css/validation.css" rel="stylesheet">
-        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">  
-        <script type="text/javascript" language="javascript" src="../../js/script.js"></script>      
-
-  	</head>
-
-
-	<body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->
-          <div class="nav-collapse collapse">
-
-			<?php
-                $functions->geraMenu();
-            ?>
-
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="container">
-
-		<!-- Título -->
-        <blockquote>
-          <h2>Listagem de Produtos</h2>
-          <small>Utilize os campos abaixo para gerenciar as produtos</small>
-        </blockquote>
-
-
-        <!-- Mensagem de Retorno -->
-        <?php
-        if(!empty($_GET["tipo"])){
-		?>
-		<section id="aviso">
-        <?php
-        	$functions->mensagemDeRetorno($_GET["tipo"],$_GET["acao"]);
-		?>
-        </section> 
-		<?php
-        }
-        ?>
-
-		<hr>
-
-		<?php
-        if($registros){
-		?>
-        <!-- Lista -->
-        <table class="table table-hover">
-			<thead>
-            	<tr>
-                    <th>Código</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Setor</th>
-                    <th>Marca</th>
-                    <th>Status</th>
-                    <th style="text-align:center"><i class="icon-edit"></i></th>
-                    <th style="text-align:center">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-            
-				<?php
-                	while($reg = mysqli_fetch_array($registros)){
-				?>
-            
-            	<tr>
-                    <td><?php echo $reg["id"]; ?></td>
-                    <td><?php echo $reg["produto"]; ?></td>
-                    <td><?php echo $reg["quantidade"]; ?></td>
-                    <td><?php echo $reg["setor"]; ?></td>
-                    <td><?php echo $reg["marca"]; ?></td>
-                    <td><?php echo $reg["status"]; ?></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="ativar_produto.php?id=<?php echo $reg["id"]; ?>">
-<?php if ($reg["status"] == 0) {?><button name="botao"  id="botao">Ativar</button> <?php } else { ?><button name="botao"  id="botao">Desativar</button>
-                        <?php } ?></a></td>
-                </tr>
-            
-            	<?php
-					}
-				?>
-            
-            </tbody>
-		</table>
-        
-      	<?php
-		}else{
-		?>
-        	<div class="text-center">
-                <h2>Opsss!!!</h2>
-                <p>Sua pesquisa não retornou nenhum resultado válido.</p>
-            </div>
-        
-        <?php
-		}
-		?>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Modelo 2014</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    	<!-- Javascript -->
-		<script src="../../js/jquery.js"></script>
-        <script src="../../js/jquery.validate.min.js"></script>
-        <script src="../../js/bootstrap-transition.js"></script>
-        <script src="../../js/bootstrap-alert.js"></script>
-        <script src="../../js/bootstrap-modal.js"></script>
-        <script src="../../js/bootstrap-dropdown.js"></script>
-        <script src="../../js/bootstrap-scrollspy.js"></script>
-        <script src="../../js/bootstrap-tab.js"></script>
-        <script src="../../js/bootstrap-tooltip.js"></script>
-        <script src="../../js/bootstrap-popover.js"></script>
-        <script src="../../js/bootstrap-button.js"></script>
-        <script src="../../js/bootstrap-collapse.js"></script>
-        <script src="../../js/bootstrap-carousel.js"></script>
-        <script src="../../js/bootstrap-typeahead.js"></script>
-    
-	</body>
-</html>
