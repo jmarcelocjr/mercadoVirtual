@@ -74,3 +74,46 @@
 [20-Sep-2014 00:17:16 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:0
 [20-Sep-2014 00:17:16 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\lista.php:15
 >>>>>>> 67dc202c938121f98c95a3a51a7901f1215f8cd9
+[08-Oct-2014 23:16:29 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:16:29 UTC] PHP Stack trace:
+[08-Oct-2014 23:16:29 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:16:29 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:16:29 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:21:17 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:21:17 UTC] PHP Stack trace:
+[08-Oct-2014 23:21:17 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:21:17 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:21:17 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:21:22 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:21:22 UTC] PHP Stack trace:
+[08-Oct-2014 23:21:22 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:21:22 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:21:22 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:22:12 UTC] PHP Parse error:  syntax error, unexpected '<', expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:22:12 UTC] PHP Stack trace:
+[08-Oct-2014 23:22:12 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:22:12 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:22:12 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:22:38 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:22:38 UTC] PHP Stack trace:
+[08-Oct-2014 23:22:38 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:22:38 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:22:38 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:22:55 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:22:55 UTC] PHP Stack trace:
+[08-Oct-2014 23:22:55 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:22:55 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:22:55 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:23:08 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 5
+[08-Oct-2014 23:23:08 UTC] PHP Stack trace:
+[08-Oct-2014 23:23:08 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:23:08 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:23:08 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:30:25 UTC] PHP Fatal error:  Cannot redeclare Connection::$parameters in C:\wamp\www\mercadoVirtual\functions\connection.class.php on line 7
+[08-Oct-2014 23:30:25 UTC] PHP Stack trace:
+[08-Oct-2014 23:30:25 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
+[08-Oct-2014 23:30:25 UTC] PHP   2. require_once() C:\wamp\www\mercadoVirtual\view\usuario\login.php:16
+[08-Oct-2014 23:30:25 UTC] PHP   3. require_once() C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php:12
+[08-Oct-2014 23:32:38 UTC] PHP Parse error:  syntax error, unexpected '"' in C:\wamp\www\mercadoVirtual\controller\usuario.controller.class.php on line 35
+[08-Oct-2014 23:32:38 UTC] PHP Stack trace:
+[08-Oct-2014 23:32:38 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\usuario\login.php:0
