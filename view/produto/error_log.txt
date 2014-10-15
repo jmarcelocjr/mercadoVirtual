@@ -815,3 +815,60 @@
 [12-Oct-2014 20:41:18 UTC] PHP Notice:  Undefined variable: status in C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php on line 41
 [12-Oct-2014 20:41:18 UTC] PHP Stack trace:
 [12-Oct-2014 20:41:18 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[14-Oct-2014 23:57:20 UTC] PHP Notice:  Undefined index: codigo in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 134
+[14-Oct-2014 23:57:20 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:20 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:20 UTC] PHP Notice:  Undefined index: codigo in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 134
+[14-Oct-2014 23:57:20 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:20 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:41 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 140
+[14-Oct-2014 23:57:41 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:41 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 141
+[14-Oct-2014 23:57:41 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:41 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 140
+[14-Oct-2014 23:57:41 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:41 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php on line 141
+[14-Oct-2014 23:57:41 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:41 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\produtos_inativos.php:0
+[14-Oct-2014 23:57:54 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[14-Oct-2014 23:57:54 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:57:54 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[14-Oct-2014 23:57:54 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:57:54 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[14-Oct-2014 23:57:54 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:57:54 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[14-Oct-2014 23:57:54 UTC] PHP Stack trace:
+[14-Oct-2014 23:57:54 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:58:39 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[14-Oct-2014 23:58:39 UTC] PHP Stack trace:
+[14-Oct-2014 23:58:39 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:58:39 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[14-Oct-2014 23:58:39 UTC] PHP Stack trace:
+[14-Oct-2014 23:58:39 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:58:39 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[14-Oct-2014 23:58:39 UTC] PHP Stack trace:
+[14-Oct-2014 23:58:39 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:58:39 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[14-Oct-2014 23:58:39 UTC] PHP Stack trace:
+[14-Oct-2014 23:58:39 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[14-Oct-2014 23:58:46 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php on line 28
+[14-Oct-2014 23:58:46 UTC] PHP Stack trace:
+[14-Oct-2014 23:58:46 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
+[15-Oct-2014 00:00:05 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[15-Oct-2014 00:00:05 UTC] PHP Stack trace:
+[15-Oct-2014 00:00:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[15-Oct-2014 00:00:05 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[15-Oct-2014 00:00:05 UTC] PHP Stack trace:
+[15-Oct-2014 00:00:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[15-Oct-2014 00:00:05 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 142
+[15-Oct-2014 00:00:05 UTC] PHP Stack trace:
+[15-Oct-2014 00:00:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[15-Oct-2014 00:00:05 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
+[15-Oct-2014 00:00:05 UTC] PHP Stack trace:
+[15-Oct-2014 00:00:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0

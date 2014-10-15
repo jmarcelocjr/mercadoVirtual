@@ -131,14 +131,14 @@ header('Location: ativar_produto.php');
 				?>
             
             	<tr>
-                    <td><?php echo $reg["id"]; ?></td>
+                    <td><?php echo $reg["codigo"]; ?></td>
                     <td><?php echo $reg["produto"]; ?></td>
                     <td><?php echo $reg["quantidade"]; ?></td>
                     <td><?php echo $reg["setor"]; ?></td>
                     <td><?php echo $reg["marca"]; ?></td>
                     <td><?php echo $reg["status"]; ?></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="ativar_produto.php?id=<?php echo $reg["id"]; ?>">
+                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?codigo=<?php echo $reg["codigo"]; ?>"><i class="icon-edit"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" href="ativar_produto.php?codigo=<?php echo $reg["codigo"]; ?>">
 <?php if ($reg["status"] == 0) {?><button name="botao"  id="botao">Ativar</button> <?php } else { ?><button name="botao"  id="botao">Desativar</button>
                         <?php } ?></a></td>
                 </tr>
