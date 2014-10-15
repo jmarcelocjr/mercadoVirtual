@@ -30,6 +30,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 			header("Location: login.php?tipo=4&acao=5");
 			
 		}else{
+
 			
 			//Declara as variáveis de sessão que serão utilizadas no sistema
 			session_start();
@@ -42,7 +43,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 			$_SESSION["valido"]				= $usuario["valido"];
 	
 			//Sucesso, redireciona para a tela principal
-			header("Location: ../../home.php");
+			header("Location: ../../index.php");
 			
 		}
 		
@@ -54,7 +55,10 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 }
 
 ?>
-      <form class="form-signin" id="login-form" action="login.php" method="post">
+<link type="text/css" href="../../css/bootstrap.css">
+
+<div class="col md-offset6">
+      <form class="form-signin" id="login-form"  method="post">
             <fieldset>
             
                 <div class="control-group">
@@ -66,12 +70,12 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
                 
                 <div class="control-group">
                     <div class="controls">
-                        <input type="text" class="input-block-level" name="email" id="email" placeholder="Login" style="width:80%;">
+                        <input type="text" class="input-block-level" name="email" id="email" placeholder="Login" style="width:20%;">
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <input type="password" class="input-block-level" name="senha" id="senha" placeholder="Senha" style="width:80%;">
+                        <input type="password" class="input-block-level" name="senha" id="senha" placeholder="Senha" style="width:20%;">
                     </div>
                 </div>
                 <div>
@@ -84,5 +88,6 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 					</div>
                 </div>
             </fieldset>
+
           </form>
-    
+    </div>

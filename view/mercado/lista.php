@@ -13,19 +13,6 @@ include_once("../../functions/functions.class.php");
 $mercado	= new MercadoController;
 $registros 	= $mercado->lista();
 
-/*
-//Método construtor do arquivo controlador
-
-public function __construct() {
-	//Passa como parâmetro a tabela
-    parent::__construct("mercado");
-}
-	
-public function lista(){
-	return $this->execute_query("SELECT * FROM mercado  ;" );
-}
-*/
-
 //Instanciando a classe de funções
 $functions	= new Functions;
 
@@ -45,8 +32,8 @@ if ($id > 0) {
 <html>
   	<head>
     
-        <meta charset="utf-8">
-        <title>Modelo - UNIFEOB</title>
+         <meta charset="utf-8">
+        <title>Listagem de Mercados</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -55,7 +42,7 @@ if ($id > 0) {
         <link href="../../css/bootstrap.css" rel="stylesheet">
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
-        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">        
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">      
 
   	</head>
 
@@ -70,10 +57,10 @@ if ($id > 0) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
+          <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->
           <div class="nav-collapse collapse">
 
-			<?php
+            <?php
                 $functions->geraMenu();
             ?>
 
@@ -85,7 +72,7 @@ if ($id > 0) {
     
     <div class="container">
 
-		<!-- Título -->
+        <!-- Título -->
         <blockquote>
           <h2>Listagem de mercados</h2>
           <small>Utilize os campos abaixo para gerenciar os mercados</small>
@@ -95,81 +82,80 @@ if ($id > 0) {
         <!-- Mensagem de Retorno -->
         <?php
         if(!empty($_GET["tipo"])){
-		?>
-		<section id="aviso">
+        ?>
+        <section id="aviso">
         <?php
-        	$functions->mensagemDeRetorno($_GET["tipo"],$_GET["acao"]);
-		?>
+            $functions->mensagemDeRetorno($_GET["tipo"],$_GET["acao"]);
+        ?>
         </section> 
-		<?php
+        <?php
         }
         ?>
 
-		<hr>
+        <hr>
 
         <div class="control-group">
             <div class="controls">
-              <a href="edita.php" class="btn btn-info btn-large">Cadastrar novo mercado</a>
+              <a href="edita.php" class="btn btn-info btn-large">Cadastrar um novo mercado</a>
             </div>
-		</div>
+        </div>
 
-		<?php
+        <?php
         if($registros){
-		?>
+        ?>
         <!-- Lista -->
         <table class="table table-hover">
-			<thead>
-            	<tr>
+            <thead>
+                <tr>
                     <th>Código</th>
-                    <th>Nome</th>
-                    <th>Endereco</th>
+                    <th>Descrição</th>
                     <th style="text-align:center"><i class="icon-edit"></i></th>
                     <th style="text-align:center"><i class="icon-remove"></i></th>
                 </tr>
             </thead>
             <tbody>
             
-				<?php
-                	while($reg = mysql_fetch_array($registros)){
-				?>
+                <?php
+                    while($reg = mysqli_fetch_array($registros)){
+                ?>
             
-            	<tr>
+                <tr>
                     <td><?php echo $reg["id"]; ?></td>
                     <td><?php echo $reg["nome"]; ?></td>
                     <td><?php echo $reg["endereco"]; ?></td>
                     <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["id"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["id"]; ?>"><i class="icon-remove">x</i></a></td>
                 </tr>
             
-            	<?php
-					}
-				?>
+                <?php
+                    }
+                ?>
             
             </tbody>
-		</table>
+        </table>
         
-      	<?php
-		}else{
-		?>
-        	<div class="text-center">
+        <?php
+        }else{
+        ?>
+            <div class="text-center">
                 <h2>Opsss!!!</h2>
                 <p>Sua pesquisa não retornou nenhum resultado válido.</p>
             </div>
         
         <?php
-		}
-		?>
+        }
+        ?>
 
       <hr>
 
       <footer>
-        <p>&copy; Modelo 2014</p>
+        <p>&copy; Mercado Virtual</p>
       </footer>
 
     </div> <!-- /container -->
 
-    	<!-- Javascript -->
-		<script src="../../js/jquery.js"></script>
+        <!-- Javascript -->
+        <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
         <script src="../../js/bootstrap-transition.js"></script>
         <script src="../../js/bootstrap-alert.js"></script>
@@ -183,6 +169,6 @@ if ($id > 0) {
         <script src="../../js/bootstrap-collapse.js"></script>
         <script src="../../js/bootstrap-carousel.js"></script>
         <script src="../../js/bootstrap-typeahead.js"></script>
-    
-	</body>
+
+        </body>
 </html>
