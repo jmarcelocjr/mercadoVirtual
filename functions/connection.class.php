@@ -3,14 +3,7 @@ class Connection {
 	private $connection;
 //Local DB
 
-<<<<<<< HEAD
-
-	private $parameters = array("host" => "localhost", "user" => "root", "password" => "", "database" => "mercadovirtual");
-
-	
-=======
 	private $parameters = array("host" => "localhost", "user" => "root", "password" => "", "database" => "mercadoVirtual");
->>>>>>> 8f85603c713a72056ca3185cb09a27358ed30064
 
 	public function openConnection() {
 		$this->connection = mysqli_connect($this->parameters["host"], $this->parameters["user"], $this->parameters["password"]);
