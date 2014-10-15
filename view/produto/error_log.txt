@@ -872,3 +872,6 @@
 [15-Oct-2014 00:00:05 UTC] PHP Notice:  Undefined index: id in C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php on line 143
 [15-Oct-2014 00:00:05 UTC] PHP Stack trace:
 [15-Oct-2014 00:00:05 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\lista.php:0
+[15-Oct-2014 00:14:29 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in C:\Webserver\wamp\www\mercadoVirtual\controller\produto.controller.class.php on line 20
+[15-Oct-2014 00:14:29 UTC] PHP Stack trace:
+[15-Oct-2014 00:14:29 UTC] PHP   1. {main}() C:\Webserver\wamp\www\mercadoVirtual\view\produto\ativar_produto.php:0
