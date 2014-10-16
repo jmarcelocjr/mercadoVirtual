@@ -25,7 +25,7 @@ $produto    = new Produto();
 
 
 
-$id = $_GET['id'];
+$id = $_GET['codigo'];
 //$status = $_GET['status'];
 
 echo $id;
@@ -46,8 +46,8 @@ $ativar_produto = $ProdutoController->desativarProduto($id);
 }
 header('Location: produtos_inativos.php');
 
-if(isset($_SESSION["id"])){
-    $produto = $controller->loadObject($_SESSION["id"], $id);
+if(isset($_SESSION["codigo"])){
+    $produto = $controller->loadObject($_SESSION["codigo"], $id);
     //$produto = $controller->loadObject($_SESSION["status"], $id);
 }
 

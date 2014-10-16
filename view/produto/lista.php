@@ -139,8 +139,10 @@ if ($id > 0) {
                     <td><?php echo $reg["setor"]; ?></td>
                     <td><?php echo $reg["marca"]; ?></td>
                     <td><?php echo $reg["status"]; ?></td>
+                    
                     <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-edit"></i></a></td>
                     <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-remove">x</i></a></td>
+
                 </tr>
             
             	<?php
