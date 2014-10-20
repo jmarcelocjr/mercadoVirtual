@@ -60,8 +60,13 @@ class Functions {
 
 						<li><a href=\"" . $contextoDeMenu . "/view/ajuda.php\">Ajuda</a></li>
 
-						<li><a href=\"" . $contextoDeMenu . "/view/usuario/login.php\">Acesso ao Sistema</a></li>
-					</ul>
+						
+					
+					<form class=\"navbar-form pull-left\" action=\"../usuario/login.php\" method=\"post\">
+						  <input type=\"text\" class=\"span2\" placeholder=\"Usuário\" name=\"email\" id=\"email\">
+						  <input type=\"password\" class=\"span2\" placeholder=\"Senha\"name=\"email\" id=\"email\">
+						  <button type=\"submit\" class=\"btn\">Logar</button>
+					</form>	
 					";
 
 		} elseif ($usuario == 1) {
@@ -75,8 +80,14 @@ class Functions {
 							<li><a href=\"" . $contextoDeMenu . "/view/usuario/lista.php\">Gerenciar Usuários</a></li>
 							<li><a href=\"" . $contextoDeMenu . "/view/logdeacesso/lista.php\">Gerenciar Log de Acesso</a></li>
 							<li><a href=\"" . $contextoDeMenu . "/view/tipodeusuario/lista.php\">Gerenciar Tipos de Usuários</a></li>
+						
+
 						</ul>
 					</li>
+					<form class=\"navbar-form pull-left\">
+						  <input type=\"text\" class=\"span2\">
+						  <button type=\"submit\" class=\"btn\">Submit</button>
+					</form>
 					";
 
 		} elseif ($usuario == 2) {

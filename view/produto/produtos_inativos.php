@@ -31,10 +31,13 @@ $id = ( isset($_GET['id']) ) ? $_GET['id'] : 0;
 
 //Caso algum id tenha sido recebido, passa ele como parâmetro
 //para o método de remoção de item
-if ($id > 0) {
-    $load = $produto->deleteTables($id);
-    header('Location: lista.php?acao=3&tipo=1');
-}
+
+
+if(isset($_POST['botao'])) {
+$ativar  = $produto->ativarProduto($id);
+$ativar->setStatus($_POST['status']);
+header('Location: ativar_produto.php');
+    }
 
 ?>
 <!DOCTYPE html>
@@ -51,7 +54,8 @@ if ($id > 0) {
         <link href="../../css/bootstrap.css" rel="stylesheet">
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
-        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">        
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">  
+        <script type="text/javascript" language="javascript" src="../../js/script.js"></script>      
 
   	</head>
 
@@ -103,12 +107,6 @@ if ($id > 0) {
 
 		<hr>
 
-        <div class="control-group">
-            <div class="controls">
-              <a href="edita.php" class="btn btn-info btn-large">Cadastrar um novo produto</a>
-            </div>
-		</div>
-
 		<?php
         if($registros){
 		?>
@@ -123,7 +121,7 @@ if ($id > 0) {
                     <th>Marca</th>
                     <th>Status</th>
                     <th style="text-align:center"><i class="icon-edit"></i></th>
-                    <th style="text-align:center"><i class="icon-remove"></i></th>
+                    <th style="text-align:center">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -139,10 +137,10 @@ if ($id > 0) {
                     <td><?php echo $reg["setor"]; ?></td>
                     <td><?php echo $reg["marca"]; ?></td>
                     <td><?php echo $reg["status"]; ?></td>
-                    
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-remove">x</i></a></td>
-
+                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?codigo=<?php echo $reg["codigo"]; ?>"><i class="icon-edit"></i></a></td>
+                    <td style="text-align:center"><a class="btn btn-small" type="button" href="ativar_produto.php?codigo=<?php echo $reg["codigo"]; ?>">
+<?php if ($reg["status"] == 0) {?><button name="botao"  id="botao">Ativar</button> <?php } else { ?><button name="botao"  id="botao">Desativar</button>
+                        <?php } ?></a></td>
                 </tr>
             
             	<?php

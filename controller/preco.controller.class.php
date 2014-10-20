@@ -25,11 +25,13 @@ class PrecoController extends Crud {
 
 	public function comparaLista($listaProdutos) {
 		//produto_has_marca_id, quantidade
-		$mercado_id = mercado->buscaMercadosProximos();
+		//$mercados_id = mercado->buscaMercadosProximos();
 
-		foreach ($mercado_id as $mercado) {
-			for($i = 0; $i < $listaProdutos.lenght; $i++){
-				$this->execute_query("SELECT preco.Mercado_id, preco.produto_has_marca_id,  FROM preco INNER JOIN produto WHERE preco.Mercado_id = $mercado AND preco.produto_has_marca_id = " . $listaProdutos[$i][0]);
+		//salvar [0] = mercado_id [1] = phm_id [2] = valor [3] = quantidade
+		$listaPrecosProdutos = array();
+		foreach ($mercados_id as $mercado) {
+			for ($i = 0; $i < $listaProdutos . lenght; $i++) {
+				$this->execute_query("SELECT preco.Mercado_id, preco.produto_has_marca_id, preco.valor FROM preco INNER JOIN produto WHERE preco.Mercado_id = $mercado AND preco.produto_has_marca_id = " . $listaProdutos[$i][0]);
 			}
 		}
 	}

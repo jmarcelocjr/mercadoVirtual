@@ -1,6 +1,0 @@
-[13-Sep-2014 18:20:19 UTC] PHP Warning:  require_once(../../controller/empresa.controller.class.php): failed to open stream: No such file or directory in C:\wamp\www\mercadoVirtual\view\preco\lista.php on line 16
-[13-Sep-2014 18:20:19 UTC] PHP Stack trace:
-[13-Sep-2014 18:20:19 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\preco\lista.php:0
-[13-Sep-2014 18:20:19 UTC] PHP Fatal error:  require_once(): Failed opening required '../../controller/empresa.controller.class.php' (include_path='.;C:\php\pear') in C:\wamp\www\mercadoVirtual\view\preco\lista.php on line 16
-[13-Sep-2014 18:20:19 UTC] PHP Stack trace:
-[13-Sep-2014 18:20:19 UTC] PHP   1. {main}() C:\wamp\www\mercadoVirtual\view\preco\lista.php:0
