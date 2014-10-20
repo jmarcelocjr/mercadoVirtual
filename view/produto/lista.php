@@ -5,58 +5,50 @@ ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
-/*
- * 	Descrição do Arquivo
- * 	@author - João Ricardo Gomes dos Reis
- * 	@data de criação - 09/09/2014
- * 	@arquivo  - lista.php
- */
-
 //Importanto as classes externas
-require_once("../../controller/produto.controller.class.php");
-include_once("../../functions/functions.class.php");
-
+require_once ("../../controller/produto.controller.class.php");
+include_once ("../../functions/functions.class.php");
+session_start();
 
 //Instanciando a classe controladora
-$produto 	= new ProdutoController;
-$registros 	= $produto->lista();
+$produto = new ProdutoController;
+$registros = $produto->lista();
 
 //Instanciando a classe de funções
-$functions	= new Functions;
+$functions = new Functions;
 
 //Verificando se está sendo passado algum id por parâmetro
 //para o caso de exclusão de algum item
-$id = ( isset($_GET['id']) ) ? $_GET['id'] : 0;
-
+$id = (isset($_GET['id'])) ? $_GET['id'] : 0;
 
 //Caso algum id tenha sido recebido, passa ele como parâmetro
 //para o método de remoção de item
 if ($id > 0) {
-    $load = $produto->deleteTables($id);
-    header('Location: lista.php?acao=3&tipo=1');
+	$load = $produto->remove($id, 'id');
+	header('Location: lista_produtos.php?acao=3&tipo=1');
 }
 
 ?>
 <!DOCTYPE html>
 <html>
-  	<head>
-    
+    <head>
+
         <meta charset="utf-8">
-        <title>Listagem de Produtos</title>
+        <title>Produtos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-    
+
         <!-- Estilos -->
         <link href="../../css/bootstrap.css" rel="stylesheet">
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
-        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">        
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
 
-  	</head>
+    </head>
 
 
-	<body>
+    <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -66,114 +58,83 @@ if ($id > 0) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->
+
+          <img class="brand" src="file:///C|/wamp/www/mercadoVirtual/img/assinatura_tanbook.png" alt="" style="width:200px;">
+
           <div class="nav-collapse collapse">
 
-			<?php
-                $functions->geraMenu();
-            ?>
-
-          </div><!--/.nav-collapse -->
+<?php
+$functions->geraMenu();
+?>
+</div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-    
-    
+
+
     <div class="container">
 
-		<!-- Título -->
+        <!-- Título -->
         <blockquote>
           <h2>Listagem de Produtos</h2>
-          <small>Utilize os campos abaixo para gerenciar as produtos</small>
+          <small>Selecione os produtos desejados</small>
         </blockquote>
 
 
         <!-- Mensagem de Retorno -->
-        <?php
-        if(!empty($_GET["tipo"])){
-		?>
-		<section id="aviso">
-        <?php
-        	$functions->mensagemDeRetorno($_GET["tipo"],$_GET["acao"]);
-		?>
-        </section> 
-		<?php
-        }
-        ?>
+<?php
+if (!empty($_GET["tipo"])) {
+	?>
+<section id="aviso">
+<?php
+$functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
+	?>
+</section>
+<?php
+}
+?>
+<hr>
 
-		<hr>
+<?php
+if ($registros) {
+	?>
+<!-- Lista -->
 
-        <div class="control-group">
-            <div class="controls">
-              <a href="edita.php" class="btn btn-info btn-large">Cadastrar um novo produto</a>
-            </div>
-		</div>
-
-		<?php
-        if($registros){
-		?>
-        <!-- Lista -->
-        <table class="table table-hover">
-			<thead>
-            	<tr>
-                    <th>Código</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Setor</th>
-                    <th>Marca</th>
-                    <th>Status</th>
-                    <th style="text-align:center"><i class="icon-edit"></i></th>
-                    <th style="text-align:center"><i class="icon-remove"></i></th>
-                </tr>
-            </thead>
             <tbody>
-            
-				<?php
-                	while($reg = mysqli_fetch_array($registros)){
-				?>
-            
-            	<tr>
-                    <td><?php echo $reg["codigo"]; ?></td>
-                    <td><?php echo $reg["produto"]; ?></td>
-                    <td><?php echo $reg["quantidade"]; ?></td>
-                    <td><?php echo $reg["setor"]; ?></td>
-                    <td><?php echo $reg["marca"]; ?></td>
-                    <td><?php echo $reg["status"]; ?></td>
-                    
-                    <td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-edit"></i></a></td>
-                    <td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["codigo"]; ?>"><i class="icon-remove">x</i></a></td>
 
-                </tr>
-            
-            	<?php
-					}
-				?>
-            
-            </tbody>
-		</table>
-        
-      	<?php
-		}else{
+<?php while ($reg = mysqli_fetch_array($registros)) {
+		echo $reg["produto"] . " - " . $reg["marca"];
 		?>
-        	<div class="text-center">
-                <h2>Opsss!!!</h2>
+<a href="#" ><img src= "../../img/carrinho.png" width="39" height="29"/></a><br/><br/>
+
+<?php
+}
+	?>
+</tbody>
+        </table>
+
+<?php
+} else {
+	?>
+<div class="text-center">
+                <h2>Opa!!</h2>
                 <p>Sua pesquisa não retornou nenhum resultado válido.</p>
             </div>
-        
-        <?php
-		}
-		?>
+
+<?php
+}
+?>
 
       <hr>
 
       <footer>
-        <p>&copy; Modelo 2014</p>
+        <p>&copy; Mercado Virtual 2014</p>
       </footer>
 
     </div> <!-- /container -->
 
-    	<!-- Javascript -->
-		<script src="../../js/jquery.js"></script>
+        <!-- Javascript -->
+        <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
         <script src="../../js/bootstrap-transition.js"></script>
         <script src="../../js/bootstrap-alert.js"></script>
@@ -187,6 +148,6 @@ if ($id > 0) {
         <script src="../../js/bootstrap-collapse.js"></script>
         <script src="../../js/bootstrap-carousel.js"></script>
         <script src="../../js/bootstrap-typeahead.js"></script>
-    
-	</body>
+
+    </body>
 </html>
