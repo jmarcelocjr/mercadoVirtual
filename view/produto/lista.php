@@ -105,7 +105,7 @@ if ($registros) {
 <?php while ($reg = mysqli_fetch_array($registros)) {
 		echo $reg["produto"] . " - " . $reg["marca"];
 		?>
-<a href="#" ><img src= "../../img/carrinho.png" width="39" height="29"/></a><br/><br/>
+<a href="#" id=<?=$reg['codigo']?>><img src= "../../img/carrinho.png" width="39" height="29"/></a><br/><br/>
 
 <?php
 }
@@ -151,3 +151,26 @@ if ($registros) {
 
     </body>
 </html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+    $("a").click(function() {
+            var idInput = $(this).attr('id');
+            var id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                url: "./session.php",
+                datatype: "html",
+                data: {"idProduto": id},
+                success: function(data) {
+                    alert(data);
+                }
+            });
+
+    });
+
+
+});
+</script>
