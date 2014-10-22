@@ -39,7 +39,7 @@ $functions	= new Functions;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         
+         <img class="brand" src="./img/assinatura_tanbook.png" alt="" style="width:200px;">
 
           
           <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->

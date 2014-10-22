@@ -115,7 +115,7 @@ body{
             <span class="icon-bar"></span>
           </button>
 
-          <img class="brand" src="file:///C|/wamp/www/mercadoVirtual/img/assinatura_tanbook.png" alt="" style="width:200px;">
+          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
 
           <div class="nav-collapse collapse">
 

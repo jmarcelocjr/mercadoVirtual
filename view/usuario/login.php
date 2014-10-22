@@ -43,7 +43,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 			$_SESSION["valido"]				= $usuario["valido"];
 	
 			//Sucesso, redireciona para a tela principal
-			header("Location: ../../index.php");
+			header("Location: ./index.php");
 			
 		}
 		
