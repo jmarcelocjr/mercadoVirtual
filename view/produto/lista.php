@@ -44,6 +44,62 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+       
+
+       <style>
+
+body{
+    margin: 0px;
+    padding: 0px;   
+}
+
+#geral{
+    float:left;
+    width:100%; 
+}
+
+.box{
+    float:left;
+    width:19%;
+    border: 1px dashed #666;    
+}
+
+.box:hover{
+    background-color:#FF0;
+    cursor:context-menu;
+}
+
+.titulo{
+    color:#000;
+    font-size:22px;
+    font-weight:bold;   
+    width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.conteudo{
+    color:#000;
+    font-size:16px;
+    width:100%;
+}
+
+.rodape{
+    color:#000;
+    font-size:14px;
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+}
+
+@media screen and (max-width: 400px) {
+    .box{
+        float:left;
+        width:100%;
+        border: 1px dashed #666;    
+    }
+}
+</style>
 
     </head>
 
@@ -94,24 +150,37 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 }
 ?>
 <hr>
-
+<!-- Lista -->
+   <div id="geral">
+    
 <?php
 if ($registros) {
-	?>
-<!-- Lista -->
+    $id = 1;
+    while ($reg = mysqli_fetch_array($registros)) {
+    ?>
+    <div class="box" id=<?="box_" . $id?>>
+        <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
+        <div class="conteudo" id=<?="conteudo_" . $id?>>
+     <?= $reg["produto"] . " - " . $reg["marca"];?>
+     <br/><br/>
+	  </div>
+        <div>
+            <a href="#" id=<?=$reg['codigo']?>>
+          <button type="button" class="btn btn-default">
+             <span class="icon-shopping-cart"></span> Adicionar
+          </button> 
+          <button type="button" class="btn btn-default">
+             <span class="icon-resize-small"></span>Comparar
+          </button>
+             </div></a>
+    
+    </div>
 
-            <tbody>
-
-<?php while ($reg = mysqli_fetch_array($registros)) {
-		echo $reg["produto"] . " - " . $reg["marca"];
-		?>
-<a href="#" id=<?=$reg['codigo']?>><img src= "../../img/carrinho.png" width="39" height="29"/></a><br/><br/>
-
+    
 <?php
+$id++;
 }
 	?>
-</tbody>
-        </table>
 
 <?php
 } else {
@@ -126,11 +195,7 @@ if ($registros) {
 ?>
 
       <hr>
-
-      <footer>
-        <p>&copy; Mercado Virtual 2014</p>
-      </footer>
-
+   </div>
     </div> <!-- /container -->
 
         <!-- Javascript -->
