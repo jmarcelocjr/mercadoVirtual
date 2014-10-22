@@ -109,7 +109,7 @@ if (array_filter($listaProdutos)) {
 <tr>
 <td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
 <td><?=$produto["setor"];?></td>
-<td ><button type="button" id="incrementa">+</button><input type="text" value="1" disabled="true"><button type="button" id="decrementa">-</button></td>
+<td ><button type="button" id="incrementa">+</button><input type="text" id="quantidade" value="1" disabled="true"><button type="button" id="decrementa">-</button></td>
 <td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem(<?=$produto['codigo']?>, this);" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
@@ -176,6 +176,19 @@ if (array_filter($listaProdutos)) {
 
   };
 })(jQuery);
+
+$(document).ready(function(){
+    $("#incrementa").click(function(){
+        var valor = parseInt($("#quantidade").val());
+        valor += 1;
+        $("#quantidade").val(valor);
+    });
+    $("#decrementa").click(function(){
+        var valor = parseInt($("#quantidade").val());
+        valor -= 1;
+        $("#quantidade").val(valor);
+    });
+});
 
 
 </script>
