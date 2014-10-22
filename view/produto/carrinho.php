@@ -15,7 +15,7 @@ $produto = new ProdutoController;
 $listaProdutos = array();
 if (isset($_SESSION['idProdutos'])) {
 	foreach ($_SESSION['idProdutos'] as $idProduto) {
-		array_push($listaProdutos, $produto->load($idProduto, 'id'));
+		array_push($listaProdutos, $produto->lista("produto.id = " . $idProduto));
 	}
 }
 
@@ -90,7 +90,7 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 <hr>
 
 <?php
-if (isset($_SESSION['listaProdutos'])) {
+if (array_filter($listaProdutos)) {
 	?>
 <!-- Lista -->
 <table class="table table-hover">
@@ -104,15 +104,13 @@ if (isset($_SESSION['listaProdutos'])) {
 </thead>
 <tbody>
 <?php foreach ($listaProdutos as $produto) {
+		$produto = mysqli_fetch_array($produto);
 		?>
 <tr>
-<td><?php echo $reg["produto"];?></td>
-<td><?php echo $reg["quantidade"];?></td>
-<td><?php echo $reg["setor"];?></td>
-<td><?php echo $reg["marca"];?></td>
-<td><?php echo $reg["status"];?></td>
-<td style="text-align:center"><a class="btn btn-small" type="button" href="edita.php?id=<?php echo $reg["codigo"];?>"><i class="icon-edit"></i></a></td>
-<td style="text-align:center"><a class="btn btn-small" type="button" onClick="return confirm('Confirmar a exclusão deste item?');" href="lista.php?id=<?php echo $reg["codigo"];?>"><i class="icon-remove">x</i></a></td>
+<td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
+<td><?=$produto["setor"];?></td>
+<td >wee</td>
+<td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem();" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
 }
@@ -159,5 +157,7 @@ if (isset($_SESSION['listaProdutos'])) {
 </html>
 
 <script type="text/javascript">
+function removeItem($id){
 
+}
 </script>
