@@ -109,8 +109,8 @@ if (array_filter($listaProdutos)) {
 <tr>
 <td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
 <td><?=$produto["setor"];?></td>
-<td >wee</td>
-<td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem();" href="#"><i class="icon-remove">x</i></a></td>
+<td ><button type="button" id="incrementa">+</button><input type="text" value="1" disabled="true"><button type="button" id="decrementa">-</button></td>
+<td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem(<?=$produto['codigo']?>, this);" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
 }
@@ -156,7 +156,26 @@ if (array_filter($listaProdutos)) {
 </html>
 
 <script type="text/javascript">
-function removeItem($id){
+(function($) {
 
-}
+  removeItem = function(id, handler) {
+    $.ajax({
+                type: "POST",
+                url: "./sessionRemove.php",
+                datatype: "html",
+                data: {"idProduto": id},
+                success: function(data) {
+                    var tr = $(handler).closest('tr');
+                    tr.fadeOut(400, function(){
+                        tr.remove();
+                    });
+                    return false;
+                }
+            });
+
+
+  };
+})(jQuery);
+
+
 </script>
