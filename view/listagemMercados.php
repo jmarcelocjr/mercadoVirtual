@@ -16,12 +16,89 @@ $functions	= new Functions;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ComparaÃ§Ã£o entre Mercados</title>
+<title>Comparação entre Mercados</title>
 <!-- Estilos -->
 <link href="../css/bootstrap.css" rel="stylesheet">
 <link href="../css/geral.css" rel="stylesheet">
 <link href="../css/validation.css" rel="stylesheet">
-<link href="../css/bootstrap-responsive.css" rel="stylesheet"> 
+<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+<style>
+
+
+body{
+	margin: 0px;
+	padding: 0px;	
+}
+
+.header{
+	float:left;
+	width:33%;
+	height:50px;
+}
+
+.top{
+	height:25px;
+	font-size:22px;
+	font-weight:bold;	
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.back{
+	height:25px;
+	font-size:22px;
+	font-weight:bold;	
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.geral{
+	height:300px;
+	overflow-y:auto;
+}
+
+.box{
+	float:left;
+	width:98%;
+	border: 1px dashed #666;	
+}
+
+.box:hover{
+	background-color:#FF0;
+	cursor:context-menu;
+}
+
+.titulo{
+	color:#000;
+	font-size:22px;
+	font-weight:bold;	
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+.conteudo{
+	color:#000;
+	font-size:11px;
+	width:100%;
+}
+
+.rodape{
+	color:#000;
+	font-size:14px;
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+}
+
+@media screen and (max-width: 400px) {
+	.box{
+		float:left;
+		width:100%;
+		border: 1px dashed #666;	
+	}
+}
+</style> 
 </head>
 
 <body>
@@ -50,47 +127,30 @@ $functions	= new Functions;
   <div class="container">
   
   <div id="conteudo">
+
+<!-- Conteudo -->
+<div class="header" id="header1">
+<h1 class="top">Mercado 1</h1>
+<div class="geral" id="geral1">
+    <div class="box" id="box_1">
+        <div class="titulo" id="titulo_1">Teste 1</div>
+        <div class="conteudo" id="conteudo_1">Produto 1</div>
+        <div class="rodape" id="rodape_1">Adicionar</div>
+    </div>
+</div>
+<div class="back">Total 1</div>
+</div>
   
-  
-  
-  
-  	<!-- <table>
-  		<thead>
-  			<th>Descrição</th>
-  			<th>Quantidade</th>
-  		</thead>
-  		<tbody>
-  			<?php 
-  				$mercado = 2;
-  				$registros = $produto->$listaMercado($mercado);
-  				while ($reg = mysql_fetch_array($registros)){
-  			?>
-  			
-  			<tr>
-  				<td><?php echo $reg["descricao"] ?></td>
-  				<td><?php echo $reg["quantidade"] ?></td>
-  			</tr>
-  			
-  			<?php 
-}
-  			?>
-  		</tbody>
-  	</table>
-  	-->
-  
-  </div>
-  
+
 <button type="button" class="btn btn-default">
   <span class="icon-chevron-left"></span> Voltar ao Carrinho
 </button>
 <button type="button" class="btn btn-default pull-right">Avan&ccedil;ar
   <span class="icon-chevron-right"></span> 
 </button>
-</div>
     
-<?php
-include_once("rodape.php");
-?>
+</div>
+</div>
 
 
 
@@ -113,3 +173,6 @@ include_once("rodape.php");
         <script src="../js/bootstrap-typeahead.js"></script>
 </body>
 </html>
+<?php
+include_once("rodape.php");
+?>
