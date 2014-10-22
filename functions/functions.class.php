@@ -46,24 +46,24 @@ class Functions {
 
 	public function geraMenu($usuario = 0) {
 
-		$contextoDeMenu = "http://localhost/mercadovirtual";
+		$contextoDeMenu = "http://localhost/mercadoVirtual";
 
 		if ($usuario == 0) {
 			//Usuário
 			$menu = "
 					<ul class=\"nav\" style=\"bottom:15px;\">
-						<li><a href=\"" . $contextoDeMenu . "/view/index.php\">Mercado Virtual</a></li>
+						<li><a href=\"" . $contextoDeMenu . "/index.php\">Mercado Virtual</a></li>
 
 						<li><a href=\"" . $contextoDeMenu . "/view/produto/lista.php\">Produtos</a></li>
 
-						<li><a href=\"" . $contextoDeMenu . "/view/meuCarrinho.php\">Meu Carrinho</a></li>
+						<li><a href=\"" . $contextoDeMenu . "/view/produto/carrinho.php\">Meu Carrinho</a></li>
 
 						<li><a href=\"" . $contextoDeMenu . "/view/ajuda.php\">Ajuda</a></li>
 						<li><a href=\"" . $contextoDeMenu . "/view/usuario/login.php\">Acesso ao Sistema</a></li>
 
-						
-					
-					
+
+
+
 					";
 
 		} elseif ($usuario == 1) {
@@ -78,7 +78,7 @@ class Functions {
 							<li><a href=\"" . $contextoDeMenu . "/view/logdeacesso/lista.php\">Gerenciar Log de Acesso</a></li>
 							<li><a href=\"" . $contextoDeMenu . "/view/tipodeusuario/lista.php\">Gerenciar Tipos de Usuários</a></li>
 							<li><a href=\"" . $contextoDeMenu . "/view/usuario/login.php\">Acesso ao Sistema</a></li>
-						
+
 
 						</ul>
 					</li>
@@ -103,26 +103,26 @@ class Functions {
 		//Definir o tipo de erro, o ícone e a classe de estilo utilizada para a tela de alerta
 		switch ($tipo) {
 			case 1:
-				$msgA   = "SUCESSO";
-				$icnA   = "icone_sucesso.png";
+				$msgA = "SUCESSO";
+				$icnA = "icone_sucesso.png";
 				$classe = "alert-success";
 				break;
 
 			case 2:
-				$msgA   = "ERRO";
-				$icnA   = "icone-erro.png";
+				$msgA = "ERRO";
+				$icnA = "icone-erro.png";
 				$classe = "alert-error";
 				break;
 
 			case 3:
-				$msgA   = "FALHA";
-				$icnA   = "icone-aviso.png";
+				$msgA = "FALHA";
+				$icnA = "icone-aviso.png";
 				$classe = "alert-block";
 				break;
 
 			case 4:
-				$msgA   = "AVISO";
-				$icnA   = "icone-aviso.png";
+				$msgA = "AVISO";
+				$icnA = "icone-aviso.png";
 				$classe = "alert-info";
 				break;
 

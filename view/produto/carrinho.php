@@ -12,21 +12,15 @@ session_start();
 
 //Instanciando a classe controladora
 $produto = new ProdutoController;
-$registros = $produto->lista();
+$listaProdutos = array();
+if (isset($_SESSION['idProdutos'])) {
+	foreach ($_SESSION['idProdutos'] as $idProduto) {
+		array_push($listaProdutos, $produto->lista("produto.id = " . $idProduto));
+	}
+}
 
 //Instanciando a classe de funções
 $functions = new Functions;
-
-//Verificando se está sendo passado algum id por parâmetro
-//para o caso de exclusão de algum item
-$id = (isset($_GET['id'])) ? $_GET['id'] : 0;
-
-//Caso algum id tenha sido recebido, passa ele como parâmetro
-//para o método de remoção de item
-if ($id > 0) {
-	$load = $produto->remove($id, 'id');
-	header('Location: lista_produtos.php?acao=3&tipo=1');
-}
 
 ?>
 <!DOCTYPE html>
@@ -34,7 +28,7 @@ if ($id > 0) {
     <head>
 
         <meta charset="utf-8">
-        <title>Produtos</title>
+        <title>Meu Carrinho</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -44,62 +38,6 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
-       
-
-       <style>
-
-body{
-    margin: 0px;
-    padding: 0px;   
-}
-
-#geral{
-    float:left;
-    width:100%; 
-}
-
-.box{
-    float:left;
-    width:19%;
-    border: 1px dashed #666;    
-}
-
-.box:hover{
-    background-color:#FF0;
-    cursor:context-menu;
-}
-
-.titulo{
-    color:#000;
-    font-size:22px;
-    font-weight:bold;   
-    width:100%;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-}
-
-.conteudo{
-    color:#000;
-    font-size:16px;
-    width:100%;
-}
-
-.rodape{
-    color:#000;
-    font-size:14px;
-    width:100%;
-    text-align:center;
-    font-weight:bold;
-}
-
-@media screen and (max-width: 400px) {
-    .box{
-        float:left;
-        width:100%;
-        border: 1px dashed #666;    
-    }
-}
-</style>
 
     </head>
 
@@ -115,7 +53,7 @@ body{
             <span class="icon-bar"></span>
           </button>
 
-          <img class="brand" src="file:///C|/wamp/www/mercadoVirtual/img/assinatura_tanbook.png" alt="" style="width:200px;">
+          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
 
           <div class="nav-collapse collapse">
 
@@ -132,8 +70,8 @@ $functions->geraMenu();
 
         <!-- Título -->
         <blockquote>
-          <h2>Listagem de Produtos</h2>
-          <small>Selecione os produtos desejados</small>
+          <h2>Meu carrinho</h2>
+          <small>Altere a quantidade ou remova os produtos</small>
         </blockquote>
 
 
@@ -150,54 +88,54 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 }
 ?>
 <hr>
-<!-- Lista -->
-   <div id="geral">
-    
-<?php
-if ($registros) {
-    $id = 1;
-    while ($reg = mysqli_fetch_array($registros)) {
-    ?>
-    <div class="box" id=<?="box_" . $id?>>
-        <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
-        <div class="conteudo" id=<?="conteudo_" . $id?>>
-     <?= $reg["produto"] . " - " . $reg["marca"];?>
-     <br/><br/>
-	  </div>
-        <div>
-            <a href="#" id=<?=$reg['codigo']?>>
-          <button type="button" class="btn btn-default">
-             <span class="icon-shopping-cart"></span> Adicionar
-          </button> 
-          <button type="button" class="btn btn-default">
-             <span class="icon-resize-small"></span>Comparar
-          </button>
-             </div></a>
-    
-    </div>
 
-    
 <?php
-$id++;
+if (array_filter($listaProdutos)) {
+	?>
+<!-- Lista -->
+<table class="table table-hover">
+<thead>
+<tr>
+<th>Produto</th>
+<th>Setor</th>
+<th>Quantidade</th>
+<th style="text-align:center"><i class="icon-remove"></i></th>
+</tr>
+</thead>
+<tbody>
+<?php foreach ($listaProdutos as $produto) {
+		$produto = mysqli_fetch_array($produto);
+		?>
+<tr>
+<td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
+<td><?=$produto["setor"];?></td>
+<td >wee</td>
+<td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem();" href="#"><i class="icon-remove">x</i></a></td>
+</tr>
+<?php
 }
 	?>
-
+</tbody>
+</table>
 <?php
 } else {
 	?>
 <div class="text-center">
                 <h2>Opa!!</h2>
-                <p>Sua pesquisa não retornou nenhum resultado válido.</p>
+                <p>Nenhum item foi adicionado ao carrinho!</p>
             </div>
 
 <?php
 }
 ?>
+<hr>
 
-      <hr>
-   </div>
+
+
     </div> <!-- /container -->
-
+<footer>
+<?php include_once ("../rodape.php");?>
+      </footer>
         <!-- Javascript -->
         <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
@@ -218,24 +156,7 @@ $id++;
 </html>
 
 <script type="text/javascript">
-$(document).ready(function() {
+function removeItem($id){
 
-
-    $("a").click(function() {
-            var idInput = $(this).attr('id');
-            var id = $(this).attr('id');
-            $.ajax({
-                type: "POST",
-                url: "./session.php",
-                datatype: "html",
-                data: {"idProduto": id},
-                success: function(data) {
-                    alert(data);
-                }
-            });
-
-    });
-
-
-});
+}
 </script>
