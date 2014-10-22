@@ -53,7 +53,7 @@ $functions = new Functions;
             <span class="icon-bar"></span>
           </button>
 
-          <img class="brand" src="file:///C|/wamp/www/mercadoVirtual/img/assinatura_tanbook.png" alt="" style="width:200px;">
+          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
 
           <div class="nav-collapse collapse">
 
@@ -128,15 +128,14 @@ if (array_filter($listaProdutos)) {
 <?php
 }
 ?>
+<hr>
 
-      <hr>
 
-      <footer>
-        <p>&copy; Mercado Virtual 2014</p>
-      </footer>
 
     </div> <!-- /container -->
-
+<footer>
+<?php include_once ("../rodape.php");?>
+      </footer>
         <!-- Javascript -->
         <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
