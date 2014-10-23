@@ -44,7 +44,10 @@ $functions = new Functions;
 
     <body>
 
-<?php include_once ("../menu.php");?>
+<div id="menu">
+	<?php include_once ('../menu.php')?>
+</div>
+
 <div class="container">
 
         <!-- Título -->
