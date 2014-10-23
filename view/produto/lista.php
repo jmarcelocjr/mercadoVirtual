@@ -44,24 +44,24 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
-       
+
 
        <style>
 
 body{
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
 }
 
 #geral{
     float:left;
-    width:100%; 
+    width:100%;
 }
 
 .box{
     float:left;
     width:19%;
-    border: 1px dashed #666;    
+    border: 1px dashed #666;
 }
 
 .box:hover{
@@ -72,7 +72,7 @@ body{
 .titulo{
     color:#000;
     font-size:22px;
-    font-weight:bold;   
+    font-weight:bold;
     width:100%;
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;
@@ -96,7 +96,7 @@ body{
     .box{
         float:left;
         width:100%;
-        border: 1px dashed #666;    
+        border: 1px dashed #666;
     }
 }
 </style>
@@ -115,9 +115,10 @@ body{
             <span class="icon-bar"></span>
           </button>
 
+
           <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
 
-          <div class="nav-collapse collapse">
+                    <div class="nav-collapse collapse">
 
 <?php
 $functions->geraMenu();
@@ -152,34 +153,34 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 <hr>
 <!-- Lista -->
    <div id="geral">
-    
+
 <?php
 if ($registros) {
-    $id = 1;
-    while ($reg = mysqli_fetch_array($registros)) {
-    ?>
+	$id = 1;
+	while ($reg = mysqli_fetch_array($registros)) {
+		?>
     <div class="box" id=<?="box_" . $id?>>
         <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>>
-     <?= $reg["produto"] . " - " . $reg["marca"];?>
+<?=$reg["produto"] . " - " . $reg["marca"];?>
      <br/><br/>
 	  </div>
         <div>
             <a href="#" id=<?=$reg['codigo']?>>
           <button type="button" class="btn btn-default">
              <span class="icon-shopping-cart"></span> Adicionar
-          </button> 
+          </button>
           <button type="button" class="btn btn-default">
              <span class="icon-resize-small"></span>Comparar
           </button>
              </div></a>
-    
+
     </div>
 
-    
+
 <?php
 $id++;
-}
+	}
 	?>
 
 <?php
@@ -193,10 +194,13 @@ $id++;
 <?php
 }
 ?>
-
-      <hr>
+<hr>
    </div>
     </div> <!-- /container -->
+
+    <<footer>
+<?php include_once ('../rodape.php')?>
+    </footer>
 
         <!-- Javascript -->
         <script src="../../js/jquery.js"></script>
@@ -226,7 +230,7 @@ $(document).ready(function() {
             var id = $(this).attr('id');
             $.ajax({
                 type: "POST",
-                url: "./session.php",
+                url: "./sessionAdiciona.php",
                 datatype: "html",
                 data: {"idProduto": id},
                 success: function(data) {
