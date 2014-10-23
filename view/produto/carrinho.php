@@ -156,20 +156,6 @@ $i = 1;
                     return false;
                 }
             });
-    comparaProduto = function(id, handler) {
-    $.ajax({
-                type: "POST",
-                url: "./sessionCompara.php",
-                datatype: "html",
-                data: {"idProduto": id},
-                success: function(data) {
-                    var tr = $(handler).closest('tr');
-                    tr.fadeOut(400, function(){
-                        tr.remove();
-                    });
-                    return false;
-                }
-            });
   };
 })(jQuery);
 
