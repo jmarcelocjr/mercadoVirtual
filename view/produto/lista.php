@@ -61,11 +61,13 @@ body{
 .box{
     float:left;
     width:19%;
-    border: 1px dashed #666;
+    margin: 10px;
+    
 }
 
 .box:hover{
-    background-color:#FF0;
+    background-color:red;
+    filter:alpha(opacity=30);
     cursor:context-menu;
 }
 
@@ -82,6 +84,7 @@ body{
     color:#000;
     font-size:16px;
     width:100%;
+    font-style:;
 }
 
 .rodape{
@@ -92,11 +95,14 @@ body{
     font-weight:bold;
 }
 
+#botao2{
+	float:right;
+}
+
 @media screen and (max-width: 400px) {
     .box{
         float:left;
         width:100%;
-        border: 1px dashed #666;
     }
 }
 </style>
@@ -160,8 +166,8 @@ if ($registros) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
         <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
-        <div class="conteudo" id=<?="conteudo_" . $id?>>
-<?=$reg["produto"] . " - " . $reg["marca"];?>
+        <div class="conteudo" id=<?="conteudo_" . $id?>><p>
+<?=$reg["produto"] . " - " . $reg["marca"];?></p>
      <br/><br/>
 	  </div>
         <div>
@@ -169,7 +175,7 @@ if ($registros) {
           <button type="button" class="btn btn-default">
              <span class="icon-shopping-cart"></span> Adicionar
           </button>
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default" id="botao2">
              <span class="icon-resize-small"></span>Comparar
           </button>
              </div></a>
