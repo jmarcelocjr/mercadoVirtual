@@ -66,7 +66,7 @@ body{
 }
 
 .box:hover{
-    background-color:red;
+    background-image: linear-gradient(to bottom, white, #FFCACA);
     filter:alpha(opacity=30);
     cursor:context-menu;
 }
@@ -84,19 +84,29 @@ body{
     color:#000;
     font-size:16px;
     width:100%;
-    font-style:;
+    text-align:center;
+    font-family:Helvetica;
 }
 
-.rodape{
-    color:#000;
-    font-size:14px;
-    width:100%;
-    text-align:center;
-    font-weight:bold;
+#img{
+	border-size:2px;
+	border-style:solid;
+	border-color:gray;
+}
+
+#rodape{
+position:botton;
 }
 
 #botao2{
 	float:right;
+}
+
+@media screen and (max-width: 800px) {
+    .box{
+        float:left;
+        width:50%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -112,26 +122,9 @@ body{
 
     <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <img class="brand" src="http://localhost/mercadoVirtual/img/assinatura_tanbook.png" alt="" style="width:200px;">
-
-          <div class="nav-collapse collapse">
-
-<?php
-$functions->geraMenu();
-?>
-</div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+<div id="menu">
+	<?php include_once ('../menu.php')?>
+</div>
 
 
     <div class="container">
@@ -165,7 +158,7 @@ if ($registros) {
 	while ($reg = mysqli_fetch_array($registros)) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
-        <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
+        <img src= "../../img/detergente_Ype.png" class="img-rounded" id="img"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>><p>
 <?=$reg["produto"] . " - " . $reg["marca"];?></p>
      <br/><br/>
@@ -203,7 +196,7 @@ $id++;
    </div>
     </div> <!-- /container -->
 
-    <<footer>
+    <<footer id="rodape">
 <?php include_once ('../rodape.php')?>
     </footer>
 
