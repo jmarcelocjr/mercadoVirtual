@@ -59,12 +59,11 @@ body{
 
 .box{
 	float:left;
-	width:98%;
-	border: 1px dashed #666;	
+	width:98%;	
 }
 
 .box:hover{
-	background-color:#FF0;
+    background-image: linear-gradient(to bottom, white, #FFCACA);
 	cursor:context-menu;
 }
 
@@ -103,26 +102,9 @@ body{
 
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img class="brand" src="../img/assinatura_tanbook.png" alt="" style="width:200px;">
-          <div class="nav-collapse collapse">
-
-			<?php
-                $functions->geraMenu();
-            ?>
-
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="menu">
+	<?php include_once ('menu.php')?>
+</div>
     
   <div class="container">
   
@@ -133,12 +115,12 @@ body{
 <h1 class="top">Mercado 1</h1>
 <div class="geral" id="geral1">
     <div class="box" id="box_1">
-        <div class="titulo" id="titulo_1">Teste 1</div>
-        <div class="conteudo" id="conteudo_1">Produto 1</div>
-        <div class="rodape" id="rodape_1">Adicionar</div>
+        <h2 class="titulo" id="titulo_1">Nome do Produto</h2>
+        <p class="conteudo" id="conteudo_1">descrição do Produto</p>
+        <button type="button" class="btn btn-default">Selecionar Mercado</button>
     </div>
 </div>
-<div class="back">Total 1</div>
+<div class="back">Total do mercado 1</div>
 </div>
   
 
@@ -153,7 +135,9 @@ body{
 </div>
 
 
-
+<<footer id="rodape">
+<?php include_once ('rodape.php')?>
+</footer>
 
 
          <!-- Javascript -->
@@ -173,6 +157,4 @@ body{
         <script src="../js/bootstrap-typeahead.js"></script>
 </body>
 </html>
-<?php
-include_once("rodape.php");
-?>
+
