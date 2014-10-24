@@ -38,10 +38,12 @@ body{
     font-family:Helvetica;
 }
 
-#img{
+.padraoImagem{
 	border-size:2px;
 	border-style:solid;
 	border-color:gray;
+    width: 225px;
+    height: 225px;
 }
 
 #rodape{

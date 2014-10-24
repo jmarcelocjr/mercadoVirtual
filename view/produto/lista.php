@@ -51,33 +51,9 @@ if ($id > 0) {
 
     <body>
 
-<<<<<<< HEAD
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-
-          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
-
-                    <div class="nav-collapse collapse">
-
-<?php
-$functions->geraMenu();
-?>
-</div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-=======
 <div id="menu">
 	<?php include_once ('../menu.php')?>
 </div>
->>>>>>> 6439784d546ce1fa3d34dfd4a24052a2e1ad76ae
 
 
     <div class="container">
@@ -111,17 +87,14 @@ if ($registros) {
 	while ($reg = mysqli_fetch_array($registros)) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
-<<<<<<< HEAD
-        <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded"> <br/><br/>
+
+        <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded padraoImagem"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>>
 <?=$reg["produto"] . " - " . $reg["marca"];?>
 <?=$reg["quantidade"];?>
 
-=======
-        <img src= "../../img/detergente_Ype.png" class="img-rounded" id="img"> <br/><br/>
-        <div class="conteudo" id=<?="conteudo_" . $id?>><p>
-<?=$reg["produto"] . " - " . $reg["marca"];?></p>
->>>>>>> 6439784d546ce1fa3d34dfd4a24052a2e1ad76ae
+
+
      <br/><br/>
 	  </div>
         <div>
@@ -157,7 +130,7 @@ $id++;
    </div>
     </div> <!-- /container -->
 
-    <<footer id="rodape">
+    <footer id="rodape">
 <?php include_once ('../rodape.php')?>
     </footer>
 
