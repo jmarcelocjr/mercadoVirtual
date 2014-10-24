@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 if (isset($_POST['quantidades'])) {
 	if (!isset($_SESSION['produtos'])) {
@@ -21,7 +20,9 @@ if (isset($_POST['quantidades'])) {
 			}
 		}
 	}
-	echo print_r($produtos);
+	$_SESSION['produtos'] = $produtos;
+
 }
 
 ?>
+

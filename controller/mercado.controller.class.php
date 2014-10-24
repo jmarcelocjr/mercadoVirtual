@@ -1,7 +1,7 @@
 <?php
 
 //Inclui a classe genérica CRUD
-require_once ("../functions/crud.class.php");
+require_once ("../../functions/crud.class.php");
 
 class MercadoController extends Crud {
 
@@ -17,6 +17,12 @@ class MercadoController extends Crud {
 
 	public function lista() {
 		return $this->execute_query("SELECT mercado.id, mercado.nome, mercado.endereco, mercado.Cidade_id  FROM mercado;");
+	}
+
+	public function buscaMercadosProximos($latitude, $longitude, $distancia) {
+		return $this->execute_query("SELECT id,
+        ( 6371 * acos( cos( radians($latitude) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians($longitude) ) + sin( radians($latitude) ) * sin( radians( latitude ) ) ) ) AS distance
+        FROM mercado HAVING (distance <= $distancia)");
 	}
 
 }

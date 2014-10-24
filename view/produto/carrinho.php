@@ -45,7 +45,7 @@ $functions = new Functions;
     <body>
 
 <div id="menu">
-	<?php include_once ('../menu.php')?>
+<?php include_once ('../menu.php');?>
 </div>
 
 <div class="container">
@@ -94,7 +94,7 @@ $i = 1;
 <tr>
 <td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
 <td><?=$produto["setor"];?></td>
-<td ><button type="button" class="incrementa" id=<?="incrementa_" . $produto['codigo']?>>+</button><input type="text" id=<?="quantidade_" . $produto['codigo']?> value="1" disabled="true"><button type="button" class="decrementa" id=<?="decrementa_" . $produto['codigo']?>>-</button></td>
+<td ><button type="button" class="incrementa" id=<?="incrementa_" . $produto['codigo']?>>+</button><input type="text" id=<?="quantidade_" . $produto['codigo']?> disabled="true" value="1"><button type="button" class="decrementa" id=<?="decrementa_" . $produto['codigo']?>>-</button></td>
 <td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem(<?=$produto['codigo']?>, this);" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
@@ -143,7 +143,7 @@ $i = 1;
 </html>
 
 <script type="text/javascript">
-(function($) {
+$(document).ready(function(){
 
     removeItem = function(id, handler) {
         $.ajax({
@@ -159,16 +159,13 @@ $i = 1;
                     return false;
                 }
         });
-  };
-})(jQuery);
-
-
-$(document).ready(function(){
+    };
 
     comparaLista = function() {
         var $inputs = $("input[type='text']");
 
-        var quantidades = {};
+
+        var quantidades = [];
 
          $inputs.each(function (index)
          {
@@ -178,7 +175,7 @@ $(document).ready(function(){
             id = parseInt(numsStr);
             valores[0] = id;
             valores[1] = $(this).attr('value');
-            quantidades[quantidades.length] = valores;
+            quantidades.push(valores);
 
          });
         $.ajax({
@@ -187,7 +184,7 @@ $(document).ready(function(){
                 datatype: "html",
                 data: {"quantidades": quantidades},
                 success: function(data) {
-                    alert(data);
+                    window.location.replace("../mercado/busca.php");
                 }
         });
 
@@ -201,7 +198,7 @@ $(document).ready(function(){
         id = parseInt(numsStr);
         var valor = parseInt($("#quantidade_" + id).val());
         valor += 1;
-        $("#quantidade_" + id).val(valor);
+        $("#quantidade_" + id).attr('value', valor);
     });
     $(".decrementa").click(function(){
         var id = $(this).attr('id');
@@ -211,7 +208,7 @@ $(document).ready(function(){
         if(valor > 1){
             valor -= 1;
         };
-        $("#quantidade_" + id).val(valor);
+        $("#quantidade_" + id).attr('value', valor);
     });
 });
 

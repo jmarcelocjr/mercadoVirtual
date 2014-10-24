@@ -62,7 +62,7 @@ body{
     float:left;
     width:19%;
     margin: 10px;
-    
+
 }
 
 .box:hover{
@@ -123,7 +123,7 @@ position:botton;
     <body>
 
 <div id="menu">
-	<?php include_once ('../menu.php')?>
+<?php include_once ('../menu.php');?>
 </div>
 
 
@@ -196,8 +196,8 @@ $id++;
    </div>
     </div> <!-- /container -->
 
-    <<footer id="rodape">
-<?php include_once ('../rodape.php')?>
+    <footer id="rodape">
+<?php include_once ('../rodape.php');?>
     </footer>
 
         <!-- Javascript -->
