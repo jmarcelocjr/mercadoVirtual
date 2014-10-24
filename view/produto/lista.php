@@ -44,6 +44,7 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+<<<<<<< HEAD
 
 
        <style>
@@ -116,6 +117,9 @@ position:botton;
     }
 }
 </style>
+=======
+        <link href="../../css/estilo-lista-produtos.css" rel="stylesheet">
+>>>>>>> 3177bdebd14dce0aa3f57d0495ba6fceefb9a892
 
     </head>
 
@@ -158,9 +162,14 @@ if ($registros) {
 	while ($reg = mysqli_fetch_array($registros)) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
-        <img src= "../../img/detergente_Ype.png" class="img-rounded" id="img"> <br/><br/>
-        <div class="conteudo" id=<?="conteudo_" . $id?>><p>
-<?=$reg["produto"] . " - " . $reg["marca"];?></p>
+
+        <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded padraoImagem"> <br/><br/>
+        <div class="conteudo" id=<?="conteudo_" . $id?>>
+<?=$reg["produto"] . " - " . $reg["marca"];?>
+<?=$reg["quantidade"];?>
+
+
+
      <br/><br/>
 	  </div>
         <div>
@@ -197,7 +206,11 @@ $id++;
     </div> <!-- /container -->
 
     <footer id="rodape">
+<<<<<<< HEAD
 <?php include_once ('../rodape.php');?>
+=======
+<?php include_once ('../rodape.php')?>
+>>>>>>> 3177bdebd14dce0aa3f57d0495ba6fceefb9a892
     </footer>
 
         <!-- Javascript -->

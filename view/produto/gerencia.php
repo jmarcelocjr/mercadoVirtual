@@ -132,7 +132,8 @@ if ($registros) {
 <footer>
 <p>&copy; Modelo 2014</p>
 </footer>
-</div> <!-- /container -->
+</div>
+ <!-- /container -->
 <!-- Javascript -->
 <script src="../../js/jquery.js"></script>
 <script src="../../js/jquery.validate.min.js"></script>
