@@ -160,9 +160,11 @@ if ($registros) {
 	while ($reg = mysqli_fetch_array($registros)) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
-        <img src= "../../img/detergente_Ype.jpg" class="img-rounded"> <br/><br/>
+        <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>>
 <?=$reg["produto"] . " - " . $reg["marca"];?>
+<?=$reg["quantidade"];?>
+
      <br/><br/>
 	  </div>
         <div>
