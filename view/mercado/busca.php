@@ -102,7 +102,8 @@ function showPosition(position) {
                 datatype: "html",
                 data: {"position": pos},
                 success: function(data) {
-                    window.location.replace("./listagemMercados.php");
+                    //window.location.replace("./listagemMercados.php");
+                    alert(data);
                 }
     });
 }

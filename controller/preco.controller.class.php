@@ -23,6 +23,14 @@ class PrecoController extends Crud {
 		$this->execute_query("SELECT ");
 	}
 
+	private function temNoMercado($idProduto, $idMercado){
+		$produto = $this->execute_query("SELECT preco.id FROM preco WHERE preco.produto_has_marca_id = $idProduto AND preco.Mercado_id = $idMercado;");
+		if($produto.next()){
+			return true;
+		}
+		return false;
+	}
+
 	public function comparaLista($listaProdutos, $mercados) {
 		//produto_has_marca_id, quantidade
 		//$mercados_id = mercado->buscaMercadosProximos();
@@ -31,7 +39,7 @@ class PrecoController extends Crud {
 		$listaPrecosProdutos = array();
 		foreach ($mercados as $mercado) {
 			for ($i = 0; $i < $listaProdutos . lenght; $i++) {
-				$preco = $this->execute_query("SELECT preco.Mercado_id, preco.produto_has_marca_id, preco.valor FROM preco INNER JOIN produto WHERE preco.Mercado_id = $mercado[0] AND preco.produto_has_marca_id = " . $listaProdutos[$i][0]);
+				$preco = $this->execute_query("SELECT preco.Mercado_id, preco.produto_has_marca_id, preco.valor FROM preco WHERE preco.Mercado_id = $mercado[0] AND preco.produto_has_marca_id = " . $listaProdutos[$i][0]);
 				array_push($listaPrecosProdutos, mysql_fetch_row($preco));
 			}
 		}

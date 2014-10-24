@@ -24,6 +24,7 @@ if (isset($_POST['position'])) {
 	}
 
 	$_SESSION['mercados'] = $ids;
+	echo print_r($_SESSION['mercados']);
 	
 }
 

@@ -1,7 +1,8 @@
 <?php
 
-//require_once ("../controller/produto.controller.class.php");
+require_once ("../../controller/preco.controller.class.php");
 include_once("../../functions/functions.class.php");
+
 
 $functions	= new Functions;
 
@@ -28,7 +29,7 @@ $functions	= new Functions;
 <body>
 
 <div id="menu">
-	<?php include_once ('../menu.php')?>
+	<?php include_once ('../menu.php');?>
 </div>
     
   <div class="container">
