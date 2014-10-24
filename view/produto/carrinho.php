@@ -76,7 +76,7 @@ if (array_filter($listaProdutos)) {
 	?>
 <!-- Lista -->
 
-<table class="table table-hover">
+<table class="table table-hover" id="listaProdutos">
 <thead>
 <tr>
 <th>Produto</th>
@@ -94,7 +94,7 @@ $i = 1;
 <tr>
 <td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
 <td><?=$produto["setor"];?></td>
-<td ><button type="button" class="incrementa" id=<?="incrementa_" . $produto['codigo']?>>+</button><input type="text" id=<?="quantidade_" . $produto['codigo']?> name=<?="quantidadeProduto_" . $produto['codigo']?> value="1" disabled="true"><button type="button" class="decrementa" id=<?="decrementa_" . $produto['codigo']?>>-</button></td>
+<td ><button type="button" class="incrementa" id=<?="incrementa_" . $produto['codigo']?>>+</button><input type="text" id=<?="quantidade_" . $produto['codigo']?> value="1" disabled="true"><button type="button" class="decrementa" id=<?="decrementa_" . $produto['codigo']?>>-</button></td>
 <td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem(<?=$produto['codigo']?>, this);" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
@@ -103,7 +103,7 @@ $i = 1;
 </tbody>
 </table>
 <br><br>
-<button type="button" name="compararCarrinho" onClick="">Comparar itens</button>
+<button type="button" name="compararCarrinho" onClick="comparaLista()">Comparar itens</button>
 <?php
 } else {
 	?>
@@ -122,7 +122,7 @@ $i = 1;
     </div> <!-- /container -->
 <footer>
 <?php include_once ("../rodape.php");?>
-      </footer>
+</footer>
         <!-- Javascript -->
         <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
@@ -158,11 +158,43 @@ $i = 1;
                     });
                     return false;
                 }
-            });
+        });
   };
 })(jQuery);
 
+
 $(document).ready(function(){
+
+    comparaLista = function() {
+        var $inputs = $("input[type='text']");
+
+        var quantidades = {};
+
+         $inputs.each(function (index)
+         {
+            var valores = {};
+            var id = $(this).attr('id');
+            var numsStr = id.replace(/[^0-9]/g,'');
+            id = parseInt(numsStr);
+            valores[0] = id;
+            valores[1] = $(this).attr('value');
+            quantidades[quantidades.length] = valores;
+
+         });
+        $.ajax({
+                type: "POST",
+                url: "./sessionCompara.php",
+                datatype: "html",
+                data: {"quantidades": quantidades},
+                success: function(data) {
+                    alert(data);
+                }
+        });
+
+
+    };
+
+
     $(".incrementa").click(function(){
         var id = $(this).attr('id');
         var numsStr = id.replace(/[^0-9]/g,'');
