@@ -21,6 +21,7 @@ if (isset($_POST['quantidades'])) {
 		}
 	}
 	$_SESSION['produtos'] = $produtos;
+	$_SESSION['distancia'] = $_POST['quantidades'][0][2];
 
 }
 

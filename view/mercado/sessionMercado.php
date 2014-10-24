@@ -16,14 +16,15 @@ if (isset($_POST['position'])) {
 	}
 	$latitude = $_POST['position'][0];
 	$longitude = $_POST['position'][1];
-	$distancia = 10;
-	$id = mysqli_fetch_array($mercadoController->buscaMercadosProximos($latitude, $longitude, $distancia));
+	$distancia = $_SESSION['distancia'];
+	$idMercados = $mercadoController->buscaMercadosProximos($latitude, $longitude, $distancia);
+	$ids = array();
+	while ($id = mysqli_fetch_array($idMercados)) {
+		array_push($ids, $id);
+	}
 
-	//echo json_encode($id);
-	echo $latitude;
-	echo " ";
-	echo $longitude;
-
+	$_SESSION['mercados'] = $ids;
+	
 }
 
 ?>

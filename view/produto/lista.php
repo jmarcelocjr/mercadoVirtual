@@ -44,82 +44,7 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
-<<<<<<< HEAD
-
-
-       <style>
-
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-#geral{
-    float:left;
-    width:100%;
-}
-
-.box{
-    float:left;
-    width:19%;
-    margin: 10px;
-
-}
-
-.box:hover{
-    background-image: linear-gradient(to bottom, white, #FFCACA);
-    filter:alpha(opacity=30);
-    cursor:context-menu;
-}
-
-.titulo{
-    color:#000;
-    font-size:22px;
-    font-weight:bold;
-    width:100%;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-}
-
-.conteudo{
-    color:#000;
-    font-size:16px;
-    width:100%;
-    text-align:center;
-    font-family:Helvetica;
-}
-
-#img{
-	border-size:2px;
-	border-style:solid;
-	border-color:gray;
-}
-
-#rodape{
-position:botton;
-}
-
-#botao2{
-	float:right;
-}
-
-@media screen and (max-width: 800px) {
-    .box{
-        float:left;
-        width:50%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .box{
-        float:left;
-        width:100%;
-    }
-}
-</style>
-=======
         <link href="../../css/estilo-lista-produtos.css" rel="stylesheet">
->>>>>>> 3177bdebd14dce0aa3f57d0495ba6fceefb9a892
 
     </head>
 
@@ -206,11 +131,7 @@ $id++;
     </div> <!-- /container -->
 
     <footer id="rodape">
-<<<<<<< HEAD
 <?php include_once ('../rodape.php');?>
-=======
-<?php include_once ('../rodape.php')?>
->>>>>>> 3177bdebd14dce0aa3f57d0495ba6fceefb9a892
     </footer>
 
         <!-- Javascript -->

@@ -1,10 +1,4 @@
 <?php
-
-ini_set('display_errors', 1);
-ini_set('log_errors', 1);
-ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
-error_reporting(E_ALL);
-
 //Importanto as classes externas
 include_once ("../../functions/functions.class.php");
 session_start();
@@ -30,6 +24,7 @@ $functions = new Functions;
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../../css/load.css" rel="stylesheet">
 
     </head>
 
@@ -47,7 +42,25 @@ $functions = new Functions;
           <h2>Buscando Mercados...</h2>
           <small>Aguarde enquanto procuramos os mercados mais próximos de sua localização</small>
         </blockquote>
-		<input type="hidden" id="latitude" value=""/><input type="hidden" id="longitude" value=""/>
+        <br><br>
+        <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01">
+        </div>
+        <div class="f_circleG" id="frotateG_02">
+        </div>
+        <div class="f_circleG" id="frotateG_03">
+        </div>
+        <div class="f_circleG" id="frotateG_04">
+        </div>
+        <div class="f_circleG" id="frotateG_05">
+        </div>
+        <div class="f_circleG" id="frotateG_06">
+        </div>
+        <div class="f_circleG" id="frotateG_07">
+        </div>
+        <div class="f_circleG" id="frotateG_08">
+        </div>
+        </div>
 
 
 
@@ -89,7 +102,7 @@ function showPosition(position) {
                 datatype: "html",
                 data: {"position": pos},
                 success: function(data) {
-                    alert(data);
+                    window.location.replace("./listagemMercados.php");
                 }
     });
 }

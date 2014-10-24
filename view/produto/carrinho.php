@@ -103,6 +103,13 @@ $i = 1;
 </tbody>
 </table>
 <br><br>
+<label for="distancia">Mercados em até: </label>
+<select name="distancia" id="distance">
+    <option value="1">1 Km.</option>
+    <option value="10">10 Km.</option>
+    <option value="100">100 Km.</option>
+</select>
+<br>
 <button type="button" name="compararCarrinho" onClick="comparaLista()">Comparar itens</button>
 <?php
 } else {
@@ -175,6 +182,7 @@ $(document).ready(function(){
             id = parseInt(numsStr);
             valores[0] = id;
             valores[1] = $(this).attr('value');
+            valores[2] = $("#distance").val();
             quantidades.push(valores);
 
          });
