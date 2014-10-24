@@ -1,7 +1,7 @@
 <?php
 
 //require_once ("../controller/produto.controller.class.php");
-include_once("../functions/functions.class.php");
+include_once("../../functions/functions.class.php");
 
 $functions	= new Functions;
 
@@ -16,84 +16,83 @@ $functions	= new Functions;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ComparaÃ§Ã£o entre Mercados</title>
+<title>Comparação entre Mercados</title>
 <!-- Estilos -->
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../css/geral.css" rel="stylesheet">
-<link href="../css/validation.css" rel="stylesheet">
-<link href="../css/bootstrap-responsive.css" rel="stylesheet"> 
+<link href="../../css/bootstrap.css" rel="stylesheet">
+<link href="../../css/geral.css" rel="stylesheet">
+<link href="../../css/validation.css" rel="stylesheet">
+<link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+<link href="../../css/estilo-lista-mercados.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img class="brand" src="../img/assinatura_tanbook.png" alt="" style="width:200px;">
-          <div class="nav-collapse collapse">
-
-			<?php
-                $functions->geraMenu();
-            ?>
-
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="menu">
+	<?php include_once ('../menu.php')?>
+</div>
     
   <div class="container">
   
   <div id="conteudo">
+
+<!-- Conteudo -->
+<div class="header" id="header1">
+<h1 class="top">Mercado 1</h1>
+<img src="../../img/sempre-vale.png" style="width:100px; height:100px; "/>
+<div class="geral" id="geral1">
+    <div class="box" id="box_1">
+        <p class="conteudo" id="conteudo_1"></p>
+        	<table class="table table-hover">
+				<thead>
+					<tr>
+					<th>Produto</th>
+					<th>Valor</th>
+					<th>Quantidade</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr class="pexistente">
+					<td>Danone JMC-Junior</td>
+					<td>R$ 1,99</td>
+					<td>1</td>
+					</tr>
+					
+					<tr class="pinexistente">
+					<td>Detergente Ype</td>
+					<td>R$ 299,99</td>
+					<td>20</td>
+					</tr>
+				</tbody>
+				
+				</table>
+
+        </p>
+
+    </div>
+</div>
+<div class="back">Total do mercado: R$</div>
+<button type="button" class="btn btn-default">Selecionar Mercado</button>
+</div>
   
-  
-  
-  
-  	<!-- <table>
-  		<thead>
-  			<th>Descrição</th>
-  			<th>Quantidade</th>
-  		</thead>
-  		<tbody>
-  			<?php 
-  				$mercado = 2;
-  				$registros = $produto->$listaMercado($mercado);
-  				while ($reg = mysql_fetch_array($registros)){
-  			?>
-  			
-  			<tr>
-  				<td><?php echo $reg["descricao"] ?></td>
-  				<td><?php echo $reg["quantidade"] ?></td>
-  			</tr>
-  			
-  			<?php 
-}
-  			?>
-  		</tbody>
-  	</table>
-  	-->
-  
-  </div>
-  
+<nav style="clear:both; padding: 10px 10px 10px 10px;">
 <button type="button" class="btn btn-default">
   <span class="icon-chevron-left"></span> Voltar ao Carrinho
 </button>
 <button type="button" class="btn btn-default pull-right">Avan&ccedil;ar
   <span class="icon-chevron-right"></span> 
 </button>
+</nav>
+
+
+
 </div>
-    
-<?php
-include_once("rodape.php");
-?>
+</div>
 
 
-
+<footer style="clear:both !important;" id="rodape">
+<?php include_once ('../rodape.php')?>
+</footer>
 
 
          <!-- Javascript -->
@@ -113,3 +112,4 @@ include_once("rodape.php");
         <script src="../js/bootstrap-typeahead.js"></script>
 </body>
 </html>
+
