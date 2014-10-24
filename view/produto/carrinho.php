@@ -44,29 +44,11 @@ $functions = new Functions;
 
     <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+<div id="menu">
+	<?php include_once ('../menu.php')?>
+</div>
 
-          <img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">
-
-          <div class="nav-collapse collapse">
-
-<?php
-$functions->geraMenu();
-?>
-</div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
+<div class="container">
 
         <!-- Título -->
         <blockquote>
@@ -93,7 +75,8 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 if (array_filter($listaProdutos)) {
 	?>
 <!-- Lista -->
-<table class="table table-hover">
+
+<table class="table table-hover" id="listaProdutos">
 <thead>
 <tr>
 <th>Produto</th>
@@ -103,13 +86,15 @@ if (array_filter($listaProdutos)) {
 </tr>
 </thead>
 <tbody>
-<?php foreach ($listaProdutos as $produto) {
+<?php
+$i = 1;
+	foreach ($listaProdutos as $produto) {
 		$produto = mysqli_fetch_array($produto);
 		?>
 <tr>
 <td><?=$produto["produto"] . " - " . $produto['quantidade'] . " - " . $produto['marca']?></td>
 <td><?=$produto["setor"];?></td>
-<td ><button type="button" id="incrementa">+</button><input type="text" id="quantidade" value="1" disabled="true"><button type="button" id="decrementa">-</button></td>
+<td ><button type="button" class="incrementa" id=<?="incrementa_" . $produto['codigo']?>>+</button><input type="text" id=<?="quantidade_" . $produto['codigo']?> value="1" disabled="true"><button type="button" class="decrementa" id=<?="decrementa_" . $produto['codigo']?>>-</button></td>
 <td style="text-align:center"><a class="btn btn-small" type="button" onClick="removeItem(<?=$produto['codigo']?>, this);" href="#"><i class="icon-remove">x</i></a></td>
 </tr>
 <?php
@@ -117,6 +102,8 @@ if (array_filter($listaProdutos)) {
 	?>
 </tbody>
 </table>
+<br><br>
+<button type="button" name="compararCarrinho" onClick="comparaLista()">Comparar itens</button>
 <?php
 } else {
 	?>
@@ -135,7 +122,7 @@ if (array_filter($listaProdutos)) {
     </div> <!-- /container -->
 <footer>
 <?php include_once ("../rodape.php");?>
-      </footer>
+</footer>
         <!-- Javascript -->
         <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
@@ -158,8 +145,8 @@ if (array_filter($listaProdutos)) {
 <script type="text/javascript">
 (function($) {
 
-  removeItem = function(id, handler) {
-    $.ajax({
+    removeItem = function(id, handler) {
+        $.ajax({
                 type: "POST",
                 url: "./sessionRemove.php",
                 datatype: "html",
@@ -171,22 +158,60 @@ if (array_filter($listaProdutos)) {
                     });
                     return false;
                 }
-            });
-
-
+        });
   };
 })(jQuery);
 
+
 $(document).ready(function(){
-    $("#incrementa").click(function(){
-        var valor = parseInt($("#quantidade").val());
+
+    comparaLista = function() {
+        var $inputs = $("input[type='text']");
+
+        var quantidades = {};
+
+         $inputs.each(function (index)
+         {
+            var valores = {};
+            var id = $(this).attr('id');
+            var numsStr = id.replace(/[^0-9]/g,'');
+            id = parseInt(numsStr);
+            valores[0] = id;
+            valores[1] = $(this).attr('value');
+            quantidades[quantidades.length] = valores;
+
+         });
+        $.ajax({
+                type: "POST",
+                url: "./sessionCompara.php",
+                datatype: "html",
+                data: {"quantidades": quantidades},
+                success: function(data) {
+                    alert(data);
+                }
+        });
+
+
+    };
+
+
+    $(".incrementa").click(function(){
+        var id = $(this).attr('id');
+        var numsStr = id.replace(/[^0-9]/g,'');
+        id = parseInt(numsStr);
+        var valor = parseInt($("#quantidade_" + id).val());
         valor += 1;
-        $("#quantidade").val(valor);
+        $("#quantidade_" + id).val(valor);
     });
-    $("#decrementa").click(function(){
-        var valor = parseInt($("#quantidade").val());
-        valor -= 1;
-        $("#quantidade").val(valor);
+    $(".decrementa").click(function(){
+        var id = $(this).attr('id');
+        var numsStr = id.replace(/[^0-9]/g,'');
+        id = parseInt(numsStr);
+        var valor = parseInt($("#quantidade_" + id).val());
+        if(valor > 1){
+            valor -= 1;
+        };
+        $("#quantidade_" + id).val(valor);
     });
 });
 

@@ -55,6 +55,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 }
 
 ?>
+
 <link type="text/css" href="../../css/bootstrap.css">
 
 <div class="col md-offset6">

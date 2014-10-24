@@ -44,68 +44,14 @@ if ($id > 0) {
         <link href="../../css/geral.css" rel="stylesheet">
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
-
-
-       <style>
-
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-#geral{
-    float:left;
-    width:100%;
-}
-
-.box{
-    float:left;
-    width:19%;
-    border: 1px dashed #666;
-}
-
-.box:hover{
-    background-color:#FF0;
-    cursor:context-menu;
-}
-
-.titulo{
-    color:#000;
-    font-size:22px;
-    font-weight:bold;
-    width:100%;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-}
-
-.conteudo{
-    color:#000;
-    font-size:16px;
-    width:100%;
-}
-
-.rodape{
-    color:#000;
-    font-size:14px;
-    width:100%;
-    text-align:center;
-    font-weight:bold;
-}
-
-@media screen and (max-width: 400px) {
-    .box{
-        float:left;
-        width:100%;
-        border: 1px dashed #666;
-    }
-}
-</style>
+        <link href="../../css/estilo-lista-produtos.css" rel="stylesheet">
 
     </head>
 
 
     <body>
 
+<<<<<<< HEAD
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -127,6 +73,11 @@ $functions->geraMenu();
         </div>
       </div>
     </div>
+=======
+<div id="menu">
+	<?php include_once ('../menu.php')?>
+</div>
+>>>>>>> 6439784d546ce1fa3d34dfd4a24052a2e1ad76ae
 
 
     <div class="container">
@@ -160,11 +111,17 @@ if ($registros) {
 	while ($reg = mysqli_fetch_array($registros)) {
 		?>
     <div class="box" id=<?="box_" . $id?>>
+<<<<<<< HEAD
         <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>>
 <?=$reg["produto"] . " - " . $reg["marca"];?>
 <?=$reg["quantidade"];?>
 
+=======
+        <img src= "../../img/detergente_Ype.png" class="img-rounded" id="img"> <br/><br/>
+        <div class="conteudo" id=<?="conteudo_" . $id?>><p>
+<?=$reg["produto"] . " - " . $reg["marca"];?></p>
+>>>>>>> 6439784d546ce1fa3d34dfd4a24052a2e1ad76ae
      <br/><br/>
 	  </div>
         <div>
@@ -172,7 +129,7 @@ if ($registros) {
           <button type="button" class="btn btn-default">
              <span class="icon-shopping-cart"></span> Adicionar
           </button>
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default" id="botao2">
              <span class="icon-resize-small"></span>Comparar
           </button>
              </div></a>
@@ -200,7 +157,7 @@ $id++;
    </div>
     </div> <!-- /container -->
 
-    <<footer>
+    <<footer id="rodape">
 <?php include_once ('../rodape.php')?>
     </footer>
 
