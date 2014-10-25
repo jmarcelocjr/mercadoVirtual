@@ -26,11 +26,14 @@ class MercadoController extends Crud {
 	}
 
 	public function buscaMercadosProximos($latitude, $longitude, $distancia) {
-		return $this->execute_query("SELECT id,
+		/*return $this->execute_query("SELECT id,
         ( 6371 * acos( cos( radians($latitude) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians($longitude) ) + sin( radians($latitude) ) * sin( radians( latitude ) ) ) ) AS distance
         FROM mercado HAVING (distance <= $distancia)");
+        */
+		return $this->execute_query("SELECT id, (6371 * acos(cos(radians($latitude)) * cos(radians(latitude)) * cos(radians($longitude) - radians(longitude)) + sin(radians($latitude)) * sin(radians(latitude)))) AS distance FROM mercado HAVING (distance <= $distancia)");
 	}
 
+	
 }
 
 ?>
