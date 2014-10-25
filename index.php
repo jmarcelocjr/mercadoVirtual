@@ -38,7 +38,7 @@ include_once("./view/menu.php");
 	<div id="conteudo" name="conteudo">
 		<h1 class="titulo">Seja bem vindo ao</h1>
 		<br><img class="imagem" src="./img/logo_tanbook.png">
-		<h2 class="titulo">O modo fácil e digital de fazer sua lista de compras!</h2>
+		<h2 class="titulo">O modo fácil e digital de fazer sua lista de <br> <br> compras!</h2>
 
 		<br><button class="btn btn-primary btn-large imagem" name="botao">Faça já sua lista!
 		<script language= "JavaScript">
