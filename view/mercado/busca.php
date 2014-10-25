@@ -93,8 +93,10 @@ $functions = new Functions;
 
 function showPosition(position) {
 	var pos = [];
-	pos[0] = position.coords.latitude;
-	pos[1] = position.coords.longitude;
+	//pos[0] = position.coords.latitude;
+	//pos[1] = position.coords.longitude;
+    pos[0] = -21.9701160;
+    pos[1] = -46.7821960;
     console.log(pos);
 	$.ajax({
                 type: "POST",
