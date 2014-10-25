@@ -127,7 +127,7 @@ function showError(error) {
 
 $(document).ready(function(){
     if(navigator.geolocation){
-	navigator.geolocation.getCurrentPosition(showPosition, showError);
+	navigator.geolocation.getCurrentPosition(showPosition, showError, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
     }else{
         alert("Seu navegador não tem compatibilidade com geolocalização");
     }
