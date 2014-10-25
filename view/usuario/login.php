@@ -58,7 +58,7 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 
 <link type="text/css" href="../../css/bootstrap.css">
 
-<div class="col md-offset6">
+<div class="col md-offset6" style="width : 30%;">
       <form class="form-signin" id="login-form"  method="post">
             <fieldset>
             
@@ -71,12 +71,12 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
                 
                 <div class="control-group">
                     <div class="controls">
-                        <input type="text" class="input-block-level" name="email" id="email" placeholder="Login" style="width:20%;">
+                        <input type="text" class="input-block-level" name="email" id="email" placeholder="Login" style="width:60%;">
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <input type="password" class="input-block-level" name="senha" id="senha" placeholder="Senha" style="width:20%;">
+                        <input type="password" class="input-block-level" name="senha" id="senha" placeholder="Senha" style="width:60%;">
                     </div>
                 </div>
                 <div>
@@ -92,3 +92,17 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 
           </form>
     </div>
+<script src="../../js/jquery.js"></script>
+        <script src="../../js/jquery.validate.min.js"></script>
+        <script src="../../js/bootstrap-transition.js"></script>
+        <script src="../../js/bootstrap-alert.js"></script>
+        <script src="../../js/bootstrap-modal.js"></script>
+        <script src="../../js/bootstrap-dropdown.js"></script>
+        <script src="../../js/bootstrap-scrollspy.js"></script>
+        <script src="../../js/bootstrap-tab.js"></script>
+        <script src="../../js/bootstrap-tooltip.js"></script>
+        <script src="../../js/bootstrap-popover.js"></script>
+        <script src="../../js/bootstrap-button.js"></script>
+        <script src="../../js/bootstrap-collapse.js"></script>
+        <script src="../../js/bootstrap-carousel.js"></script>
+        <script src="../../js/bootstrap-typeahead.js"></script>
