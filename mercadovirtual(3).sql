@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 30, 2014 at 09:39 PM
--- Server version: 5.5.38-0ubuntu0.14.04.1
+-- Generation Time: Oct 25, 2014 at 12:01 AM
+-- Server version: 5.5.40-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -35,7 +35,14 @@ CREATE TABLE IF NOT EXISTS `cidade` (
   `Estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_Cidade_Estado_idx` (`Estado_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `cidade`
+--
+
+INSERT INTO `cidade` (`id`, `nome`, `Estado_id`) VALUES
+(1, 'São Paulo', 1);
 
 -- --------------------------------------------------------
 
@@ -50,7 +57,14 @@ CREATE TABLE IF NOT EXISTS `estado` (
   `Pais_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_Estado_Pais1_idx` (`Pais_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `estado`
+--
+
+INSERT INTO `estado` (`id`, `nome`, `Pais_id`) VALUES
+(1, 'São Paulo', 1);
 
 -- --------------------------------------------------------
 
@@ -81,7 +95,17 @@ CREATE TABLE IF NOT EXISTS `marca` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `marca`
+--
+
+INSERT INTO `marca` (`id`, `descricao`) VALUES
+(1, 'Ype'),
+(2, 'Turma da Mônica'),
+(3, 'João'),
+(4, 'Danone');
 
 -- --------------------------------------------------------
 
@@ -95,11 +119,21 @@ CREATE TABLE IF NOT EXISTS `mercado` (
   `nome` varchar(200) DEFAULT NULL,
   `endereco` varchar(200) DEFAULT NULL,
   `Cidade_id` int(11) NOT NULL,
-  `latitude` int(11) DEFAULT NULL,
-  `longitude` int(11) DEFAULT NULL,
+  `latitude` varchar(20) NOT NULL,
+  `longitude` varchar(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_Mercado_Cidade1_idx` (`Cidade_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `mercado`
+--
+
+INSERT INTO `mercado` (`id`, `nome`, `endereco`, `Cidade_id`, `latitude`, `longitude`) VALUES
+(1, 'Big Bom Supermercado', 'Avenida Brasília, 1950 - Vila Zanetti', 1, '-21.9799920', '-46.7853860'),
+(2, 'Sempre Vale Supermercados', 'Avenida Rodrigues Alves, 606 - Rosário', 1, '-21.9618050', '-46.7985630'),
+(3, 'Supermercado Ideal', 'Rua Capitão Joaquim Rabelo de Andrade, 225 - Santa Terezinha', 1, '-21.7074010', '-46.8170370'),
+(4, 'Supermercado Guimarães Teixeira', 'Rua Família Romano, 319 - Jardim América', 1, '-21.7647610', '-47.0918740');
 
 -- --------------------------------------------------------
 
@@ -113,7 +147,14 @@ CREATE TABLE IF NOT EXISTS `pais` (
   `nome` varchar(200) DEFAULT NULL,
   `pais_name` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `pais`
+--
+
+INSERT INTO `pais` (`id`, `nome`, `pais_name`) VALUES
+(1, 'Brasil', 'Brazil');
 
 -- --------------------------------------------------------
 
@@ -130,7 +171,29 @@ CREATE TABLE IF NOT EXISTS `preco` (
   PRIMARY KEY (`id`),
   KEY `fk_Preco_Mercado1_idx` (`Mercado_id`),
   KEY `produto_has_marca_id` (`produto_has_marca_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `preco`
+--
+
+INSERT INTO `preco` (`id`, `valor`, `Mercado_id`, `produto_has_marca_id`) VALUES
+(1, 4.99, 1, 3),
+(2, 5.99, 1, 1),
+(3, 0.99, 1, 4),
+(4, 8, 1, 2),
+(5, 4.89, 2, 3),
+(6, 6.09, 2, 1),
+(7, 0.88, 2, 4),
+(8, 7, 2, 2),
+(9, 4.69, 3, 3),
+(10, 5.09, 3, 1),
+(11, 1.88, 3, 4),
+(12, 8, 3, 2),
+(13, 2.69, 4, 3),
+(14, 1.09, 4, 1),
+(15, 3.88, 4, 4),
+(16, 9, 4, 2);
 
 -- --------------------------------------------------------
 
@@ -148,7 +211,17 @@ CREATE TABLE IF NOT EXISTS `produto` (
   PRIMARY KEY (`id`),
   KEY `fk_Produto_Quantidade1_idx` (`Quantidade_id`),
   KEY `fk_Produto_Setor1_idx` (`Setor_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `produto`
+--
+
+INSERT INTO `produto` (`id`, `descricao`, `Quantidade_id`, `status`, `Setor_id`) VALUES
+(1, 'Arroz', 1, 1, 1),
+(2, 'Detergente', 4, 1, 2),
+(3, 'Iorgute', 3, 0, 3),
+(4, 'Maça', 2, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -165,7 +238,17 @@ CREATE TABLE IF NOT EXISTS `produto_has_marca` (
   PRIMARY KEY (`id`),
   KEY `fk_Produto_has_Marca_Marca1_idx` (`Marca_id`),
   KEY `fk_Produto_has_Marca_Produto1_idx` (`Produto_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `produto_has_marca`
+--
+
+INSERT INTO `produto_has_marca` (`id`, `Produto_id`, `Marca_id`, `img`) VALUES
+(1, 1, 3, NULL),
+(2, 2, 1, NULL),
+(3, 3, 4, NULL),
+(4, 4, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -179,7 +262,17 @@ CREATE TABLE IF NOT EXISTS `quantidade` (
   `peso` double DEFAULT NULL,
   `unidade` varchar(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `quantidade`
+--
+
+INSERT INTO `quantidade` (`id`, `peso`, `unidade`) VALUES
+(1, 1, 'Kg'),
+(2, 100, 'g'),
+(3, 1, 'L'),
+(4, 100, 'mL');
 
 -- --------------------------------------------------------
 
@@ -192,7 +285,17 @@ CREATE TABLE IF NOT EXISTS `setor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `setor`
+--
+
+INSERT INTO `setor` (`id`, `descricao`) VALUES
+(1, 'Alimentício'),
+(2, 'Limpezas em Geral'),
+(3, 'Congelados'),
+(4, 'HortiFruti');
 
 -- --------------------------------------------------------
 

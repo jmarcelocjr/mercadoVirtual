@@ -98,15 +98,13 @@ if ($registros) {
      <br/><br/>
 	  </div>
         <div>
-            <a href="#" id=<?=$reg['codigo']?>>
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default adc" id=<?=$reg['codigo']?>>
              <span class="icon-shopping-cart"></span> Adicionar
           </button>
-          <button type="button" class="btn btn-default" id="botao2">
+          <button type="button" class="btn btn-default comp" id="botao2">
              <span class="icon-resize-small"></span>Comparar
           </button>
-             </div></a>
-
+             </div>
     </div>
 
 
@@ -157,7 +155,7 @@ $id++;
 $(document).ready(function() {
 
 
-    $("a").click(function() {
+    $("button[class='btn btn-default adc']").click(function() {
             var idInput = $(this).attr('id');
             var id = $(this).attr('id');
             $.ajax({
@@ -166,7 +164,7 @@ $(document).ready(function() {
                 datatype: "html",
                 data: {"idProduto": id},
                 success: function(data) {
-                    alert(data);
+                   alert(data);
                 }
             });
 
