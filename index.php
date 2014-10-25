@@ -40,13 +40,10 @@ include_once("./view/menu.php");
 		<br><img class="imagem" src="./img/logo_tanbook.png">
 		<h2 class="titulo">O modo fácil e digital de fazer sua lista de <br> <br> compras!</h2>
 
-		<br><button class="btn btn-primary btn-large imagem" name="botao">Faça já sua lista!
-		<script language= "JavaScript">
-		document.conteudo.botao.onclick = function() {
-		location.href="./view/produto/lista.php";
-		}
-		</script>
-		</button>
+		<br><form name="formulario">
+                <p align="center"><input type="button" name="botao" class="btn btn-primary btn-large" value="Faça já sua lista!" /><p>
+                </form>
+		
 		<br>
 		<br>
 		<br>
@@ -74,4 +71,9 @@ include_once("./view/rodape.php");
         <script src="../../js/bootstrap-typeahead.js"></script>
         
 </body>
+<script type="text/javascript">
+                document.formulario.botao.onclick = function() {
+                location.replace("./view/produto/lista.php");
+                }
+                </script>
 </html>
