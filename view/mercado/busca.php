@@ -62,7 +62,8 @@ $functions = new Functions;
         </div>
         </div>
 
-
+        <br><br>
+        <div id="erros"></div>
 
 
     </div> <!-- /container -->
@@ -95,7 +96,7 @@ function showPosition(position) {
 	var pos = [];
 	pos[0] = position.coords.latitude;
 	pos[1] = position.coords.longitude;
-
+    console.log(pos);
 	$.ajax({
                 type: "POST",
                 url: "./sessionMercado.php",
@@ -108,8 +109,25 @@ function showPosition(position) {
     });
 }
 
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            $("#erros").innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            $("#erros").innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            $("#erros").innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            $("#erros").innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+
 $(document).ready(function(){
-	navigator.geolocation.getCurrentPosition(showPosition);
+	navigator.geolocation.getCurrentPosition(showPosition, showError);
 
 });
 </script>
