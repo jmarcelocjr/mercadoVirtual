@@ -43,6 +43,7 @@ $listaProdutos = $preco->comparaLista($_SESSION['produtos'], $_SESSION['mercados
 
 <!-- Conteudo -->
 <?php 
+if(array_filter($listaProdutos)){
 for ($i = 0; $i < sizeof($listaProdutos); $i++ ) { 
 	$mercado = $mercadoController->lista("mercado.id = " . $listaProdutos[$i][0][0]);
 	$mercado = mysqli_fetch_row($mercado);
@@ -87,6 +88,15 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 <div class="back">Total do mercado: R$ <?= $preco->calculaPrecoTotal($listaProdutos[$i]); ?></div>
 <button type="button" class="btn btn-default">Selecionar Mercado</button>
 </div>
+<?php }
+}else{
+?>
+	<div class="text-center">
+		<h2>Que pena!!</h2>
+		<p>Nenhum mercado foi encontrado perto de sua localização! =(</p>
+	</div>
+
+
 <?php } ?>
   
 <nav style="clear:both; padding: 10px 10px 10px 10px;">
