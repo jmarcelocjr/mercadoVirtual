@@ -83,8 +83,9 @@ $functions->mensagemDeRetorno($_GET["tipo"], $_GET["acao"]);
 
 <?php
 if ($registros) {
-	$id = 1;
+	
 	while ($reg = mysqli_fetch_array($registros)) {
+        $id = $reg['codigo'];
 		?>
     <div class="box" id=<?="box_" . $id?>>
 
@@ -98,7 +99,7 @@ if ($registros) {
      <br/><br/>
 	  </div>
         <div>
-          <button type="button" class="btn btn-default adc" id=<?=$reg['codigo']?>>
+          <button type="button" class="btn btn-default adc" id=<?=$id ?>>
              <span class="icon-shopping-cart"></span> Adicionar
           </button>
           <button type="button" class="btn btn-default comp" id="botao2">
@@ -109,7 +110,6 @@ if ($registros) {
 
 
 <?php
-$id++;
 	}
 	?>
 

@@ -23,28 +23,45 @@ class PrecoController extends Crud {
 		$this->execute_query("SELECT ");
 	}
 
-	private function temNoMercado($idProduto, $idMercado){
-		$produto = $this->execute_query("SELECT preco.id FROM preco WHERE preco.produto_has_marca_id = $idProduto AND preco.Mercado_id = $idMercado;");
-		if($produto.next()){
-			return true;
-		}
-		return false;
-	}
-
 	public function comparaLista($listaProdutos, $mercados) {
-		//produto_has_marca_id, quantidade
-		//$mercados_id = mercado->buscaMercadosProximos();
 
 		//salvar [0] = mercado_id [1] = phm_id [2] = valor [3] = quantidade
 		$listaPrecosProdutos = array();
+		$mercadoLista = array();
 		foreach ($mercados as $mercado) {
-			for ($i = 0; $i < $listaProdutos . lenght; $i++) {
+			for ($i = 0; $i < sizeof($listaProdutos); $i++) {
 				$preco = $this->execute_query("SELECT preco.Mercado_id, preco.produto_has_marca_id, preco.valor FROM preco WHERE preco.Mercado_id = $mercado[0] AND preco.produto_has_marca_id = " . $listaProdutos[$i][0]);
-				array_push($listaPrecosProdutos, mysql_fetch_row($preco));
+				if(mysqli_num_rows($preco) >= 1){
+					$preco = mysqli_fetch_row($preco);
+					array_push($preco, $listaProdutos[$i][1]);
+					array_push($preco, "true");
+					array_push($mercadoLista, $preco);
+				}else{
+					$preco = array($mercado[0], $listaProdutos[$i][0], $listaProdutos[$i][1], "false");
+					array_push($mercadoLista, $preco);
+				}
+
+			}
+			array_push($listaPrecosProdutos, $mercadoLista);
+			$mercadoLista = array();
+		}
+		return $listaPrecosProdutos;
+	}
+
+	public function calculaPrecoTotal($listaProdutoMercados){
+		$precoTotal = 0;
+
+		foreach ($listaProdutoMercados as $produto) {
+			$isAtivo = end($produto);
+			if($isAtivo == "true"){
+				$precoTotal += ($produto[2] * $produto[3]);
 			}
 		}
-		$_SESSION["ProdutosPrecos"] = $listaPrecosProdutos;
+
+		return $precoTotal;
+
 	}
+
 
 }
 

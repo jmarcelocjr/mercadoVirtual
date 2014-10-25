@@ -1,20 +1,25 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('log_errors', 1);
+ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
+error_reporting(E_ALL);
 
 require_once ("../../controller/preco.controller.class.php");
-include_once("../../functions/functions.class.php");
+require_once("../../functions/functions.class.php");
+require_once("../../controller/mercado.controller.class.php");
+require_once("../../controller/produto.controller.class.php");
 
+session_start();
 
 $functions	= new Functions;
+$preco = new PrecoController;
+$mercadoController = new MercadoController;
+$produtoController = new ProdutoController;
 
-//$produto = new produtoController;
-
-
-
-
+$listaProdutos = $preco->comparaLista($_SESSION['produtos'], $_SESSION['mercados']);
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Comparação entre Mercados</title>
@@ -37,8 +42,13 @@ $functions	= new Functions;
   <div id="conteudo">
 
 <!-- Conteudo -->
+<?php 
+for ($i = 0; $i < sizeof($listaProdutos); $i++ ) { 
+	$mercado = $mercadoController->lista("mercado.id = " . $listaProdutos[$i][0][0]);
+	$mercado = mysqli_fetch_row($mercado);
+?>
 <div class="header" id="header1">
-<h1 class="top">Mercado 1</h1>
+<h1 class="top"><?= $mercado[1]; ?></h1>
 <img src="../../img/sempre-vale.png" style="width:100px; height:100px; "/>
 <div class="geral" id="geral1">
     <div class="box" id="box_1">
@@ -53,17 +63,19 @@ $functions	= new Functions;
 				</thead>
 				
 				<tbody>
-					<tr class="pexistente">
-					<td>Danone JMC-Junior</td>
-					<td>R$ 1,99</td>
-					<td>1</td>
-					</tr>
+					<!-- pexistente / pinexistente -->
 					
-					<tr class="pinexistente">
-					<td>Detergente Ype</td>
-					<td>R$ 299,99</td>
-					<td>20</td>
+					<?php foreach($listaProdutos[$i] as $produto) { 
+						$produtoNome = $produtoController->lista("phm.id = " . $produto[1]);
+						$produtoNome = mysqli_fetch_row($produtoNome);
+						?>
+					<tr class=
+					"<?= ($produto[sizeof($produto) -1] == 'true') ? 'pexistente' : 'pinexistente'; ?>">
+					<td><?= $produtoNome[1] . " - " . $produtoNome[2] . " - " . $produtoNome[5]; ?></td>
+					<td>R$ <?= ($produto[sizeof($produto) -1] == 'true') ? $produto[2] : '0'; ?></td>
+					<td><?= $produto[sizeof($produto) -2]; ?></td>
 					</tr>
+					<?php } ?>
 				</tbody>
 				
 				</table>
@@ -72,9 +84,10 @@ $functions	= new Functions;
 
     </div>
 </div>
-<div class="back">Total do mercado: R$</div>
+<div class="back">Total do mercado: R$ <?= $preco->calculaPrecoTotal($listaProdutos[$i]); ?></div>
 <button type="button" class="btn btn-default">Selecionar Mercado</button>
 </div>
+<?php } ?>
   
 <nav style="clear:both; padding: 10px 10px 10px 10px;">
 <button type="button" class="btn btn-default">
@@ -92,7 +105,7 @@ $functions	= new Functions;
 
 
 <footer style="clear:both !important;" id="rodape">
-<?php include_once ('../rodape.php')?>
+<?php include_once ('../rodape.php');?>
 </footer>
 
 
@@ -113,4 +126,3 @@ $functions	= new Functions;
         <script src="../js/bootstrap-typeahead.js"></script>
 </body>
 </html>
-

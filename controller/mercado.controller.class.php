@@ -15,8 +15,14 @@ class MercadoController extends Crud {
 
 	//Listagem de todas as mercado
 
-	public function lista() {
-		return $this->execute_query("SELECT mercado.id, mercado.nome, mercado.endereco, mercado.Cidade_id  FROM mercado;");
+	public function lista($where = null) {
+		$query = "SELECT mercado.id, mercado.nome, mercado.endereco, mercado.Cidade_id  FROM mercado";
+
+		if($where != null){
+			$query .= " WHERE $where";
+		}
+
+		return $this->execute_query($query);
 	}
 
 	public function buscaMercadosProximos($latitude, $longitude, $distancia) {

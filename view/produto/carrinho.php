@@ -106,7 +106,10 @@ $i = 1;
 <label for="distancia">Mercados em até: </label>
 <select name="distancia" id="distance">
     <option value="1">1 Km.</option>
-    <option value="10">10 Km.</option>
+    <option value="5">5 Km.</option>
+    <option value="10" selected="true">10 Km.</option>
+    <option value="25">25 Km.</option>
+    <option value="50">50 Km.</option>
     <option value="100">100 Km.</option>
 </select>
 <br>
