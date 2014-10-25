@@ -85,7 +85,6 @@ $functions = new Functions;
         <script src="../../js/bootstrap-collapse.js"></script>
         <script src="../../js/bootstrap-carousel.js"></script>
         <script src="../../js/bootstrap-typeahead.js"></script>
-        <script src="../../js/georeferenciamento.js"></script>
 
     </body>
 </html>
@@ -112,22 +111,25 @@ function showPosition(position) {
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
-            $("#erros").innerHTML = "User denied the request for Geolocation."
+            $("#erros").append("User denied the request for Geolocation.");
             break;
         case error.POSITION_UNAVAILABLE:
-            $("#erros").innerHTML = "Location information is unavailable."
+            $("#erros").append("Location information is unavailable.");
             break;
         case error.TIMEOUT:
-            $("#erros").innerHTML = "The request to get user location timed out."
+            $("#erros").append("The request to get user location timed out.");
             break;
         case error.UNKNOWN_ERROR:
-            $("#erros").innerHTML = "An unknown error occurred."
+            $("#erros").append("An unknown error occurred.");
             break;
     }
 }
 
 $(document).ready(function(){
+    if(navigator.geolocation){
 	navigator.geolocation.getCurrentPosition(showPosition, showError);
-
+    }else{
+        alert("Seu navegador não tem compatibilidade com geolocalização");
+    }
 });
 </script>
