@@ -17,6 +17,7 @@ $mercadoController = new MercadoController;
 $produtoController = new ProdutoController;
 
 $listaProdutos = $preco->comparaLista($_SESSION['produtos'], $_SESSION['mercados']);
+print_r($listaProdutos);
 ?>
 
 <!DOCTYPE html>
