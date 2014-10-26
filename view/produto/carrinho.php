@@ -113,7 +113,7 @@ $i = 1;
     <option value="100">100 Km.</option>
 </select>
 <br>
-<button type="button" name="compararCarrinho" onClick="comparaLista()">Comparar itens</button>
+<button type="button" name="compararCarrinho" class="btn btn-primary btn-large" onClick="comparaLista()">Comparar itens</button>
 <?php
 } else {
 	?>

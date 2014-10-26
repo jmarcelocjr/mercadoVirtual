@@ -85,8 +85,9 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 
     </div>
 </div>
-<div class="back">Total do mercado: R$ <?= $preco->calculaPrecoTotal($listaProdutos[$i]); ?></div>
-<button type="button" class="btn btn-default" onclick="window.location.replace('./selecionaMercado.php?id=<?=$listaProdutos[$i][0][0]?>');">Selecionar Mercado</button>
+<br>
+<div class="back">Total do mercado: R$ <?= $preco->calculaPrecoTotal($listaProdutos[$i]); ?></div><br>
+<button type="button" class="btn btn-primary btn-large" onclick="window.location.replace('./selecionaMercado.php?id=<?=$listaProdutos[$i][0][0]?>');">Selecionar Mercado</button>
 </div>
 <?php }
 }else{
@@ -100,7 +101,9 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 <?php } ?>
   
 <nav style="clear:both; padding: 10px;">
-<button type="button" class="btn btn-default">
+<br>
+<br>
+<button type="button" class="btn btn-primary btn-large" onclick="window.location.replace('../produto/carrinho.php');">
   <span class="icon-chevron-left"></span> Voltar ao Carrinho
 </button>
 </nav>
