@@ -50,7 +50,7 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 ?>
 <div class="header" id="header1">
 <h1 class="top"><?= $mercado[1]; ?></h1>
-<img src="../../img/sempre-vale.png" style="width:100px; height:100px; "/>
+<center><img src="../../img/sempre-vale.png" style="width:100px; height:100px; "/></center>
 <div class="geral" id="geral1">
     <div class="box" id="box_1">
         <p class="conteudo" id="conteudo_1"></p>
@@ -99,12 +99,9 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 
 <?php } ?>
   
-<nav style="clear:both; padding: 10px 10px 10px 10px;">
+<nav style="clear:both; padding: 10px;">
 <button type="button" class="btn btn-default">
   <span class="icon-chevron-left"></span> Voltar ao Carrinho
-</button>
-<button type="button" class="btn btn-default pull-right">Avan&ccedil;ar
-  <span class="icon-chevron-right"></span> 
 </button>
 </nav>
 
