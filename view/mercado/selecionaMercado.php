@@ -26,7 +26,7 @@ $mercado = mysqli_fetch_row($mercado);
     <head>
 
         <meta charset="utf-8">
-        <title>Bucando Mercados...</title>
+        <title><?= $_SESSION['mercados'][$id -1][1] ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -80,7 +80,7 @@ $mercado = mysqli_fetch_row($mercado);
         <!-- Título -->
         <blockquote>
           <h2><?= $mercado[1];?></h2>
-          <h5><?="Distância de " . intval($functions->distance($_SESSION['coordenadas'][0]), $_SESSION['coordenadas'][1], $mercado[4], $mercado[5]) . "Km."; ?></h5>
+          <h5 id="distance"></h5>
         </blockquote>
         <article>
         
@@ -137,7 +137,7 @@ function success(position) {
         center: latlngEu,
         mapTypeControl: false,
         navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
     map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
@@ -163,11 +163,14 @@ var end = latlngMercado;
 var request = {
 origin:start,
 destination:end,
-travelMode: google.maps.TravelMode.WALKING
+travelMode: google.maps.TravelMode.DRIVING
  };
  directionsService.route(request, function(result, status) {
 if (status == google.maps.DirectionsStatus.OK) {
   directionsDisplay.setDirections(result);
+  var metros = result.routes[0].legs[0].distance.value;
+  var km = metros / 1000;
+  $("#distance").html("Distância de " + km + "Km.");
 } else { alert("couldn't get directions:"+status); }
 });
 } 
