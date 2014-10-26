@@ -62,7 +62,8 @@ $functions = new Functions;
         </div>
         </div>
 
-
+        <br><br>
+        <div id="erros"></div>
 
 
     </div> <!-- /container -->
@@ -84,7 +85,6 @@ $functions = new Functions;
         <script src="../../js/bootstrap-collapse.js"></script>
         <script src="../../js/bootstrap-carousel.js"></script>
         <script src="../../js/bootstrap-typeahead.js"></script>
-        <script src="../../js/georeferenciamento.js"></script>
 
     </body>
 </html>
@@ -93,23 +93,44 @@ $functions = new Functions;
 
 function showPosition(position) {
 	var pos = [];
-	pos[0] = position.coords.latitude;
-	pos[1] = position.coords.longitude;
-
+	//pos[0] = position.coords.latitude;
+	//pos[1] = position.coords.longitude;
+    pos[0] = -21.9701160;
+    pos[1] = -46.7821960;
+    console.log(pos);
 	$.ajax({
                 type: "POST",
                 url: "./sessionMercado.php",
                 datatype: "html",
                 data: {"position": pos},
                 success: function(data) {
-                    //window.location.replace("./listagemMercados.php");
-                    alert(data);
+                    window.location.replace("./listagemMercados.php");
                 }
     });
 }
 
-$(document).ready(function(){
-	navigator.geolocation.getCurrentPosition(showPosition);
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            $("#erros").append("User denied the request for Geolocation.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            $("#erros").append("Location information is unavailable.");
+            break;
+        case error.TIMEOUT:
+            $("#erros").append("The request to get user location timed out.");
+            break;
+        case error.UNKNOWN_ERROR:
+            $("#erros").append("An unknown error occurred.");
+            break;
+    }
+}
 
+$(document).ready(function(){
+    if(navigator.geolocation){
+	navigator.geolocation.getCurrentPosition(showPosition, showError, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
+    }else{
+        alert("Seu navegador não tem compatibilidade com geolocalização");
+    }
 });
 </script>

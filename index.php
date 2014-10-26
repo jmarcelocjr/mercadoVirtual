@@ -14,9 +14,9 @@ $functions	= new Functions;
 <head>
 
 
-	<meta charset="utf-8">
+	<meta charset="ISO-8859-1">
 
-        <title>Pagina Incial</title>
+        <title>Inicio - Mercado Virtual</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -25,40 +25,55 @@ $functions	= new Functions;
         <link href="./css/bootstrap.css" rel="stylesheet">
         <link href="./css/geral.css" rel="stylesheet">
         <link href="./css/validation.css" rel="stylesheet">
-        <link href="./css/bootstrap-responsive.css" rel="stylesheet">  
-	
-	<title>Pagina Inicial</title>
+        <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="./css/estilo-index.css" rel="stylesheet">
 	
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         <img class="brand" src="./img/assinatura_tanbook.png" alt="" style="width:200px;">
+<?php
+include_once("./view/menu.php");
+?>
+<br>
+<br>
+	<div id="conteudo" name="conteudo">
+		<h1 class="titulo">Seja bem vindo ao</h1>
+		<br><img class="imagem" src="./img/logo_tanbook.png">
+		<h2 class="titulo">O modo fácil e digital de fazer sua lista de <br> <br> compras!</h2>
 
-          
-          <!--<img class="brand" src="../../img/assinatura_tanbook.png" alt="" style="width:200px;">-->
-          <div class="nav-collapse collapse">
-
-            <?php
-                $functions->geraMenu();
-            ?>
-
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
+		<br><form name="formulario">
+                <p align="center"><input type="button" name="botao" class="btn btn-primary btn-large" value="Faça já sua lista!" /><p>
+                </form>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
 	
+<?php
+include_once("./view/rodape.php");
+?>
+
+		<!-- Javascript -->
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/jquery.validate.min.js"></script>
+        <script src="../../js/bootstrap-transition.js"></script>
+        <script src="../../js/bootstrap-alert.js"></script>
+        <script src="../../js/bootstrap-modal.js"></script>
+        <script src="../../js/bootstrap-dropdown.js"></script>
+        <script src="../../js/bootstrap-scrollspy.js"></script>
+        <script src="../../js/bootstrap-tab.js"></script>
+        <script src="../../js/bootstrap-tooltip.js"></script>
+        <script src="../../js/bootstrap-popover.js"></script>
+        <script src="../../js/bootstrap-button.js"></script>
+        <script src="../../js/bootstrap-collapse.js"></script>
+        <script src="../../js/bootstrap-carousel.js"></script>
+        <script src="../../js/bootstrap-typeahead.js"></script>
+        
 </body>
+<script type="text/javascript">
+                document.formulario.botao.onclick = function() {
+                location.replace("./view/produto/lista.php");
+                }
+                </script>
 </html>
