@@ -37,6 +37,22 @@ $mercado = mysqli_fetch_row($mercado);
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
         <link href="../../css/load.css" rel="stylesheet">
+        
+        <style type="text/css">
+        #mapa {
+			position:absolute;
+			top:50%;
+			left:50%;
+			width:500px;
+			height:300px;
+			margin-left:-250px;
+			margin-top:-220px;
+				}
+				
+		footer{
+			margin-top:600px;
+		}
+        </style>
 
     </head>
 
@@ -47,7 +63,7 @@ $mercado = mysqli_fetch_row($mercado);
 <?php include_once ('../menu.php');?>
 </div>
 
-<div class="container">
+<div class="container" id="mapa">
 
         <!-- Título -->
         <blockquote>
@@ -59,6 +75,7 @@ $mercado = mysqli_fetch_row($mercado);
         </article>
 
     </div> <!-- /container -->
+
 <footer>
 <?php include_once ("../rodape.php");?>
 </footer>

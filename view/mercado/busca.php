@@ -25,6 +25,19 @@ $functions = new Functions;
         <link href="../../css/validation.css" rel="stylesheet">
         <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
         <link href="../../css/load.css" rel="stylesheet">
+        
+        <style type="text/css">
+        .loading {
+			position:absolute;
+			top:50%;
+			left:55%;
+			width:700px;
+			height:300px;
+			margin-left:-180px;
+			margin-top:-130px;
+			text-align:center;
+				}
+        </style>
 
     </head>
 
@@ -43,7 +56,10 @@ $functions = new Functions;
           <small>Aguarde enquanto procuramos os mercados mais próximos de sua localização</small>
         </blockquote>
         <br><br>
-        <div id="floatingCirclesG">
+        <br><br>
+        <br><br>
+        <br>
+        <div id="floatingCirclesG" class="loading">
         <div class="f_circleG" id="frotateG_01">
         </div>
         <div class="f_circleG" id="frotateG_02">
