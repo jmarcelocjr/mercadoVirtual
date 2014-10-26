@@ -91,7 +91,7 @@ if ($registros) {
 
         <img src= <?= "../../img/produto_" . $id . ".jpg"; ?> class="img-rounded padraoImagem"> <br/><br/>
         <div class="conteudo" id=<?="conteudo_" . $id?>>
-<?=$reg["produto"] . " - " . $reg["marca"];?>
+<?=$reg["produto"] . " - " . $reg["marca"]." ";?><br>
 <?=$reg["quantidade"];?>
 
 
