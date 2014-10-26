@@ -14,18 +14,15 @@ if (isset($_POST['position'])) {
 	if (!isset($_SESSION['mercados'])) {
 		$_SESSION['mercados'] = array();
 	}
+	$_SESSION['coordenadas'] = array();
 	$latitude = $_POST['position'][0];
 	$longitude = $_POST['position'][1];
+	array_push($_SESSION['coordenadas'], $latitude);
+	array_push($_SESSION['coordenadas'], $longitude);
 	$distancia = $_SESSION['distancia'];
-	$idMercados = $mercadoController->buscaMercadosProximos($latitude, $longitude, $distancia);
-	$ids = array();
-	while ($id = mysqli_fetch_array($idMercados)) {
-		array_push($ids, $id);
-	}
-
-	$_SESSION['mercados'] = $ids;
-	echo print_r($_SESSION['mercados']);
+	$mercados = $mercadoController->buscaMercadosProximos($latitude, $longitude, $distancia);
 	
+	$_SESSION['mercados'] = $mercados;
 }
 
 ?>

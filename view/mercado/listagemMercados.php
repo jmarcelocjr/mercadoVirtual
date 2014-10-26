@@ -17,7 +17,6 @@ $mercadoController = new MercadoController;
 $produtoController = new ProdutoController;
 
 $listaProdutos = $preco->comparaLista($_SESSION['produtos'], $_SESSION['mercados']);
-print_r($listaProdutos);
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +86,7 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
     </div>
 </div>
 <div class="back">Total do mercado: R$ <?= $preco->calculaPrecoTotal($listaProdutos[$i]); ?></div>
-<button type="button" class="btn btn-default">Selecionar Mercado</button>
+<button type="button" class="btn btn-default" onclick="window.location.replace('./selecionaMercado.php?id=<?=$listaProdutos[$i][0][0]?>');">Selecionar Mercado</button>
 </div>
 <?php }
 }else{
