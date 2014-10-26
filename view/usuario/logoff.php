@@ -28,7 +28,7 @@ if($_GET["confirma"]=="SIM"){
         <div class="control-group">
             <div class="controls" style="text-align:center">
               <a href="logoff.php?confirma=SIM" class="btn btn-success btn-large">Sim, desejo sair do sistema</a>&nbsp;&nbsp;
-              <a href="../home.php" class="btn btn-danger btn-large">Não desejo sair do sistema</a>
+              <a href="../../index.php" class="btn btn-danger btn-large">Não desejo sair do sistema</a>
             </div>
 		</div>
 

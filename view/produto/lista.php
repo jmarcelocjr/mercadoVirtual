@@ -124,7 +124,7 @@ if ($registros) {
 <?php
 }
 ?>
-<hr>
+
    </div>
     </div> <!-- /container -->
 

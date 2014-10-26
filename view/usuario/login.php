@@ -54,17 +54,25 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 	
 }
 
-?>
+?>	
+<!DOCTYPE html>
+<html>
+<head>
 
+<link href="../../css/geral.css" rel="stylesheet">
 <link type="text/css" href="../../css/bootstrap.css">
+</head>
+<body>
 
-<div class="col md-offset6" style="width : 30%;">
+<center>
+<div class="col md-offset6" style="width : 30%;position: absolute; 
+	left: 35%; top: 28%;">
       <form class="form-signin" id="login-form"  method="post">
             <fieldset>
             
                 <div class="control-group">
                     <div class="controls">
-                        <img src="../../img/logo_tanbook.png" alt="" style="width:200px;">
+                        <img src="../../img/logo_tanbook.png" alt="" style="width:230px;">
                         <p>&nbsp;</p>
                     </div>
                 </div>
@@ -92,6 +100,9 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 
           </form>
     </div>
+    </center>
+
+    
 <script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
         <script src="../../js/bootstrap-transition.js"></script>
@@ -106,3 +117,6 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
         <script src="../../js/bootstrap-collapse.js"></script>
         <script src="../../js/bootstrap-carousel.js"></script>
         <script src="../../js/bootstrap-typeahead.js"></script>
+        </body>
+        </html>
+        

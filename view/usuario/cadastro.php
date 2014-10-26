@@ -6,6 +6,7 @@ require_once("../../functions/connection.class.php");
 
 
 ?>
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -19,48 +20,56 @@ require_once("../../functions/connection.class.php");
 </head>
 <body>
 
+
+<center>
 <form class="form-horizontal">
   <div class="control-group">
   <fieldset style="width : 50%">
   	
   
-  <legend>Informações Do Mercado</legend>
+  <legend>Informações do Mercado</legend>
   	<label class="control-label" for="inputEmail">Nome :</label>
     <div class="controls">
       <input type="text" id="inputEmail" placeholder="Nome">
     </div>
-  </div>
-  <div class="control-group">
     <label class="control-label" for="inputEndereco">Endereço :</label>
     <div class="controls">
       <input type="text" id="inputEndereco" placeholder="Endereço">
-    </div>
-  </div>
-  </fieldset>
-  <fieldset style="width : 50%">
-  <legend>Informações De Login</legend>
+    
+  </div>  <br><br>
   	<label class="control-label" for="inputEmail">Usuario :</label>
     <div class="controls">
-      <input type="text" id="inputEmail" placeholder="Nome">
+      <input type="text" id="inputEmail" placeholder="Usuario">
     </div>
-  </div>
+  
   <div class="control-group">
     <label class="control-label" for="inputPassword">Senha :</label>
     <div class="controls">
       <input type="password" id="inputPassword" placeholder="Senha">
+
+      </div><br>
+      <div class="control-group">
+    <div class="controls"style="width : 21%;position: absolute; 
+  left: 38%; top: 50%;">
+      <button type="submit" class="btn btn-inverse">Cadastrar</button>
+    
+  </div>
     </div>
+    </div>
+    </div>  
+  </div>
   </div>
   </fieldset>
     
-  <div class="control-group">
-    <div class="controls">
-      <button type="submit" class="btn">Cadastrar</button>
-    </div>
-  </div>
+  
 </form>
-	
+	</center>
+
 </body>
 </html>
+<?php
+include_once("../../view/rodape.php");
+?>
 		<script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
         <script src="../../js/bootstrap-transition.js"></script>
