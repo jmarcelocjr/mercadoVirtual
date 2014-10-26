@@ -61,8 +61,22 @@ if (isset($_POST["email"]) ||  isset($_POST["senha"])){
 
 <link href="../../css/geral.css" rel="stylesheet">
 <link type="text/css" href="../../css/bootstrap.css">
+
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/geral.css" rel="stylesheet">
+        <link href="../../css/validation.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
+
+<?php 
+include_once ("../../functions/functions.class.php");
+session_start();
+
+$functions = new Functions;
+
+include_once ('../menu.php');
+?>
 
 <center>
 <div class="col md-offset6" style="width : 30%;position: absolute; 

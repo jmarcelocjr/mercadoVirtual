@@ -20,7 +20,16 @@ require_once("../../functions/connection.class.php");
 </head>
 <body>
 
+<?php 
+include_once ("../../functions/functions.class.php");
+session_start();
 
+$functions = new Functions;
+
+include_once ('../menu.php');
+?>
+
+<br>
 <center>
 <form class="form-horizontal">
   <div class="control-group">
@@ -47,7 +56,8 @@ require_once("../../functions/connection.class.php");
     <div class="controls">
       <input type="password" id="inputPassword" placeholder="Senha">
 
-      </div><br>
+      </div>
+      
       <div class="control-group">
     <div class="controls"style="width : 21%;position: absolute; 
   left: 38%; top: 50%;">
@@ -67,9 +77,6 @@ require_once("../../functions/connection.class.php");
 
 </body>
 </html>
-<?php
-include_once("../../view/rodape.php");
-?>
 		<script src="../../js/jquery.js"></script>
         <script src="../../js/jquery.validate.min.js"></script>
         <script src="../../js/bootstrap-transition.js"></script>
