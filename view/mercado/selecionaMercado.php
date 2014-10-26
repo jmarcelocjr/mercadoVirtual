@@ -52,6 +52,18 @@ $mercado = mysqli_fetch_row($mercado);
 		footer{
 			margin-top:600px;
 		}
+		
+		@media screen and (max-width: 400px) {
+    	#mapa{
+        	position:absolute;
+			top:50%;
+			left:50%;
+			width:500px;
+			height:300px;
+			margin-left:-250px;
+			margin-top:-120px;
+    }
+}
         </style>
 
     </head>
@@ -63,18 +75,18 @@ $mercado = mysqli_fetch_row($mercado);
 <?php include_once ('../menu.php');?>
 </div>
 
-<div class="container" id="mapa">
+<center><div class="container" id="mapa">
 
         <!-- Título -->
         <blockquote>
           <h2><?= $mercado[1];?></h2>
-          <h5><?="Distância de " . $functions->distance($_SESSION['coordenadas'][0], $_SESSION['coordenadas'][1], $mercado[4], $mercado[5]) . "Km."; ?></h5>
+          <h5><?="Distância de " . intval($functions->distance($_SESSION['coordenadas'][0]), $_SESSION['coordenadas'][1], $mercado[4], $mercado[5]) . "Km."; ?></h5>
         </blockquote>
         <article>
         
         </article>
 
-    </div> <!-- /container -->
+    </div></center> <!-- /container -->
 
 <footer>
 <?php include_once ("../rodape.php");?>
