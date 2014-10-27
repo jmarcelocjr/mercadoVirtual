@@ -112,7 +112,7 @@ if ($registros) {
 <?php
 	}
 	?>
-
+<div id="alertSuccess" class="alert success fade" data-alert="alert">Adicionado com sucesso!.</div>
 <?php
 } else {
 	?>
@@ -126,6 +126,7 @@ if ($registros) {
 ?>
 
    </div>
+
     </div> <!-- /container -->
 
     <footer id="rodape">
@@ -154,6 +155,9 @@ if ($registros) {
 <script type="text/javascript">
 $(document).ready(function() {
 
+    function showAlert() {
+    $(this).addClass("out");
+    }
 
     $("button[class='btn btn-default adc']").click(function() {
             var idInput = $(this).attr('id');
@@ -164,7 +168,9 @@ $(document).ready(function() {
                 datatype: "html",
                 data: {"idProduto": id},
                 success: function(data) {
-                   alert(data);
+                    window.setTimeout(function () {
+                        showAlert();
+                    }, 3000);
                 }
             });
 
