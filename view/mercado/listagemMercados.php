@@ -50,7 +50,7 @@ for ($i = 0; $i < sizeof($listaProdutos); $i++ ) {
 ?>
 <div class="header" id="header1">
 <h1 class="top"><?= $mercado[1]; ?></h1>
-<center><img src="../../img/sempre-vale.png" style="width:100px; height:100px; "/></center>
+<center><img src=<?= "../../img/mercado_" . $mercado[0] . ".png";?> style="width:100px; height:100px; "/></center>
 <div class="geral" id="geral1">
     <div class="box" id="box_1">
         <p class="conteudo" id="conteudo_1"></p>
