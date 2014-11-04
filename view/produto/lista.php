@@ -102,7 +102,7 @@ if ($registros) {
           <button type="button" class="btn btn-default adc" id=<?=$id ?>>
              <span class="icon-shopping-cart"></span> Adicionar
           </button>
-          <button type="button" class="btn btn-default comp" id="botao2">
+          <button type="button" class="btn btn-default comp" id="botao2" style="visibility:hidden">
              <span class="icon-resize-small"></span>Comparar
           </button>
              </div>
@@ -112,7 +112,6 @@ if ($registros) {
 <?php
 	}
 	?>
-<div id="alertSuccess" class="alert success fade" data-alert="alert">Adicionado com sucesso!.</div>
 <?php
 } else {
 	?>
