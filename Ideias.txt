@@ -1,0 +1,1 @@
+Inserir um mapa do mercado mostrando onde os itens se encontram.
